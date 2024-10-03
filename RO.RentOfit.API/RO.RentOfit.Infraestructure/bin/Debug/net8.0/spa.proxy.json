@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "",
+"RedirectUrl": "",
+"LaunchCommand": "",
+"WorkingDirectory": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.Aplication",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

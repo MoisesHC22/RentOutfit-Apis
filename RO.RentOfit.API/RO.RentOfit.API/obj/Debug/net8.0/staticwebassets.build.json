@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "tfsbHv9ddnclSLovJFum2/pu3hABI0i02H3u944gC3U=",
+  "Source": "RO.RentOfit.API",
+  "BasePath": "_content/RO.RentOfit.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RO.RentOfit.API\\wwwroot",
+      "Source": "RO.RentOfit.API",
+      "ContentRoot": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
+      "BasePath": "_content/RO.RentOfit.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "SourceId": "RO.RentOfit.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
+      "BasePath": "_content/RO.RentOfit.API",
+      "RelativePath": "swagger/ui/custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\swagger\\ui\\custom.css"
+    }
+  ]
+}

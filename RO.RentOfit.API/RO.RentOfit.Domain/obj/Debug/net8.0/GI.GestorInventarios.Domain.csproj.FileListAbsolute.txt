@@ -1,0 +1,12 @@
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\bin\Debug\net8.0\GI.GestorInventarios.Domain.deps.json
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\bin\Debug\net8.0\GI.GestorInventarios.Domain.dll
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\bin\Debug\net8.0\GI.GestorInventarios.Domain.pdb
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\GI.GestorInventarios.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\GI.GestorInventarios.Domain.AssemblyInfoInputs.cache
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\GI.GestorInventarios.Domain.AssemblyInfo.cs
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\GI.GestorInventarios.Domain.csproj.CoreCompileInputs.cache
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\GI.GestorInventarios.Domain.dll
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\refint\GI.GestorInventarios.Domain.dll
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\GI.GestorInventarios.Domain.pdb
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\ref\GI.GestorInventarios.Domain.dll
+C:\Users\juan.benitez\Desktop\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Domain\obj\Debug\net8.0\GI.GestorInventarios.Domain.csproj.AssemblyReference.cache

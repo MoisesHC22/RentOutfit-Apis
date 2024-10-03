@@ -1,0 +1,14 @@
+﻿global using RO.RentOfit.Aplication.Interfaces.Persistance;
+global using RO.RentOfit.Domain.ValueObjects;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Configuration;
+global using RO.RentOfit.Aplication.Commons;
+global using RO.RentOfit.Infraestructure.DataContexts;
+global using Microsoft.Extensions.DependencyInjection;
+global using RO.RentOfit.Domain.Interfaces.Infraestructure;
+global using RO.RentOfit.Infraestructure.Repositories;
+global using RO.RentOfit.Domain.DTOs.Persona;
+global using Microsoft.Data.SqlClient;
+global using System.Data;
+global using RO.RentOfit.Domain.Aggregates.Persona;
+global using RO.RentOfit.Domain.DTOs;
