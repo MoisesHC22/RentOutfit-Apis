@@ -6,5 +6,6 @@ namespace RO.RentOfit.Domain.Interfaces.Infraestructure
     public interface IClienteInfraestructure
     {
         Task<List<ClienteDto>> ObtenerCliente(int usuarioID);
+        Task<RespuestaDB> RegistrarCliente(RegistrarClienteDto registro);
     }
 }

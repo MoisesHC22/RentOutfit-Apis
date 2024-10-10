@@ -18,5 +18,10 @@ namespace RO.RentOfit.Aplication.Presenters
         {
             return await _unitRepository.clienteInfraestructure.ObtenerCliente(usuarioID);
         }
+
+        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteDto registro)
+        {
+            return await _unitRepository.clienteInfraestructure.RegistrarCliente(registro);
+        }
     }
 }

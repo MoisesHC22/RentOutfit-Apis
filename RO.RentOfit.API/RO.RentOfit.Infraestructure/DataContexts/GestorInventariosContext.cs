@@ -8,7 +8,6 @@ public class GestorInventariosContext : DbContext
     }
     #region Generic Dtos DB
     public DbSet<RespuestaDB>respuestaDB { get; set; }
-    public DbSet<PersonaDto> personaDto { get; set; }
     #endregion
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

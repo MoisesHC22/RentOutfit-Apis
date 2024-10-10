@@ -12,7 +12,10 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         #region Generic Dtos DB
         public DbSet<RespuestaDB> respuestaDB { get; set; }
         public DbSet<ClienteDto> clienteDto { get; set; }
+        public DbSet<RegistrarClienteDto> registrarClienteDto { get; set; }
         #endregion
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured) 

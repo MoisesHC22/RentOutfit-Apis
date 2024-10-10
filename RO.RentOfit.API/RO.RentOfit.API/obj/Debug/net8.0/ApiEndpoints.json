@@ -14,5 +14,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "RegistrarCliente",
+    "RelativePath": "api/Cliente/RegistrarCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registro",
+        "Type": "RO.RentOfit.Domain.DTOs.Cliente.RegistrarClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
