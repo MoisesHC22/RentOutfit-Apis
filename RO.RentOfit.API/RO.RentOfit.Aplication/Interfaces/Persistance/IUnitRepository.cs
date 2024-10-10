@@ -11,7 +11,6 @@ namespace RO.RentOfit.Aplication.Interfaces.Persistance
     {
         ValueTask<bool> Complete();
         bool HasChanges();
-
-        IPersonaInfraestructure personaInfraestructure {  get; }
+        IClienteInfraestructure clienteInfraestructure { get; }
     }
 }

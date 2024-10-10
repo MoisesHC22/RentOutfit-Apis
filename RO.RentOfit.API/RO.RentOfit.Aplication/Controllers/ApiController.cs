@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RO.RentOfit.Aplication.Controllers
 {
-    public class ApiController:IApiController
+    public class ApiController : IApiController
     {
         private readonly IUnitRepository _unitRepository;
         private readonly IMapper _mapper;
@@ -23,5 +23,6 @@ namespace RO.RentOfit.Aplication.Controllers
         }
 
         public IPersonaPresenter PersonaPresenter => new PersonaPresenter(_unitRepository, _mapper);    //
+        public IClientePresenter ClientePresenter => new ClientePresenter(_unitRepository, _mapper);
     }
 }

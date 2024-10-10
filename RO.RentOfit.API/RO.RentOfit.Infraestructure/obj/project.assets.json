@@ -5498,23 +5498,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bryan\\.nuget\\packages\\": {},
+    "C:\\Users\\moyhc\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
+      "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
       "projectName": "RO.RentOfit.Infraestructure",
-      "projectPath": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
-      "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.Infraestructure\\obj\\",
+      "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
+      "packagesPath": "C:\\Users\\moyhc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Infraestructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\moyhc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5530,8 +5530,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj": {
-              "projectPath": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj"
+            "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj": {
+              "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj"
             }
           }
         }
@@ -5598,7 +5598,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

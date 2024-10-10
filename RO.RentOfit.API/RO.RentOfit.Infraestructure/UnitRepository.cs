@@ -1,21 +1,21 @@
 ﻿namespace RO.RentOfit.Infraestructure;
 public class UnitRepository:BaseDisposable, IUnitRepository
 {
-    private readonly GestorInventariosContext _context;
+    private readonly RentOutfitContext _outfitContext;
     private readonly IConfiguration _configuration;
 
-    public UnitRepository(GestorInventariosContext context, IConfiguration configuration)
+    public UnitRepository( IConfiguration configuration, RentOutfitContext outfitContext)
     {
-        _context = context;
+
         _configuration = configuration;
+        _outfitContext = outfitContext;
     }
 
     protected override void DisposeManagedResource()
     {
         try
         {
-            _context.Dispose();
-
+            _outfitContext.Dispose();
 
             //if (_context.Database.GetDbConnection != null)
             //{
@@ -29,19 +29,18 @@ public class UnitRepository:BaseDisposable, IUnitRepository
         }
     }
     //
-    public IPersonaInfraestructure personaInfraestructure => new PersonaInfraestructure(_context);
-
+    public IClienteInfraestructure clienteInfraestructure => new ClienteInfraestructure(_outfitContext);
 
     public async ValueTask<bool> Complete()
     {
-        return await _context.SaveChangesAsync() > 0;
+        return await _outfitContext.SaveChangesAsync() > 0;
     }
 
 
 
     public bool HasChanges()
     {
-        return _context.ChangeTracker.HasChanges();
+        return _outfitContext.ChangeTracker.HasChanges();
     }
 
 }

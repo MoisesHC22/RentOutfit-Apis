@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tfsbHv9ddnclSLovJFum2/pu3hABI0i02H3u944gC3U=",
+  "Hash": "hQE4GUkgM91cYZm1DLSYhTpuWoPK35QFW4bjJ1qmVeA=",
   "Source": "RO.RentOfit.API",
   "BasePath": "_content/RO.RentOfit.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RO.RentOfit.API\\wwwroot",
       "Source": "RO.RentOfit.API",
-      "ContentRoot": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\RO.RentOfit.API\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
       "BasePath": "_content/RO.RentOfit.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "Identity": "C:\\Users\\moyhc\\Desktop\\RO.RentOfit.API\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
       "SourceId": "RO.RentOfit.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bryan\\Music\\PLANTILLA NET 8\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\RO.RentOfit.API\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
       "BasePath": "_content/RO.RentOfit.API",
       "RelativePath": "swagger/ui/custom.css",
       "AssetKind": "All",

@@ -1,72 +1,18 @@
 [
   {
-    "ContainingType": "RO.RentOfit.API.Controllers.AuthController",
-    "Method": "AddPersona",
-    "RelativePath": "api/Auth/AddPersona",
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "ObtenerCliente",
+    "RelativePath": "api/Cliente/ObtenerCliente",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "aggregate",
-        "Type": "RO.RentOfit.Domain.Aggregates.Persona.PersonaAggregate",
+        "Name": "usuarioID",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 401
-      },
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 500
-      }
-    ]
-  },
-  {
-    "ContainingType": "RO.RentOfit.API.Controllers.AuthController",
-    "Method": "GetPersona",
-    "RelativePath": "api/Auth/GetPersona",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 401
-      },
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

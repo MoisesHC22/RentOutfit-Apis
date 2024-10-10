@@ -9,7 +9,7 @@ namespace RO.RentOfit.Domain.DTOs
     public class RespuestaDB
     {
         [Key]
-        public int TipoError {  get; set; }
-        public string Mensaje {  get; set; }
+        public int tipoError {  get; set; }
+        public string mensaje {  get; set; }
     }
 }

@@ -41,7 +41,7 @@ if (Environment.GetEnvironmentVariable("ASPNETCORE_SWAGGER_UI_ACTIVE") == "On" |
     // specifying the Swagger JSON endpoint.
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "RO.RentOufit.API");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "GI.GestorInventarios.API");
         c.DefaultModelsExpandDepth(-1);
         c.InjectStylesheet("./swagger/ui/custom.css");
         c.DisplayRequestDuration();

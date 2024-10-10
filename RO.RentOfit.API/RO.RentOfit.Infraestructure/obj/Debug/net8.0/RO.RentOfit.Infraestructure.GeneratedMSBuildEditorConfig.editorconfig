@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RO.RentOfit.Infraestructure
-build_property.ProjectDir = C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\
+build_property.ProjectDir = C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

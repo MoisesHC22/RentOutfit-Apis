@@ -7,15 +7,5 @@
 namespace RO.RentOfit.Domain.Interfaces.Services;
 public interface IPersonaPresenter
 {
-    /// <summary>
-    /// Consulta un registro de la tabla GI_Persona
-    /// </summary>
-    /// <returns></returns>
-    Task<PersonaDto> GetPersona();
 
-    /// <summary>
-    /// Agrega un registro de la tabla GI_Persona
-    /// </summary>
-    /// <returns></returns>
-    Task<RespuestaDB> AddPersona(PersonaAggregate aggregate);
 }
