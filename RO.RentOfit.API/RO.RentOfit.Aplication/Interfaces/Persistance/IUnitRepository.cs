@@ -1,10 +1,4 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace RO.RentOfit.Aplication.Interfaces.Persistance
 {
     public interface IUnitRepository
@@ -12,5 +6,6 @@ namespace RO.RentOfit.Aplication.Interfaces.Persistance
         ValueTask<bool> Complete();
         bool HasChanges();
         IClienteInfraestructure clienteInfraestructure { get; }
+        IListasInfraestructure listasInfraestructure { get; }
     }
 }

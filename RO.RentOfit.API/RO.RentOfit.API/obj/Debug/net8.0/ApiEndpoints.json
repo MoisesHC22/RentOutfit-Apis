@@ -2,14 +2,14 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "IniciarSesion",
-    "RelativePath": "api/Cliente/IniciarSesion",
+    "RelativePath": "Cliente/IniciarSesion",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "requerimiento",
-        "Type": "RO.RentOfit.Domain.DTOs.Cliente.RequerimientoIniciarSesionDto",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.IniciarSesionAggregate",
         "IsRequired": true
       }
     ],
@@ -18,7 +18,7 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "ObtenerCliente",
-    "RelativePath": "api/Cliente/ObtenerCliente",
+    "RelativePath": "Cliente/ObtenerCliente",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -34,14 +34,50 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "RegistrarCliente",
-    "RelativePath": "api/Cliente/RegistrarCliente",
+    "RelativePath": "Cliente/RegistrarCliente",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "registro",
-        "Type": "RO.RentOfit.Domain.DTOs.Cliente.RegistrarClienteDto",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.RegistrarClienteAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ListasController",
+    "Method": "ObtenerEstados",
+    "RelativePath": "Listas/ObtenerEstados",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ListasController",
+    "Method": "ObtenerGeneros",
+    "RelativePath": "Listas/ObtenerGeneros",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ListasController",
+    "Method": "ObtenerMunicipios",
+    "RelativePath": "Listas/ObtenerMunicipios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estadoID",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

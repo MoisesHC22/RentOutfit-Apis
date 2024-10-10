@@ -1,10 +1,7 @@
 ﻿
-using NPOI.OpenXmlFormats.Dml;
-using RO.RentOfit.Domain.DTOs.Cliente;
-
 namespace RO.RentOfit.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ClienteController : ApiController
     {
@@ -19,13 +16,13 @@ namespace RO.RentOfit.API.Controllers
         }
 
         [HttpPost("RegistrarCliente")]
-        public async ValueTask<IActionResult> RegistrarCliente([FromBody] RegistrarClienteDto registro)
+        public async ValueTask<IActionResult> RegistrarCliente([FromBody] RegistrarClienteAggregate registro)
         {
             return Ok( await _appController.ClientePresenter.RegistrarCliente(registro));
         }
 
         [HttpPost("IniciarSesion")]
-        public async ValueTask<IActionResult> IniciarSesion([FromBody] RequerimientoIniciarSesionDto requerimiento)
+        public async ValueTask<IActionResult> IniciarSesion([FromBody] IniciarSesionAggregate requerimiento)
         {
             return Ok(await _appController.ClientePresenter.IniciarSesion(requerimiento));
         }

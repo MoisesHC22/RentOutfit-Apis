@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.DTOs.Cliente;
-
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class ClienteInfraestructure : IClienteInfraestructure
@@ -28,7 +26,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
 
-        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteDto registro)
+        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro)
         {
             try
             {
@@ -69,7 +67,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
 
 
-        public async Task<IniciarSesionDto> IniciarSesion(RequerimientoIniciarSesionDto requerimiento)
+        public async Task<IniciarSesionDto> IniciarSesion(IniciarSesionAggregate requerimiento)
         {
             try
             {

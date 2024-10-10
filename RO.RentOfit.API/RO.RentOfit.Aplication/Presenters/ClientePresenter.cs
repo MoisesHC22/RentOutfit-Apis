@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.DTOs.Cliente;
-
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class ClientePresenter : IClientePresenter
@@ -19,12 +17,12 @@ namespace RO.RentOfit.Aplication.Presenters
             return await _unitRepository.clienteInfraestructure.ObtenerCliente(usuarioID);
         }
 
-        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteDto registro)
+        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro)
         {
             return await _unitRepository.clienteInfraestructure.RegistrarCliente(registro);
         }
 
-        public async Task<IniciarSesionDto> IniciarSesion(RequerimientoIniciarSesionDto requerimiento) 
+        public async Task<IniciarSesionDto> IniciarSesion(IniciarSesionAggregate requerimiento) 
         {
             return await _unitRepository.clienteInfraestructure.IniciarSesion(requerimiento);
         }

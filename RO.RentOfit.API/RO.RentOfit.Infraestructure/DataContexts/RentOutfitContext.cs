@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.DTOs.Cliente;
-
 namespace RO.RentOfit.Infraestructure.DataContexts
 {
     public class RentOutfitContext : DbContext
@@ -12,9 +10,10 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         #region Generic Dtos DB
         public DbSet<RespuestaDB> respuestaDB { get; set; }
         public DbSet<ClienteDto> clienteDto { get; set; }
-        public DbSet<RegistrarClienteDto> registrarClienteDto { get; set; }
         public DbSet<IniciarSesionDto> iniciarSesionDto { get; set; }
-        public DbSet<RequerimientoIniciarSesionDto> requerimientoIniciarSesionDto { get; set; }
+        public DbSet<GeneroDto> generoDto { get; set; }
+        public DbSet<EstadosDto> estadosDto { get; set; }
+        public DbSet<MunicipiosDto> municipiosDto { get; set; }
         #endregion
 
 

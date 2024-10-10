@@ -1,9 +1,8 @@
 ﻿
-namespace RO.RentOfit.Domain.DTOs.Cliente
+namespace RO.RentOfit.Domain.Aggregates.Cliente
 {
-    public class RequerimientoIniciarSesionDto
+    public class IniciarSesionAggregate
     {
-        [Key]
         public string email { get; set; }
         public string contrasena { get; set; }
     }

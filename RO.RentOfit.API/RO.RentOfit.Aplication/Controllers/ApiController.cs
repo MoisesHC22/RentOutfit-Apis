@@ -1,11 +1,4 @@
 ﻿
-using RO.RentOfit.Aplication.Presenters;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace RO.RentOfit.Aplication.Controllers
 {
     public class ApiController : IApiController
@@ -23,5 +16,6 @@ namespace RO.RentOfit.Aplication.Controllers
         }
 
         public IClientePresenter ClientePresenter => new ClientePresenter(_unitRepository, _mapper);
+        public IListasPresenter ListasPresenter => new ListasPresenter(_unitRepository, _mapper);
     }
 }

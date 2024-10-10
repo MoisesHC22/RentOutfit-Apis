@@ -30,6 +30,7 @@ public class UnitRepository:BaseDisposable, IUnitRepository
     }
     //
     public IClienteInfraestructure clienteInfraestructure => new ClienteInfraestructure(_outfitContext);
+    public IListasInfraestructure listasInfraestructure => new ListasInfraestructure(_outfitContext);
 
     public async ValueTask<bool> Complete()
     {
