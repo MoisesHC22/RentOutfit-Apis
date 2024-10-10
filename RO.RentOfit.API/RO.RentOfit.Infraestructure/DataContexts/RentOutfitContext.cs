@@ -13,6 +13,8 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         public DbSet<RespuestaDB> respuestaDB { get; set; }
         public DbSet<ClienteDto> clienteDto { get; set; }
         public DbSet<RegistrarClienteDto> registrarClienteDto { get; set; }
+        public DbSet<IniciarSesionDto> iniciarSesionDto { get; set; }
+        public DbSet<RequerimientoIniciarSesionDto> requerimientoIniciarSesionDto { get; set; }
         #endregion
 
 

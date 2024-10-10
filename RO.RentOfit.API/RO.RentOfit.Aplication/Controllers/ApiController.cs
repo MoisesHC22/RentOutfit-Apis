@@ -22,7 +22,6 @@ namespace RO.RentOfit.Aplication.Controllers
             _configuration = configuration;
         }
 
-        public IPersonaPresenter PersonaPresenter => new PersonaPresenter(_unitRepository, _mapper);    //
         public IClientePresenter ClientePresenter => new ClientePresenter(_unitRepository, _mapper);
     }
 }

@@ -23,5 +23,12 @@ namespace RO.RentOfit.API.Controllers
         {
             return Ok( await _appController.ClientePresenter.RegistrarCliente(registro));
         }
+
+        [HttpPost("IniciarSesion")]
+        public async ValueTask<IActionResult> IniciarSesion([FromBody] RequerimientoIniciarSesionDto requerimiento)
+        {
+            return Ok(await _appController.ClientePresenter.IniciarSesion(requerimiento));
+        }
+
     }
 }

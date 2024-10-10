@@ -23,5 +23,10 @@ namespace RO.RentOfit.Aplication.Presenters
         {
             return await _unitRepository.clienteInfraestructure.RegistrarCliente(registro);
         }
+
+        public async Task<IniciarSesionDto> IniciarSesion(RequerimientoIniciarSesionDto requerimiento) 
+        {
+            return await _unitRepository.clienteInfraestructure.IniciarSesion(requerimiento);
+        }
     }
 }

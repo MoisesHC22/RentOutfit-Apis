@@ -8,5 +8,7 @@ namespace RO.RentOfit.Domain.Interfaces.Services
         Task<List<ClienteDto>> ObtenerCliente(int usuarioID);
 
         Task<RespuestaDB> RegistrarCliente(RegistrarClienteDto registro);
+
+        Task<IniciarSesionDto> IniciarSesion(RequerimientoIniciarSesionDto requerimiento);
     }
 }

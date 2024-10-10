@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "IniciarSesion",
+    "RelativePath": "api/Cliente/IniciarSesion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimiento",
+        "Type": "RO.RentOfit.Domain.DTOs.Cliente.RequerimientoIniciarSesionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "ObtenerCliente",
     "RelativePath": "api/Cliente/ObtenerCliente",
     "HttpMethod": "POST",

@@ -69,6 +69,31 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
 
 
+        public async Task<IniciarSesionDto> IniciarSesion(RequerimientoIniciarSesionDto requerimiento)
+        {
+            try
+            {
+                var clientes = await _context.iniciarSesionDto
+                  .FromSqlRaw("EXEC dbo.sp_Iniciar_Sesion @email, @contrasena ", new SqlParameter("@email", requerimiento.email), new SqlParameter("@contrasena", requerimiento.contrasena))
+                  .ToListAsync();
+
+                if (clientes == null || !clientes.Any())
+                {
+                    return null;
+                }
+
+                return clientes.FirstOrDefault();
+
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception("Error al intentar iniciar sesión.");
+            }
+        }
+
+
+
+
 
     }
 }
