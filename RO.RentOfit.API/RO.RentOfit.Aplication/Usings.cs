@@ -8,4 +8,16 @@ global using RO.RentOfit.Domain.DTOs;
 global using RO.RentOfit.Aplication.Presenters;
 global using RO.RentOfit.Domain.Aggregates.Cliente;
 global using RO.RentOfit.Domain.DTOs.Cliente;
-
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Http.HttpResults;
+global using RO.RentOfit.Domain.DTOs.Estados;
+global using RO.RentOfit.Domain.DTOs.Generos;
+global using RO.RentOfit.Domain.DTOs.Municipios;
+global using RO.RentOfit.Aplication.Controllers;
+global using RO.RentOfit.Aplication.Mapping;
+global using Microsoft.Extensions.DependencyInjection;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;

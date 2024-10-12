@@ -1,9 +1,4 @@
 ﻿
-using Microsoft.AspNetCore.Http.HttpResults;
-using RO.RentOfit.Domain.DTOs.Estados;
-using RO.RentOfit.Domain.DTOs.Generos;
-using RO.RentOfit.Domain.DTOs.Municipios;
-
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class ListasPresenter : IListasPresenter
@@ -21,7 +16,6 @@ namespace RO.RentOfit.Aplication.Presenters
         {
             return await _unitRepository.listasInfraestructure.ObtenerGeneros();
         }
-
 
         public async Task<List<EstadosDto>> ObtenerEstados()
         {

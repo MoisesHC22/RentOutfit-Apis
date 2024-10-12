@@ -14,14 +14,12 @@ namespace RO.RentOfit.Domain.Aggregates.Cliente
 
         public string email { get; set; }
         public string controsena { get; set; }
-        public string token { get; set; }
-        public string tokenValidacion { get; set; }
+
 
 
         public string nombreCliente { get; set; }
         public string apellidoPaterno { get; set; }
         public string apellidoMaterno { get; set; }
-        public string linkImagenPerfil { get; set; }
         public string telefono { get; set; }
         public int generoID { get; set; }
 

@@ -1,4 +1,5 @@
-﻿namespace RO.RentOfit.Infraestructure;
+﻿
+namespace RO.RentOfit.Infraestructure;
 public static class DContainer
 {
     public static IServiceCollection AddInfrastructure(

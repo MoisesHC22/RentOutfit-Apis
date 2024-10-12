@@ -1,6 +1,4 @@
-﻿using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerGen;
-
+﻿
 namespace RO.RentOfit.API.Swagger.Filters;
 
 /// <summary>

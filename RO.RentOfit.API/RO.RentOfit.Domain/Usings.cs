@@ -5,6 +5,4 @@ global using RO.RentOfit.Domain.DTOs.Cliente;
 global using RO.RentOfit.Domain.DTOs.Estados;
 global using RO.RentOfit.Domain.DTOs.Generos;
 global using RO.RentOfit.Domain.DTOs.Municipios;
-global using RO.RentOfit.Domain.DTOs.Estados;
-global using RO.RentOfit.Domain.DTOs.Generos;
-global using RO.RentOfit.Domain.DTOs.Municipios;
+global using Microsoft.AspNetCore.Http;

@@ -1,4 +1,8 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using RO.RentOfit.API.Extensions;
+using RO.RentOfit.Infraestructure.Repositories;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Logging.ClearProviders();
@@ -8,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddSwagger(builder);
 //builder.Services.AddCors();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+builder.Services.AddSingleton<StorageFirebaseConfig>();
 
 //Configure session -----------------------------
 builder.Services.AddDistributedMemoryCache();
@@ -25,8 +31,46 @@ builder.Services.AddSession(options =>
 builder.Services.AddApplicationServices(builder.Configuration);
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+     .AddJwtBearer(options =>
+     {
+         options.TokenValidationParameters = new TokenValidationParameters
+         {
+             ValidateIssuer = true,
+             ValidateAudience = true,
+             ValidateLifetime = true,
+             ValidateIssuerSigningKey = true,
+             ValidIssuer = builder.Configuration["Jwt:Issuer"],
+             ValidAudience = builder.Configuration["Jwt:Audience"],
+             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+         };
+     });
+
+
+
 builder.Services.AddEndpointsApiExplorer();
 //Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200")
+                               .AllowAnyHeader()
+                               .AllowAnyMethod()
+                               .AllowCredentials();
+                    });
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
+
 // Configure the HTTP request pipeline 
 var app = builder.Build();
 
@@ -48,7 +92,7 @@ if (Environment.GetEnvironmentVariable("ASPNETCORE_SWAGGER_UI_ACTIVE") == "On" |
         c.RoutePrefix = string.Empty;
     });
 }
-app.UseCors("AllowedOrigins");
+app.UseCors("AllowSpecificOrigins");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();

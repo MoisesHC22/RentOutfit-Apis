@@ -1,4 +1,5 @@
-﻿namespace RO.RentOfit.API.Controllers;
+﻿
+namespace RO.RentOfit.API.Controllers;
 public class ApiController : ControllerBase
 {
     /// <summary>

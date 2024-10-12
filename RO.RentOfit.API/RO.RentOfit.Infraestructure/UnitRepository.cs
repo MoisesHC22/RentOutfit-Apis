@@ -1,14 +1,17 @@
-﻿namespace RO.RentOfit.Infraestructure;
+﻿
+namespace RO.RentOfit.Infraestructure;
 public class UnitRepository:BaseDisposable, IUnitRepository
 {
     private readonly RentOutfitContext _outfitContext;
     private readonly IConfiguration _configuration;
+    private readonly StorageFirebaseConfig _storageFirebaseConfig;
 
-    public UnitRepository( IConfiguration configuration, RentOutfitContext outfitContext)
+    public UnitRepository( IConfiguration configuration, RentOutfitContext outfitContext, StorageFirebaseConfig storageFirebaseConfig)
     {
 
         _configuration = configuration;
         _outfitContext = outfitContext;
+        _storageFirebaseConfig = storageFirebaseConfig;
     }
 
     protected override void DisposeManagedResource()
@@ -29,7 +32,7 @@ public class UnitRepository:BaseDisposable, IUnitRepository
         }
     }
     //
-    public IClienteInfraestructure clienteInfraestructure => new ClienteInfraestructure(_outfitContext);
+    public IClienteInfraestructure clienteInfraestructure => new ClienteInfraestructure(_outfitContext, _storageFirebaseConfig);
     public IListasInfraestructure listasInfraestructure => new ListasInfraestructure(_outfitContext);
 
     public async ValueTask<bool> Complete()

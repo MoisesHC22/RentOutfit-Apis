@@ -1,4 +1,5 @@
-﻿namespace RO.RentOfit.Aplication.Commons
+﻿
+namespace RO.RentOfit.Aplication.Commons
 {
     public class ConnectionsSettings
     {

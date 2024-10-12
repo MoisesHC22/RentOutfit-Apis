@@ -15,3 +15,6 @@ global using RO.RentOfit.Domain.Aggregates.Cliente;
 global using RO.RentOfit.Domain.DTOs.Estados;
 global using RO.RentOfit.Domain.DTOs.Generos;
 global using RO.RentOfit.Domain.DTOs.Municipios;
+global using Google.Apis.Auth.OAuth2;
+global using Google.Cloud.Storage.V1;
+global using Microsoft.AspNetCore.Http;

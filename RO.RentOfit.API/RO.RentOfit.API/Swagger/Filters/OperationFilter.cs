@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerGen;
-using System.Text.RegularExpressions;
-
+﻿
 namespace RO.RentOfit.API.Swagger.Filters;
 
 /// <summary>

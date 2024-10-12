@@ -4,9 +4,11 @@ namespace RO.RentOfit.Infraestructure.Repositories
     internal class ClienteInfraestructure : IClienteInfraestructure
     {
         private readonly RentOutfitContext _context;
-        public ClienteInfraestructure(RentOutfitContext context) 
+        private readonly StorageFirebaseConfig _storageFirebase;
+        public ClienteInfraestructure(RentOutfitContext context, StorageFirebaseConfig storageFirebase)
         {
             _context = context;
+            _storageFirebase = storageFirebase;
         }
 
         public async Task<List<ClienteDto>> ObtenerCliente(int usuarioID)
@@ -26,20 +28,25 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
 
-        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro)
+        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro, IFormFile Imagen)
         {
             try
             {
+                var ubicacion = "perfiles/";
+                var nombreImg = registro.nombreCliente + "_" + registro.email;
+                var linkImg = await _storageFirebase.SubirArchivo(Imagen, nombreImg, ubicacion);
+
+                var token = Guid.NewGuid().ToString();
+
                 SqlParameter[] parameters =
                 {
                     new SqlParameter("email", registro.email),
                     new SqlParameter("contrasena", registro.controsena),
-                    new SqlParameter("token", registro.token),
-                    new SqlParameter("tokenValidacion", registro.tokenValidacion),
+                    new SqlParameter("token", token),
                     new SqlParameter("nombreCliente", registro.nombreCliente),
                     new SqlParameter("apellidoPaterno", registro.apellidoPaterno),
                     new SqlParameter("apellidoMaterno", registro.apellidoMaterno),
-                    new SqlParameter("linkImagenPerfil", registro.linkImagenPerfil),
+                    new SqlParameter("linkImagenPerfil", linkImg),
                     new SqlParameter("telefono", registro.telefono),
                     new SqlParameter("generoID", registro.generoID),
                     new SqlParameter("codigoPostal", registro.codigoPostal),
@@ -51,7 +58,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                     new SqlParameter("municipio", registro.municipio)
                 };
 
-                var sqlQuery = "EXEC dbo.sp_registrar_cliente @email, @contrasena, @token, @tokenValidacion, " +
+                var sqlQuery = "EXEC dbo.sp_registrar_cliente @email, @contrasena, @token, " +
                     "@nombreCliente, @apellidoPaterno, @apellidoMaterno, @linkImagenPerfil, @telefono, @generoID, " +
                     "@codigoPostal, @colonia, @calle, @noInt, @noExt, @estadoID, @municipio";
 
@@ -59,10 +66,11 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
                 return dataSP.FirstOrDefault();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 throw;
             }
+
         }
 
 
@@ -83,14 +91,11 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 return clientes.FirstOrDefault();
 
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 throw new Exception("Error al intentar iniciar sesión.");
             }
         }
-
-
-
 
 
     }

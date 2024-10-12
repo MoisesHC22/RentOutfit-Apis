@@ -1,4 +1,5 @@
-﻿namespace RO.RentOfit.API.Swagger.Filters
+﻿
+namespace RO.RentOfit.API.Swagger.Filters
 {
     class AuthenticationLogFilter :Attribute, IAuthorizationFilter
     {      

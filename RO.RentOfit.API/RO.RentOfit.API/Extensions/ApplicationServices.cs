@@ -1,4 +1,5 @@
-﻿namespace RO.RentOfit.API.Extensions;
+﻿
+namespace RO.RentOfit.API.Extensions;
 
 /// <summary>
 /// Application services

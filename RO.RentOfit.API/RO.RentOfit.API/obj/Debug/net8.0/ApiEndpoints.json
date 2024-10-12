@@ -40,9 +40,79 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "registro",
-        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.RegistrarClienteAggregate",
-        "IsRequired": true
+        "Name": "estadoID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "codigoPostal",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "colonia",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "calle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noInt",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "noExt",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "municipio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controsena",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombreCliente",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "apellidoPaterno",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "apellidoMaterno",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "telefono",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "generoID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "imagenPerfil",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
