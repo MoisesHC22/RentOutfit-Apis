@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1OSc8TR6m/o=",
+  "dgSpecHash": "pwWBBbXUUz8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
+  "projectFilePath": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moyhc\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\moyhc\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

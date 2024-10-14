@@ -5281,11 +5281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
       "projectName": "RO.RentOfit.Domain",
-      "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
+      "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
       "packagesPath": "C:\\Users\\moyhc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\obj\\",
+      "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "DarDeAltaUnVendedor",
+    "RelativePath": "Cliente/DarDeAltaUnVendedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "IniciarSesion",
     "RelativePath": "Cliente/IniciarSesion",
     "HttpMethod": "POST",

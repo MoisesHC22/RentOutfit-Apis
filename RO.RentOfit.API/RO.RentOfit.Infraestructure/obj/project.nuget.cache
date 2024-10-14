@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZSykVYo4X7Y=",
+  "dgSpecHash": "9lfD7AXUdUs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\moyhc\\Desktop\\SPRINT2_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
+  "projectFilePath": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moyhc\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\moyhc\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

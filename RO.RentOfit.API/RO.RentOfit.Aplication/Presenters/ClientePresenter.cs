@@ -26,5 +26,10 @@ namespace RO.RentOfit.Aplication.Presenters
         {
             return await _unitRepository.clienteInfraestructure.IniciarSesion(requerimiento);
         }
+        
+        public async Task<RespuestaDB> DarDeAltaUnVendedor(int usuarioID)
+        {
+            return await _unitRepository.clienteInfraestructure.DarDeAltaUnVendedor(usuarioID);
+        }
     }
 }

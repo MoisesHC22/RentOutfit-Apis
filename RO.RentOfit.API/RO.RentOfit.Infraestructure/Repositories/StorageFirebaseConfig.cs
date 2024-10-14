@@ -5,11 +5,28 @@ namespace RO.RentOfit.Infraestructure.Repositories
     {
         private readonly StorageClient _storageClient;
         private readonly string _bucketName = "rentoutfit-712b4.appspot.com";
+        private readonly IConfiguration _configuration;
 
-        public StorageFirebaseConfig() 
+        public StorageFirebaseConfig(IConfiguration configuration) 
         {
-            var googleCredential = GoogleCredential.FromFile(@"C:\Firebase\rentoutfit-712b4-firebase-adminsdk-8a650-1bfc5490c5.json");
+            _configuration = configuration;
 
+            var firebaseJson = @$"{{ 
+                ""type"": ""{_configuration["Firebase:Type"]}"",
+                ""project_id"": ""{_configuration["Firebase:ProjectId"]}"",
+                ""private_key_id"": ""{_configuration["Firebase:PrivateKeyId"]}"",
+                ""private_key"": ""{_configuration["Firebase:PrivateKey"]}"",
+                ""client_email"": ""{_configuration["Firebase:ClientEmail"]}"",
+                ""client_id"": ""{_configuration["Firebase:ClientId"]}"",
+                ""auth_uri"": ""{_configuration["Firebase:AuthUri"]}"",
+                ""token_uri"": ""{_configuration["Firebase:TokenUri"]}"",
+                ""auth_provider_x509_cert_url"": ""{_configuration["Firebase:AuthProviderX509CertUrl"]}"",
+                ""client_x509_cert_url"": ""{_configuration["Firebase:ClientX509CertUrl"]}"",
+                ""universe_domain"": ""{_configuration["Firebase:UniverseDomain"]}""
+            }}";
+
+            var googleCredential = GoogleCredential.FromJson(firebaseJson);
+              
             _storageClient = StorageClient.Create(googleCredential);
         }
 

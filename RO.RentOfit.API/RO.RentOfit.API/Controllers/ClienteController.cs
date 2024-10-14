@@ -60,5 +60,11 @@ namespace RO.RentOfit.API.Controllers
         }
 
 
+        [HttpPost("DarDeAltaUnVendedor")]
+        public async ValueTask<IActionResult> DarDeAltaUnVendedor([FromBody] int usuarioID)
+        {
+            return Ok( await _appController.ClientePresenter.DarDeAltaUnVendedor(usuarioID));
+        }
+
     }
 }

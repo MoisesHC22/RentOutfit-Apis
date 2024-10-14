@@ -28,6 +28,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
 
+
         public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro, IFormFile Imagen)
         {
             try
@@ -94,6 +95,24 @@ namespace RO.RentOfit.Infraestructure.Repositories
             catch (Exception ex)
             {
                 throw new Exception("Error al intentar iniciar sesión.");
+            }
+        }
+
+
+
+        public async Task<RespuestaDB> DarDeAltaUnVendedor(int usuarioID)
+        {
+            try
+            {
+                var nuevoVendedor = await _context.respuestaDB
+                    .FromSqlRaw("EXEC dbo.sp_DardeAlta_Vendedor @usuarioID ", new SqlParameter("@usuarioID", usuarioID))
+                    .ToListAsync();
+
+                return nuevoVendedor.FirstOrDefault();
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception("Error al dar de alta un vendedor.");
             }
         }
 
