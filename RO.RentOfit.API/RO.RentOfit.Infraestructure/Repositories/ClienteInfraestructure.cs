@@ -19,7 +19,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
             try
             {
                 var clientes = await _context.clienteDto
-                    .FromSqlRaw("EXEC sp_mostrar_cliente @usuarioID ", new SqlParameter("@usuarioID", usuarioID))
+                    .FromSqlRaw("EXEC dbo.sp_mostrar_cliente @usuarioID ", new SqlParameter("@usuarioID", usuarioID))
                     .ToListAsync();
 
                 return (clientes);

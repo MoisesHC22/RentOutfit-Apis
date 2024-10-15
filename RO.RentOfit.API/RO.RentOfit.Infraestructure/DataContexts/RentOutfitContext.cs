@@ -1,4 +1,6 @@
 ﻿
+using RO.RentOfit.Domain.DTOs.Tallas;
+
 namespace RO.RentOfit.Infraestructure.DataContexts
 {
     public class RentOutfitContext : DbContext
@@ -14,6 +16,7 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         public DbSet<GeneroDto> generoDto { get; set; }
         public DbSet<EstadosDto> estadosDto { get; set; }
         public DbSet<MunicipiosDto> municipiosDto { get; set; }
+        public DbSet<TallasDto> tallasDto { get; set; }
         #endregion
 
 

@@ -154,6 +154,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RO.RentOfit.API.Controllers.ListasController",
+    "Method": "ObtenerTallas",
+    "RelativePath": "Listas/ObtenerTallas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
     "Method": "DarDeAltaEstablecimiento",
     "RelativePath": "Vendedor/DarDeAltaEstablecimiento",

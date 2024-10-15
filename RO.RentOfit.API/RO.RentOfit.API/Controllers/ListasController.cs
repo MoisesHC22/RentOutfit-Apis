@@ -27,5 +27,11 @@ namespace RO.RentOfit.API.Controllers
             return Ok(await _appController.ListasPresenter.ObtenerMunicipios(estadoID));
         }
 
+        [HttpPost("ObtenerTallas")]
+        public async ValueTask<IActionResult> ObtenerTallas()
+        {
+            return Ok(await _appController.ListasPresenter.ObtenerTallas());
+        }
+
     }
 }

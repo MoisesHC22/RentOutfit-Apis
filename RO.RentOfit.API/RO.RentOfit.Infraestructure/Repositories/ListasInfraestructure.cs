@@ -1,4 +1,6 @@
 ﻿
+using RO.RentOfit.Domain.DTOs.Tallas;
+
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class ListasInfraestructure : IListasInfraestructure
@@ -15,7 +17,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
             try
             {
                 var generos = await _context.generoDto
-                    .FromSqlRaw("EXEC sp_consultar_generos")
+                    .FromSqlRaw("EXEC dbo.sp_consultar_generos")
                     .ToListAsync();
 
                 return (generos);
@@ -31,7 +33,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
             try
             {
                 var estados = await _context.estadosDto
-                    .FromSqlRaw("EXEC sp_consultar_estados")
+                    .FromSqlRaw("EXEC dbo.sp_consultar_estados")
                     .ToListAsync();
 
                 return (estados);
@@ -57,5 +59,22 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 throw;
             }
         }
+
+        public async Task<List<TallasDto>> ObtenerTallas()
+        {
+            try
+            {
+                var tallas = await _context.tallasDto
+                    .FromSqlRaw("EXEC dbo.sp_consultar_tallas")
+                    .ToListAsync();
+
+                return (tallas);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
     }
 }
