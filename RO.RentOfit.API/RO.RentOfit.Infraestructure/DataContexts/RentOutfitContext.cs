@@ -16,6 +16,7 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         public DbSet<MunicipiosDto> municipiosDto { get; set; }
         public DbSet<TallasDto> tallasDto { get; set; }
         public DbSet<EstilosDto> estilosDto { get; set; }
+        public DbSet<RecuperarContrasenaDto> recuperarContrasenaDto { get; set; }
         #endregion
 
 

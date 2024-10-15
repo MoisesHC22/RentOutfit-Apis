@@ -12,15 +12,21 @@ namespace RO.RentOfit.Aplication.Presenters
             _mapper = mapper;
         }
 
+
+
         public async Task<List<ClienteDto>> ObtenerCliente(int usuarioID)
         {
             return await _unitRepository.clienteInfraestructure.ObtenerCliente(usuarioID);
         }
 
+
+
         public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro, IFormFile Imagen)
         {
             return await _unitRepository.clienteInfraestructure.RegistrarCliente(registro, Imagen);
         }
+
+
 
         public async Task<IniciarSesionDto> IniciarSesion(IniciarSesionAggregate requerimiento) 
         {

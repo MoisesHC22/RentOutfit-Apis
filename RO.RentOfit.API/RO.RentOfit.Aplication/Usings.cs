@@ -24,3 +24,5 @@ global using System.Threading.Tasks;
 global using RO.RentOfit.Domain.Aggregates.Vendedor;
 global using RO.RentOfit.Domain.DTOs.Estilos;
 global using RO.RentOfit.Domain.DTOs.Tallas;
+global using Microsoft.Data.SqlClient;
+global using RO.RentOfit.Domain.DTOs.RecuperarContrasena;

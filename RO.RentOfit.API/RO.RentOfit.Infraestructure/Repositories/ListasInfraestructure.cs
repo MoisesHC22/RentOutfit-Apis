@@ -10,6 +10,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
             _context = context;
         }
 
+
+
         public async Task<List<GeneroDto>> ObtenerGeneros()
         {
             try
@@ -25,6 +27,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 throw;
             }
         }
+
+
 
         public async Task<List<EstadosDto>> ObtenerEstados()
         {
@@ -42,6 +46,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
+
+
         public async Task<List<MunicipiosDto>> ObtenerMunicipios(int estadoID)
         {
             try
@@ -58,6 +64,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
+
+
         public async Task<List<TallasDto>> ObtenerTallas()
         {
             try
@@ -73,6 +81,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 throw;
             }
         }
+
+
 
         public async Task<List<EstilosDto>> ObtenerEstilos()
         {

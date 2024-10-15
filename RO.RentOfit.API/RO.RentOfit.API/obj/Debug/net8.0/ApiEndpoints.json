@@ -174,6 +174,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RO.RentOfit.API.Controllers.RecuperarContrasenaController",
+    "Method": "ActualizarContrasena",
+    "RelativePath": "RecuperarContrasena/ActualizarContrasena",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contrasena",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.RecuperarContrasenaController",
+    "Method": "ObtenerToken",
+    "RelativePath": "RecuperarContrasena/ObtenerToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.RecuperarContrasenaController",
+    "Method": "ValidarToken",
+    "RelativePath": "RecuperarContrasena/ValidarToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
     "Method": "DarDeAltaEstablecimiento",
     "RelativePath": "Vendedor/DarDeAltaEstablecimiento",

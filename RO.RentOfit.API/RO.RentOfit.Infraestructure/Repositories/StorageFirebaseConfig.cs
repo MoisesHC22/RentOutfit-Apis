@@ -30,6 +30,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
             _storageClient = StorageClient.Create(googleCredential);
         }
 
+
+
         public async Task<string> SubirArchivo(IFormFile archivo, string nombre, string ubicacion)
         {
             if (archivo == null || archivo.Length == 0)

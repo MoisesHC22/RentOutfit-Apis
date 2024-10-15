@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RO.RentOfit.Aplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46e17b39495f2a184f49b87027dc3d0914f8be3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+484135c46817142e045cc8749980db1d459cb445")]
 [assembly: System.Reflection.AssemblyProductAttribute("RO.RentOfit.Aplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RO.RentOfit.Aplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

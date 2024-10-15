@@ -21,4 +21,5 @@ global using Microsoft.AspNetCore.Http;
 global using RO.RentOfit.Domain.Aggregates.Vendedor;
 global using RO.RentOfit.Domain.DTOs.Estilos;
 global using RO.RentOfit.Domain.DTOs.Tallas;
+global using RO.RentOfit.Domain.DTOs.RecuperarContrasena;
 

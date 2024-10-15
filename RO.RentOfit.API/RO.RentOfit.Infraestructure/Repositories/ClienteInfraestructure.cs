@@ -11,6 +11,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
             _storageFirebase = storageFirebase;
         }
 
+
+
         public async Task<List<ClienteDto>> ObtenerCliente(int usuarioID)
         {
             try
