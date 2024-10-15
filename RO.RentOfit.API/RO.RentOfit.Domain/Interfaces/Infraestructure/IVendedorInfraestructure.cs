@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.Aggregates.Vendedor;
-
 namespace RO.RentOfit.Domain.Interfaces.Infraestructure
 {
     public interface IVendedorInfraestructure

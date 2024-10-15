@@ -15,3 +15,6 @@ global using Swashbuckle.AspNetCore.SwaggerGen;
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Mvc.Routing;
 global using System.Text.RegularExpressions;
+global using RO.RentOfit.Domain.Aggregates.Vendedor;
+global using Newtonsoft.Json;
+global using NPOI.OpenXmlFormats.Dml.Diagram;

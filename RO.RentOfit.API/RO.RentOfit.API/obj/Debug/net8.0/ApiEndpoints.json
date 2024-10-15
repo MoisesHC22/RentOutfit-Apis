@@ -129,6 +129,16 @@
   },
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ListasController",
+    "Method": "ObtenerEstilos",
+    "RelativePath": "Listas/ObtenerEstilos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ListasController",
     "Method": "ObtenerGeneros",
     "RelativePath": "Listas/ObtenerGeneros",
     "HttpMethod": "POST",

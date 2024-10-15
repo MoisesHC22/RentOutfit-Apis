@@ -18,3 +18,7 @@ global using RO.RentOfit.Domain.DTOs.Municipios;
 global using Google.Apis.Auth.OAuth2;
 global using Google.Cloud.Storage.V1;
 global using Microsoft.AspNetCore.Http;
+global using RO.RentOfit.Domain.Aggregates.Vendedor;
+global using RO.RentOfit.Domain.DTOs.Estilos;
+global using RO.RentOfit.Domain.DTOs.Tallas;
+

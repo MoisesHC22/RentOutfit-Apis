@@ -21,3 +21,6 @@ global using System.Collections.Generic;
 global using System.Linq;
 global using System.Text;
 global using System.Threading.Tasks;
+global using RO.RentOfit.Domain.Aggregates.Vendedor;
+global using RO.RentOfit.Domain.DTOs.Estilos;
+global using RO.RentOfit.Domain.DTOs.Tallas;

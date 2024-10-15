@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.DTOs.Tallas;
-
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class ListasInfraestructure : IListasInfraestructure
@@ -75,6 +73,23 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 throw;
             }
         }
+
+        public async Task<List<EstilosDto>> ObtenerEstilos()
+        {
+            try
+            {
+                var estilos = await _context.estilosDto
+                    .FromSqlRaw("EXEC dbo.sp_consultar_estilos")
+                    .ToListAsync();
+
+                return (estilos);
+            }
+            catch (Exception ex) 
+            {
+                throw;
+            }
+        }
+
 
     }
 }

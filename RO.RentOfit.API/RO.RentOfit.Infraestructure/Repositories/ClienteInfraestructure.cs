@@ -1,7 +1,4 @@
 ﻿
-using Microsoft.Win32;
-using Newtonsoft.Json.Linq;
-
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class ClienteInfraestructure : IClienteInfraestructure

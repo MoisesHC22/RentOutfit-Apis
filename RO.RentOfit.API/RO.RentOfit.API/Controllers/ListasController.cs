@@ -33,5 +33,12 @@ namespace RO.RentOfit.API.Controllers
             return Ok(await _appController.ListasPresenter.ObtenerTallas());
         }
 
+        [HttpPost("ObtenerEstilos")]
+        public async ValueTask<IActionResult> ObtenerEstilos()
+        {
+            return Ok(await _appController.ListasPresenter.ObtenerEstilos());
+        }
+
+
     }
 }

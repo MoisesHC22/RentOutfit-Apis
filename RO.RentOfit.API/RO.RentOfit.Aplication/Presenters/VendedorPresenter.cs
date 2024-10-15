@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.Aggregates.Vendedor;
-
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class VendedorPresenter : IVendedorPresenter

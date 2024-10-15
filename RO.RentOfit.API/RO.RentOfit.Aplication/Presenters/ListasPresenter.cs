@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.DTOs.Tallas;
-
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class ListasPresenter : IListasPresenter
@@ -32,6 +30,11 @@ namespace RO.RentOfit.Aplication.Presenters
         public async Task<List<TallasDto>> ObtenerTallas()
         {
             return await _unitRepository.listasInfraestructure.ObtenerTallas();
+        }
+
+        public async Task<List<EstilosDto>> ObtenerEstilos()
+        {
+            return await _unitRepository.listasInfraestructure.ObtenerEstilos();
         }
 
     }
