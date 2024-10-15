@@ -1,4 +1,7 @@
 ﻿
+using Newtonsoft.Json;
+using NPOI.OpenXmlFormats.Dml.Diagram;
+
 namespace RO.RentOfit.API.Controllers
 {
     [Route("[controller]")]
@@ -15,7 +18,32 @@ namespace RO.RentOfit.API.Controllers
         [HttpPost("ObtenerCliente")]
         public async ValueTask<IActionResult> ObtenerCliente([FromBody] int usuarioID)
         {
-            return Ok( await _appController.ClientePresenter.ObtenerCliente(usuarioID));
+            var clientes = await _appController.ClientePresenter.ObtenerCliente(usuarioID);
+
+            if (clientes == null || !clientes.Any())
+            {
+                return Unauthorized();
+            }
+
+            var clientesJson = JsonConvert.SerializeObject(clientes);
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                 new Claim("Clientes", clientesJson)
+                }),
+                Expires = DateTime.UtcNow.AddMinutes(double.Parse(_configuration["Jwt:ExpireMinutes"])),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
+
+            return Ok(new { Token = tokenString });
         }
 
 
@@ -56,15 +84,8 @@ namespace RO.RentOfit.API.Controllers
             var tokenString = tokenHandler.WriteToken(token);
 
             return Ok(new { Token = tokenString });
-
         }
 
-
-        [HttpPost("DarDeAltaUnVendedor")]
-        public async ValueTask<IActionResult> DarDeAltaUnVendedor([FromBody] int usuarioID)
-        {
-            return Ok( await _appController.ClientePresenter.DarDeAltaUnVendedor(usuarioID));
-        }
 
     }
 }

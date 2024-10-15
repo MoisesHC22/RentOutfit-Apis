@@ -17,5 +17,6 @@ namespace RO.RentOfit.Aplication.Controllers
 
         public IClientePresenter ClientePresenter => new ClientePresenter(_unitRepository, _mapper);
         public IListasPresenter ListasPresenter => new ListasPresenter(_unitRepository, _mapper);
+        public IVendedorPresenter vendedorPresenter => new VendedorPresenter(_unitRepository, _mapper);
     }
 }

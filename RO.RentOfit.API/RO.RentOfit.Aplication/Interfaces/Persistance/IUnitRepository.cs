@@ -7,5 +7,6 @@ namespace RO.RentOfit.Aplication.Interfaces.Persistance
         bool HasChanges();
         IClienteInfraestructure clienteInfraestructure { get; }
         IListasInfraestructure listasInfraestructure { get; }
+        IVendedorInfraestructure vendedorInfraestructure { get; }
     }
 }

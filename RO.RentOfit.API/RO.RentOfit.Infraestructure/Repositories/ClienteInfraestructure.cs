@@ -1,4 +1,7 @@
 ﻿
+using Microsoft.Win32;
+using Newtonsoft.Json.Linq;
+
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class ClienteInfraestructure : IClienteInfraestructure
@@ -33,9 +36,6 @@ namespace RO.RentOfit.Infraestructure.Repositories
         {
             try
             {
-                var ubicacion = "perfiles/";
-                var nombreImg = registro.nombreCliente + "_" + registro.email;
-                var linkImg = await _storageFirebase.SubirArchivo(Imagen, nombreImg, ubicacion);
 
                 var token = Guid.NewGuid().ToString();
 
@@ -47,7 +47,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                     new SqlParameter("nombreCliente", registro.nombreCliente),
                     new SqlParameter("apellidoPaterno", registro.apellidoPaterno),
                     new SqlParameter("apellidoMaterno", registro.apellidoMaterno),
-                    new SqlParameter("linkImagenPerfil", linkImg),
+                    new SqlParameter("linkImagenPerfil", DBNull.Value),
                     new SqlParameter("telefono", registro.telefono),
                     new SqlParameter("generoID", registro.generoID),
                     new SqlParameter("codigoPostal", registro.codigoPostal),
@@ -65,13 +65,26 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
                 var dataSP = await _context.respuestaDB.FromSqlRaw(sqlQuery, parameters).ToListAsync();
 
-                return dataSP.FirstOrDefault();
+                var respuesta = dataSP.FirstOrDefault();
+
+
+                if (respuesta != null)
+                {
+                    var ubicacion = "perfiles/";
+                    var nombreImg = registro.nombreCliente + "_" + registro.email;
+                    var linkImg = await _storageFirebase.SubirArchivo(Imagen, nombreImg, ubicacion);
+
+                    var actualizacion = await _context.respuestaDB
+                        .FromSqlRaw("EXEC dbo.sp_actualizar_fotoDePefil @email, @linkImagenPerfil", new SqlParameter("@email", registro.email), new SqlParameter("@linkImagenPerfil", linkImg))
+                        .ToListAsync();
+                }
+
+                return respuesta;
             }
             catch (Exception ex)
             {
                 throw;
             }
-
         }
 
 
@@ -97,25 +110,6 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 throw new Exception("Error al intentar iniciar sesión.");
             }
         }
-
-
-
-        public async Task<RespuestaDB> DarDeAltaUnVendedor(int usuarioID)
-        {
-            try
-            {
-                var nuevoVendedor = await _context.respuestaDB
-                    .FromSqlRaw("EXEC dbo.sp_DardeAlta_Vendedor @usuarioID ", new SqlParameter("@usuarioID", usuarioID))
-                    .ToListAsync();
-
-                return nuevoVendedor.FirstOrDefault();
-            }
-            catch (Exception ex) 
-            {
-                throw new Exception("Error al dar de alta un vendedor.");
-            }
-        }
-
 
     }
 }

@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
-    "Method": "DarDeAltaUnVendedor",
-    "RelativePath": "Cliente/DarDeAltaUnVendedor",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "usuarioID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "IniciarSesion",
     "RelativePath": "Cliente/IniciarSesion",
     "HttpMethod": "POST",
@@ -163,6 +147,38 @@
     "Parameters": [
       {
         "Name": "estadoID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
+    "Method": "DarDeAltaEstablecimiento",
+    "RelativePath": "Vendedor/DarDeAltaEstablecimiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimiento",
+        "Type": "RO.RentOfit.Domain.Aggregates.Vendedor.EstablecimientoAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
+    "Method": "DarDeAltaUnVendedor",
+    "RelativePath": "Vendedor/DarDeAltaUnVendedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioID",
         "Type": "System.Int32",
         "IsRequired": true
       }
