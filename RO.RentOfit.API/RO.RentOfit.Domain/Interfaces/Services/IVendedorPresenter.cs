@@ -5,5 +5,6 @@ namespace RO.RentOfit.Domain.Interfaces.Services
     {
         Task<RespuestaDB> DarDeAltaUnVendedor(int usuarioID);
         Task<RespuestaDB> DarDeAltaEstablecimiento(EstablecimientoAggregate registro);
+        Task<RespuestaDB> RegistrarVestimentas(VestimentaAggregate registro, IFormFile[] Imagenes);
     }
 }

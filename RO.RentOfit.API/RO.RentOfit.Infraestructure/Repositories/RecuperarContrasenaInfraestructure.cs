@@ -25,6 +25,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
                     return null;
                 }
 
+
+
                 return token.FirstOrDefault();
             }
             catch (Exception ex) 

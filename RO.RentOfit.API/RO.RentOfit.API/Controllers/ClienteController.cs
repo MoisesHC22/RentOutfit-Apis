@@ -12,6 +12,8 @@ namespace RO.RentOfit.API.Controllers
             _configuration = configuration;
         }
 
+
+
         [HttpPost("ObtenerCliente")]
         public async ValueTask<IActionResult> ObtenerCliente([FromBody] int usuarioID)
         {
@@ -44,11 +46,13 @@ namespace RO.RentOfit.API.Controllers
         }
 
 
+
         [HttpPost("RegistrarCliente")]
         public async ValueTask<IActionResult> RegistrarCliente([FromForm] RegistrarClienteAggregate registro, IFormFile imagenPerfil)
         {
             return Ok( await _appController.ClientePresenter.RegistrarCliente(registro, imagenPerfil));
         }
+
 
 
         [HttpPost("IniciarSesion")]

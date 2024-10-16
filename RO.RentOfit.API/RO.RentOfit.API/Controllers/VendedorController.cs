@@ -12,6 +12,8 @@ namespace RO.RentOfit.API.Controllers
             _configuration = configuration;
         }
 
+
+
         [HttpPost("DarDeAltaUnVendedor")]
         public async ValueTask<IActionResult> DarDeAltaUnVendedor([FromBody] int usuarioID)
         {
@@ -19,10 +21,20 @@ namespace RO.RentOfit.API.Controllers
         }
 
 
+
         [HttpPost("DarDeAltaEstablecimiento")]
         public async ValueTask<IActionResult> DarDeAltaEstablecimiento(EstablecimientoAggregate requerimiento) 
         {
             return Ok(await _appController.vendedorPresenter.DarDeAltaEstablecimiento(requerimiento));
+        }
+
+
+
+        [HttpPost("RegistrarVestimenta")]
+        public async ValueTask<IActionResult> RegistrarVestimenta([FromForm] VestimentaAggregate registro, IFormFile Imagen1, IFormFile? Imagen2 = null, IFormFile? Imagen3 = null, IFormFile? Imagen4 = null)
+        {
+            IFormFile[] imagenes = { Imagen1, Imagen2, Imagen3, Imagen4};
+            return Ok(await _appController.vendedorPresenter.RegistrarVestimentas(registro, imagenes));
         }
 
     }

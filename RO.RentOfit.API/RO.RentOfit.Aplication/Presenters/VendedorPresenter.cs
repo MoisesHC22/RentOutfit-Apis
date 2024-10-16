@@ -25,5 +25,12 @@ namespace RO.RentOfit.Aplication.Presenters
         {
             return await _unitRepository.vendedorInfraestructure.DarDeAltaEstablecimiento(registro);
         }
+
+
+
+        public async Task<RespuestaDB> RegistrarVestimentas(VestimentaAggregate registro, IFormFile[] Imagenes)
+        {
+            return await _unitRepository.vendedorInfraestructure.RegistrarVestimentas(registro, Imagenes);
+        }
     }
 }
