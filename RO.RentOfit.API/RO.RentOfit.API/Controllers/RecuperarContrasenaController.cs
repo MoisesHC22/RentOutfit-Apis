@@ -21,17 +21,17 @@ namespace RO.RentOfit.API.Controllers
 
 
         [HttpPost("ValidarToken")]
-        public async Task<IActionResult> ValidarToken(string email, string token)
+        public async Task<IActionResult> ValidarToken(RecuperarContrasenaAggregate requerimientos)
         {
-            return Ok(await _appController.recuperarContrasenaPresenter.ValidarToken(email, token));
+            return Ok(await _appController.recuperarContrasenaPresenter.ValidarToken(requerimientos.email, requerimientos.token));
         }
 
 
 
         [HttpPost("ActualizarContrasena")]
-        public async Task<IActionResult> ActualizarContrasena(string contrasena, string email)
+        public async Task<IActionResult> ActualizarContrasena(RecuperarContrasenaAggregate requerimientos)
         {
-            return Ok(await _appController.recuperarContrasenaPresenter.ActualizarContrasena(contrasena, email));
+            return Ok(await _appController.recuperarContrasenaPresenter.ActualizarContrasena(requerimientos.contrasena, requerimientos.email));
         }
 
     }

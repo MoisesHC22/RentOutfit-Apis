@@ -48,9 +48,9 @@ namespace RO.RentOfit.API.Controllers
 
 
         [HttpPost("RegistrarCliente")]
-        public async ValueTask<IActionResult> RegistrarCliente([FromForm] RegistrarClienteAggregate registro, IFormFile imagenPerfil)
+        public async ValueTask<IActionResult> RegistrarCliente(RegistrarClienteAggregate registro)
         {
-            return Ok( await _appController.ClientePresenter.RegistrarCliente(registro, imagenPerfil));
+            return Ok( await _appController.ClientePresenter.RegistrarCliente(registro));
         }
 
 
@@ -71,11 +71,11 @@ namespace RO.RentOfit.API.Controllers
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, cliente.nombreCliente),
-                    new Claim(ClaimTypes.Name, cliente.nombreEstado),
-                    new Claim(ClaimTypes.Name, cliente.municipio),
-                    new Claim(ClaimTypes.Name, cliente.linkImagenPerfil),
-                    new Claim(ClaimTypes.Role, (cliente.detalleRolID).ToString())
+                    new Claim(ClaimTypes.Role, (cliente.detalleRolID).ToString()),
+                    new Claim("nombre", cliente.nombreCliente),
+                    new Claim("imagen", cliente.linkImagenPerfil),
+                    new Claim("estado", cliente.nombreEstado),
+                    new Claim("municipio", cliente.municipio),
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(double.Parse(_configuration["Jwt:ExpireMinutes"])),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

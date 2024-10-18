@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "PackagePath": "staticwebassets\\swagger\\ui\\custom.css"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.RO.RentOfit.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.RO.RentOfit.API.props",
+      "PackagePath": "build\\RO.RentOfit.API.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RO.RentOfit.API.props",
+      "PackagePath": "buildMultiTargeting\\RO.RentOfit.API.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.RO.RentOfit.API.props",
+      "PackagePath": "buildTransitive\\RO.RentOfit.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

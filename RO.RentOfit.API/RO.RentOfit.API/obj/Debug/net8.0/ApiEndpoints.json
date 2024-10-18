@@ -80,7 +80,7 @@
         "IsRequired": false
       },
       {
-        "Name": "controsena",
+        "Name": "contrasena",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -110,7 +110,7 @@
         "IsRequired": false
       },
       {
-        "Name": "imagenPerfil",
+        "Name": "imagen",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }
@@ -219,14 +219,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "token",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.RecuperarContrasena.RecuperarContrasenaAggregate",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -307,22 +302,22 @@
         "IsRequired": false
       },
       {
-        "Name": "Imagen1",
+        "Name": "imagen1",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },
       {
-        "Name": "Imagen2",
+        "Name": "imagen2",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },
       {
-        "Name": "Imagen3",
+        "Name": "imagen3",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },
       {
-        "Name": "Imagen4",
+        "Name": "imagen4",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }

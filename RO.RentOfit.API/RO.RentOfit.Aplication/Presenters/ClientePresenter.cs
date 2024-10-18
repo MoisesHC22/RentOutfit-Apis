@@ -21,9 +21,9 @@ namespace RO.RentOfit.Aplication.Presenters
 
 
 
-        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro, IFormFile Imagen)
+        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro)
         {
-            return await _unitRepository.clienteInfraestructure.RegistrarCliente(registro, Imagen);
+            return await _unitRepository.clienteInfraestructure.RegistrarCliente(registro);
         }
 
 

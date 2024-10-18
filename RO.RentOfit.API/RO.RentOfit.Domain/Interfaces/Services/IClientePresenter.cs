@@ -5,7 +5,7 @@ namespace RO.RentOfit.Domain.Interfaces.Services
     {
         Task<List<ClienteDto>> ObtenerCliente(int usuarioID);
 
-        Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro, IFormFile Imagen);
+        Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro);
 
         Task<IniciarSesionDto> IniciarSesion(IniciarSesionAggregate requerimiento);
     }

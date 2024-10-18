@@ -71,8 +71,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
                     if (Imagenes[i] != null)
                     {
-                        var nombreImg = registro.nombre + "_img" + (i + 1);
-                        linksImagenes[i] = await _storageFirebase.SubirArchivo(Imagenes[i], nombreImg, ubicacion);
+                        //var nombreImg = registro.nombre + "_img" + (i + 1);
+                        //linksImagenes[i] = await _storageFirebase.SubirArchivo(Imagenes[i], nombreImg, ubicacion);
                     }
                     else 
                     {

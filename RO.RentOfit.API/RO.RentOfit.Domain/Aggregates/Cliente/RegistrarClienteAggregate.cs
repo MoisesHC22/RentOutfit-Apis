@@ -13,7 +13,7 @@ namespace RO.RentOfit.Domain.Aggregates.Cliente
 
 
         public string email { get; set; }
-        public string controsena { get; set; }
+        public string contrasena { get; set; }
 
 
 
@@ -22,6 +22,7 @@ namespace RO.RentOfit.Domain.Aggregates.Cliente
         public string apellidoMaterno { get; set; }
         public string telefono { get; set; }
         public int generoID { get; set; }
+        public IFormFile imagen { get; set; }
 
     }
 }

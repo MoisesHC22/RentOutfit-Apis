@@ -11,5 +11,11 @@ namespace RO.RentOfit.Domain.Aggregates.Vendedor
         public int estiloID { get; set; }
         public string descripcion { get; set; }
 
+        public IFormFile imagen1 { get; set; }
+        public IFormFile? imagen2 { get; set; }
+        public IFormFile? imagen3 { get; set; }
+        public IFormFile? imagen4 { get; set; }
+
+
     }
 }

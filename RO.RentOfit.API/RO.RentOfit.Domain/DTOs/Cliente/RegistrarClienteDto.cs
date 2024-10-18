@@ -16,8 +16,6 @@ namespace RO.RentOfit.Domain.DTOs.Cliente
         public string email { get; set; }
         public string controsena { get; set; }
         public string token { get; set; }
-        public string tokenValidacion { get; set; }
-
 
         public string nombreCliente { get; set; }
         public string apellidoPaterno { get; set; }

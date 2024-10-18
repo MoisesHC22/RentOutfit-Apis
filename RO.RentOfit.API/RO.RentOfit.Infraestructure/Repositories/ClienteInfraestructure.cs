@@ -31,7 +31,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
 
 
-        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro, IFormFile Imagen)
+        public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 SqlParameter[] parameters =
                 {
                     new SqlParameter("email", registro.email),
-                    new SqlParameter("contrasena", registro.controsena),
+                    new SqlParameter("contrasena", registro.contrasena),
                     new SqlParameter("token", token),
                     new SqlParameter("nombreCliente", registro.nombreCliente),
                     new SqlParameter("apellidoPaterno", registro.apellidoPaterno),
@@ -67,11 +67,11 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 var respuesta = dataSP.FirstOrDefault();
 
 
-                if (respuesta != null)
+                if (respuesta != null && registro.imagen != null)
                 {
                     var ubicacion = "perfiles/";
                     var nombreImg = registro.nombreCliente + "_" + registro.email;
-                    var linkImg = await _storageFirebase.SubirArchivo(Imagen, nombreImg, ubicacion);
+                    var linkImg = await _storageFirebase.SubirArchivo(registro.imagen, nombreImg, ubicacion);
 
                     var actualizacion = await _context.respuestaDB
                         .FromSqlRaw("EXEC dbo.sp_actualizar_fotoDePefil @email, @linkImagenPerfil", new SqlParameter("@email", registro.email), new SqlParameter("@linkImagenPerfil", linkImg))
@@ -85,6 +85,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 throw;
             }
         }
+
 
 
 

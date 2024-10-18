@@ -31,9 +31,9 @@ namespace RO.RentOfit.API.Controllers
 
 
         [HttpPost("RegistrarVestimenta")]
-        public async ValueTask<IActionResult> RegistrarVestimenta([FromForm] VestimentaAggregate registro, IFormFile Imagen1, IFormFile? Imagen2 = null, IFormFile? Imagen3 = null, IFormFile? Imagen4 = null)
+        public async ValueTask<IActionResult> RegistrarVestimenta(VestimentaAggregate registro)
         {
-            IFormFile[] imagenes = { Imagen1, Imagen2, Imagen3, Imagen4};
+            IFormFile[]  imagenes = { registro.imagen1, registro.imagen2, registro.imagen3, registro.imagen4 };
             return Ok(await _appController.vendedorPresenter.RegistrarVestimentas(registro, imagenes));
         }
 
