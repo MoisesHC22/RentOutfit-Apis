@@ -1,23 +1,31 @@
-﻿
+﻿using RO.RentOfit.API.Services;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Threading.Tasks;
+
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class RecuperarContrasenaInfraestructure : IRecuperarContrasenaInfraestructure
     {
         private readonly RentOutfitContext _context;
-        
-        public RecuperarContrasenaInfraestructure(RentOutfitContext context)
+        private readonly EmailService _emailService;
+
+        // Constructor que inyecta el contexto y el servicio de email
+        public RecuperarContrasenaInfraestructure(RentOutfitContext context, EmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
-
-
-        public async Task<RecuperarContrasenaDto> ObtenerToken(string email) 
+        // Método para obtener el token de recuperación de contraseña
+        public async Task<RecuperarContrasenaDto> ObtenerToken(string email)
         {
             try
             {
+                // Ejecutar el procedimiento almacenado para obtener el token
                 var token = await _context.recuperarContrasenaDto
-                    .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Email @email ", new SqlParameter("@email", email))
+                    .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Email @Email", new SqlParameter("@Email", email))
                     .ToListAsync();
 
                 if (token == null || !token.Any())
@@ -25,24 +33,32 @@ namespace RO.RentOfit.Infraestructure.Repositories
                     return null;
                 }
 
-
+                // Obtener el token de recuperación del primer resultado
+                var tokenRecuperacion = token.FirstOrDefault()?.token;
+                if (!string.IsNullOrEmpty(tokenRecuperacion))
+                {
+                    // Enviar el correo electrónico con el token de recuperación
+                    await _emailService.EnviarEmailRecuperacionContrasenaAsync(email, tokenRecuperacion);
+                }
 
                 return token.FirstOrDefault();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                throw;
+                // Manejar la excepción y registrarla si es necesario
+                throw new Exception("Error al obtener el token de recuperación.", ex);
             }
         }
 
-
-
+        // Método para validar el token de recuperación
         public async Task<RespuestaDB> ValidarToken(string email, string token)
         {
             try
             {
+                // Ejecutar el procedimiento almacenado para validar el token
                 var validacion = await _context.respuestaDB
-                     .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Token @email, @token ", new SqlParameter("@email", email), new SqlParameter("@token", token))
+                     .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Token @Email, @Token",
+                     new SqlParameter("@Email", email), new SqlParameter("@Token", token))
                      .ToListAsync();
 
                 if (validacion == null || !validacion.Any())
@@ -54,21 +70,23 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
             catch (Exception ex)
             {
-                throw;
+                // Manejar la excepción y registrarla si es necesario
+                throw new Exception("Error al validar el token.", ex);
             }
         }
 
-
-
+        // Método para actualizar la contraseña
         public async Task<RespuestaDB> ActualizarContrasena(string contrasena, string email)
         {
             try
             {
-                var Nuevotoken = Guid.NewGuid().ToString();
+                // Generar un nuevo token de seguridad
+                var nuevoToken = Guid.NewGuid().ToString();
 
+                // Ejecutar el procedimiento almacenado para actualizar la contraseña
                 var actualizacion = await _context.respuestaDB
-                     .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Actualizacion @contrasena, @email, @token ", 
-                     new SqlParameter("@contrasena", contrasena), new SqlParameter("@email", email), new SqlParameter("@token", Nuevotoken))
+                     .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Actualizacion @Contrasena, @Email, @Token",
+                     new SqlParameter("@Contrasena", contrasena), new SqlParameter("@Email", email), new SqlParameter("@Token", nuevoToken))
                      .ToListAsync();
 
                 if (actualizacion == null || !actualizacion.Any())
@@ -78,11 +96,11 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
                 return actualizacion.FirstOrDefault();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                throw;
+                // Manejar la excepción y registrarla si es necesario
+                throw new Exception("Error al actualizar la contraseña.", ex);
             }
         }
-
     }
 }

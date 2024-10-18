@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj": {}
+    "C:\\Users\\bryan\\Desktop\\SPRINT4_BRYAN-APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj": {
+    "C:\\Users\\bryan\\Desktop\\SPRINT4_BRYAN-APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\bryan\\Desktop\\SPRINT4_BRYAN-APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
         "projectName": "RO.RentOfit.Domain",
-        "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
-        "packagesPath": "C:\\Users\\moyhc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\obj\\",
+        "projectPath": "C:\\Users\\bryan\\Desktop\\SPRINT4_BRYAN-APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
+        "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bryan\\Desktop\\SPRINT4_BRYAN-APIS\\RO.RentOfit.API\\RO.RentOfit.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\moyhc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -79,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

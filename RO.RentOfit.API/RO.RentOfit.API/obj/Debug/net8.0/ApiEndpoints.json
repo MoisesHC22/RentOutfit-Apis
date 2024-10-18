@@ -219,9 +219,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "requerimientos",
-        "Type": "RO.RentOfit.Domain.Aggregates.RecuperarContrasena.RecuperarContrasenaAggregate",
-        "IsRequired": true
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

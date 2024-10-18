@@ -2,36 +2,41 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using RO.RentOfit.API.Extensions;
 using RO.RentOfit.Infraestructure.Repositories;
+using RO.RentOfit.API.Services; // Servicio de Email
+using RO.RentOfit.Infraestructure.Security; // Servicio de manejo de contraseñas
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Limpiar proveedores de logs predeterminados
 builder.Logging.ClearProviders();
 
-//Services
+// Servicios de la aplicación
 builder.Services.AddControllers();
 builder.Services.AddSwagger(builder);
-//builder.Services.AddCors();
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+// Registrar servicios que usará la aplicación
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSingleton<StorageFirebaseConfig>();
 
-//Configure session -----------------------------
+// Registrar servicios personalizados
+builder.Services.AddScoped<PasswordService>(); // Servicio para manejo de contraseñas
+builder.Services.AddScoped<EmailService>();    // Servicio para envío de emails
+
+// Configurar la sesión
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-    //options.Cookie.Name = "example";
-    options.IdleTimeout = TimeSpan.FromMinutes(20);
-    //options.Cookie.IsEssential = true;
+    options.IdleTimeout = TimeSpan.FromMinutes(20); // Tiempo de inactividad de la sesión
 });
-//-------------------------------------------------
 
-//Configuration Azure Key Vault
-//builder.Configuration.AzureKeyVault(builder);
-// DependencyContainers classes, it's a run time dependency
+// Agregar servicios adicionales (e.g., Azure Key Vault) si es necesario
+// builder.Configuration.AzureKeyVault(builder);
+
+// Registrar las clases de dependencias
 builder.Services.AddApplicationServices(builder.Configuration);
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
+// Configurar autenticación JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
      .AddJwtBearer(options =>
      {
@@ -47,20 +52,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
          };
      });
 
-
-
+// Configuración de explorador de API
 builder.Services.AddEndpointsApiExplorer();
-//Configure CORS
+
+// Configuración de CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins",
-                    builder =>
-                    {
-                        builder.WithOrigins("http://localhost:4200")
-                               .AllowAnyHeader()
-                               .AllowAnyMethod()
-                               .AllowCredentials();
-                    });
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:4200")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod()
+                   .AllowCredentials();
+        });
     options.AddPolicy("AllowAll",
         builder =>
         {
@@ -70,36 +75,51 @@ builder.Services.AddCors(options =>
         });
 });
 
-
-// Configure the HTTP request pipeline 
+// Construir la aplicación
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configuración del entorno para Swagger, desarrollo, producción, etc.
 if (Environment.GetEnvironmentVariable("ASPNETCORE_SWAGGER_UI_ACTIVE") == "On" || app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Environment.IsProduction())
 {
-    app.UseSession();
-    app.UseDeveloperExceptionPage();
-    // Enable middleware to serve generated Swagger as a JSON endpoint.
+    app.UseSession(); // Habilitar las sesiones en desarrollo
+    app.UseDeveloperExceptionPage(); // Página de excepciones en desarrollo
+
+    // Habilitar Swagger para documentación API
     app.UseSwagger();
-    // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-    // specifying the Swagger JSON endpoint.
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "GI.GestorInventarios.API");
-        c.DefaultModelsExpandDepth(-1);
-        c.InjectStylesheet("./swagger/ui/custom.css");
-        c.DisplayRequestDuration();
-        c.RoutePrefix = string.Empty;
+        c.DefaultModelsExpandDepth(-1); // Ocultar la expansión automática de modelos en Swagger
+        c.InjectStylesheet("./swagger/ui/custom.css"); // Añadir estilos personalizados
+        c.DisplayRequestDuration(); // Mostrar la duración de cada solicitud en Swagger
+        c.RoutePrefix = string.Empty; // Establecer el prefijo de ruta como la raíz
     });
 }
+
+// Aplicar middleware de CORS
 app.UseCors("AllowSpecificOrigins");
+
+// Forzar redirección HTTPS
 app.UseHttpsRedirection();
+
+// Habilitar archivos estáticos
 app.UseStaticFiles();
+
+// Configurar enrutamiento de solicitudes
 app.UseRouting();
+
+// Habilitar autenticación y autorización
 app.UseAuthentication();
 app.UseAuthorization();
+
+// Habilitar sesiones
 app.UseSession();
-app.UseHttpsRedirection();
+
+// Mapear los controladores a sus rutas
 app.MapControllers();
+
+// Ejecutar la aplicación
 app.Run();
+
+// Clase parcial para permitir pruebas en integración
 public partial class Program { }

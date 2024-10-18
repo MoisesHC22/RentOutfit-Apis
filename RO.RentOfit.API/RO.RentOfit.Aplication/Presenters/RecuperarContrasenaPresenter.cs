@@ -16,14 +16,14 @@ namespace RO.RentOfit.Aplication.Presenters
 
         public async Task<RecuperarContrasenaDto> ObtenerToken(string email)
         {
-          return await _unitRepository.recuperarContrasenaInfraestructure.ObtenerToken(email);
+            return await _unitRepository.recuperarContrasenaInfraestructure.ObtenerToken(email);
         }
 
 
 
         public async Task<RespuestaDB> ValidarToken(string email, string token)
         {
-          return await _unitRepository.recuperarContrasenaInfraestructure.ValidarToken(email, token);
+            return await _unitRepository.recuperarContrasenaInfraestructure.ValidarToken(email, token);
         }
 
 
