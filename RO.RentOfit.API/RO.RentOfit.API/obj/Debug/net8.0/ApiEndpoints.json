@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "InformacionVestimenta",
+    "RelativePath": "Cliente/InformacionVestimenta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vestimenta",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "IniciarSesion",
     "RelativePath": "Cliente/IniciarSesion",
     "HttpMethod": "POST",
@@ -61,12 +77,12 @@
       },
       {
         "Name": "noInt",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
         "Name": "noExt",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
@@ -240,9 +256,54 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "requerimiento",
-        "Type": "RO.RentOfit.Domain.Aggregates.Vendedor.EstablecimientoAggregate",
-        "IsRequired": true
+        "Name": "usuarioID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nombreEstablecimiento",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "codigoPostal",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "colonia",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "calle",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noInt",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "noExt",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "estadoID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "municipio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "imagen",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -14,5 +14,6 @@ namespace RO.RentOfit.Domain.Aggregates.Vendedor
         public int noExt { get; set; }
         public int estadoID { get; set; }
         public string municipio { get; set; }
+        public IFormFile imagen { get; set; }
     }
 }

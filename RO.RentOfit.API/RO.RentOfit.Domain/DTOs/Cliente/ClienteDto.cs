@@ -18,8 +18,8 @@ namespace RO.RentOfit.Domain.DTOs.Cliente
         public string codigoPostal { get; set; }
         public string colonia { get; set; }
         public string calle { get; set; }
-        public int noInt { get; set; }
-        public int noExt { get; set; }
+        public string noInt { get; set; }
+        public string noExt { get; set; }
         public string municipio { get; set; }
 
 

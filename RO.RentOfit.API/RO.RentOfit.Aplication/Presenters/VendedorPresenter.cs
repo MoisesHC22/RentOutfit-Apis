@@ -1,4 +1,7 @@
 ﻿
+using NPOI.OpenXmlFormats.Dml;
+using RO.RentOfit.Domain.DTOs.Vestimenta;
+
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class VendedorPresenter : IVendedorPresenter

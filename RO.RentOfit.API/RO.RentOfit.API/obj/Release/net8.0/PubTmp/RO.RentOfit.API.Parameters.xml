@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="moiseshc-001-site1" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\moyhc\\Desktop\\SPRINT3_MOISES_APIS\\RO\.RentOfit\.API\\RO\.RentOfit\.API\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\moyhc\\Desktop\\SPRINT4_MOISES_APIS\\RO\.RentOfit\.API\\RO\.RentOfit\.API\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

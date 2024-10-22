@@ -1,4 +1,6 @@
 ﻿
+using RO.RentOfit.Domain.DTOs.Vestimenta;
+
 namespace RO.RentOfit.Infraestructure.DataContexts
 {
     public class RentOutfitContext : DbContext
@@ -17,6 +19,8 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         public DbSet<TallasDto> tallasDto { get; set; }
         public DbSet<EstilosDto> estilosDto { get; set; }
         public DbSet<RecuperarContrasenaDto> recuperarContrasenaDto { get; set; }
+        public DbSet<InformacionVestimentaDto> informacionVestimentaDto  { get; set; }
+        public DbSet<ListaVestimentasDto> listaVestimentasDto { get; set; }
         #endregion
 
 

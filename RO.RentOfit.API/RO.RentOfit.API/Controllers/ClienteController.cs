@@ -72,7 +72,8 @@ namespace RO.RentOfit.API.Controllers
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.Role, (cliente.detalleRolID).ToString()),
-                    new Claim("nombre", cliente.nombreCliente),
+                    new Claim("usuario", (cliente.usuarioID).ToString()),
+                    new Claim("nombre", cliente.nombreCliente + " " + cliente.apellidoPaterno + " " +cliente.apellidoMaterno),
                     new Claim("imagen", cliente.linkImagenPerfil),
                     new Claim("estado", cliente.nombreEstado),
                     new Claim("municipio", cliente.municipio),
@@ -87,6 +88,19 @@ namespace RO.RentOfit.API.Controllers
             return Ok(new { Token = tokenString });
         }
 
+
+
+        [HttpPost ("InformacionVestimenta")]
+        public async ValueTask<IActionResult> InformacionVestimenta(int vestimenta) 
+        {
+            return Ok(await _appController.ClientePresenter.InformacionVestimenta(vestimenta));
+        }
+
+        //[HttpPost("MostrarVestimentas")]
+        //public async ValueTask<IActionResult> MostrarVestimentas(FiltrosBusquedaAggregate requerimientos)
+        //{
+        //    return Ok(await _appController.ClientePresenter.MostrarVestimentas(requerimientos));
+        //}
 
     }
 }

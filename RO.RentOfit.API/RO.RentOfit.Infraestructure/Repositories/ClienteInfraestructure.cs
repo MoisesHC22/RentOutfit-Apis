@@ -1,4 +1,7 @@
-﻿namespace RO.RentOfit.Infraestructure.Repositories
+﻿using NPOI.OpenXmlFormats.Dml;
+using RO.RentOfit.Domain.DTOs.Vestimenta;
+
+namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class ClienteInfraestructure : IClienteInfraestructure
     {
@@ -186,5 +189,62 @@
                 throw new Exception("Error al intentar iniciar sesión.", ex);
             }
         }
+
+
+
+        //public async Task<List<ListaVestimentasDto>> MostrarVestimentas(FiltrosBusquedaAggregate requerimientos) 
+        //{
+        //    try
+        //    {
+        //        int paginaValida = requerimientos.pagina ?? 1;
+
+        //        SqlParameter[] parameters =
+        //        {
+        //          new SqlParameter("pagina", paginaValida)
+        //        };
+
+        //        var sqlQuery = "EXEC dbo.sp_mostrar_vestimenta @pagina";
+        //        var lista = await _context.listaVestimentasDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
+
+        //        if (lista == null || !lista.Any())
+        //        {
+        //            return null;
+        //        }
+
+        //        return lista.ToList();
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception("Error al obtener vestimentas.", ex);
+        //    }
+        //}
+
+
+
+
+        public async Task<InformacionVestimentaDto> InformacionVestimenta(int vestimenta)
+        {
+            try 
+            {
+                var info = await _context.informacionVestimentaDto
+                    .FromSqlRaw("EXEC dbo.sp_Informacion_Vestimenta @vestimenta ",
+                    new SqlParameter("@vestimenta", vestimenta))
+                    .ToListAsync();
+
+                if (info == null || !info.Any()) 
+                {
+                    return null;
+                }
+                return info.FirstOrDefault();
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al buscar información.", ex);
+            }
+        }
+
+
     }
 }

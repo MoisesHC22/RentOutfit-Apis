@@ -34,8 +34,10 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
         public async Task<RespuestaDB> DarDeAltaEstablecimiento(EstablecimientoAggregate registro)
         {
-            SqlParameter[] parameters =
+            try
             {
+                SqlParameter[] parameters =
+                {
                 new SqlParameter("usuarioID", registro.usuarioID),
                 new SqlParameter("nombreEstablecimiento", registro.nombreEstablecimiento),
                 new SqlParameter("codigoPostal", registro.codigoPostal),
@@ -47,18 +49,37 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 new SqlParameter("municipio", registro.municipio)
             };
 
-            var sqlQuery = "EXEC dbo.sp_DarDeAlta_Establecimiento @usuarioID, @nombreEstablecimiento, @codigoPostal, " +
-                "@colonia, @calle, @noInt, @noExt, @estadoID, @municipio";
+                var sqlQuery = "EXEC dbo.sp_DarDeAlta_Establecimiento @usuarioID, @nombreEstablecimiento, @codigoPostal, " +
+                    "@colonia, @calle, @noInt, @noExt, @estadoID, @municipio";
 
-            var dataSP = await _context.respuestaDB.FromSqlRaw(sqlQuery, parameters).ToListAsync();
+                var dataSP = await _context.respuestaDB.FromSqlRaw(sqlQuery, parameters).ToListAsync();
 
-            return (dataSP.FirstOrDefault());
+                var respuesta = dataSP.FirstOrDefault();
 
+                if (respuesta != null && registro.imagen != null)
+                {
+                    var ubicacion = "establecimientos/";
+                    var nombreImg = registro.usuarioID + "_" + registro.nombreEstablecimiento;
+                    var linkImg = await _storageFirebase.SubirArchivo(registro.imagen, nombreImg, ubicacion);
+
+                    var actualizacion = await _context.respuestaDB
+                        .FromSqlRaw("EXEC dbo.sp_Actualizar_FotoDeEstablecimiento @usuarioID, @linkImagenEstablecimiento",
+                                    new SqlParameter("@email", registro.usuarioID),
+                                    new SqlParameter("@linkImagenPerfil", linkImg))
+                        .ToListAsync();
+                }
+
+                return respuesta;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
 
 
-        public async Task<RespuestaDB> RegistrarVestimentas(VestimentaAggregate registro, IFormFile[] Imagenes)
+    public async Task<RespuestaDB> RegistrarVestimentas(VestimentaAggregate registro, IFormFile[] Imagenes)
         {
             try
             {
@@ -71,12 +92,12 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
                     if (Imagenes[i] != null)
                     {
-                        //var nombreImg = registro.nombre + "_img" + (i + 1);
-                        //linksImagenes[i] = await _storageFirebase.SubirArchivo(Imagenes[i], nombreImg, ubicacion);
+                        var nombreImg = registro.nombre + "_img" + (i + 1);
+                        linksImagenes[i] = await _storageFirebase.SubirArchivo(Imagenes[i], nombreImg, ubicacion);
                     }
                     else 
                     {
-                        linksImagenes[i] = null;
+                        linksImagenes[i] = "";
                     }
                 }
 
@@ -91,9 +112,9 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 new SqlParameter("estiloID", registro.estiloID),
                 new SqlParameter("descripcion", registro.descripcion),
                 new SqlParameter("imagen1", linksImagenes[0]),
-                new SqlParameter("imagen2", (object)linksImagenes[1] ?? DBNull.Value),
-                new SqlParameter("imagen3", (object)linksImagenes[2] ?? DBNull.Value),
-                new SqlParameter("imagen4", (object)linksImagenes[3] ?? DBNull.Value)
+                new SqlParameter("imagen2", linksImagenes[1]),
+                new SqlParameter("imagen3", linksImagenes[2]),
+                new SqlParameter("imagen4", linksImagenes[3])
                 };
 
                 var sqlQuery = "EXEC dbo.sp_registrar_vestimenta @usuarioID, @nombre, @precio, " +
@@ -108,9 +129,6 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 throw new Exception("Error al registrar la vestimenta con imágenes.", ex);
             }
         }
-
-
-
 
     }
 }

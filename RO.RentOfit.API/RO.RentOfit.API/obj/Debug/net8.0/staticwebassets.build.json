@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bicyDYdhXirFDGNlQ/URwmtD/LCAyWUdr/kZl3QeCi0=",
+  "Hash": "QKwAQBFVK0/kKFzPNBE+AgzvbKpZpO8oWpUOykNvvIY=",
   "Source": "RO.RentOfit.API",
   "BasePath": "_content/RO.RentOfit.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RO.RentOfit.API\\wwwroot",
       "Source": "RO.RentOfit.API",
-      "ContentRoot": "C:\\Users\\bryan\\Desktop\\SPRINT4_BRYAN-APIS\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\SPRINT4_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
       "BasePath": "_content/RO.RentOfit.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\bryan\\Desktop\\SPRINT4_BRYAN-APIS\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "Identity": "C:\\Users\\moyhc\\Desktop\\SPRINT4_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
       "SourceId": "RO.RentOfit.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bryan\\Desktop\\SPRINT4_BRYAN-APIS\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\SPRINT4_MOISES_APIS\\RO.RentOfit.API\\RO.RentOfit.API\\wwwroot\\",
       "BasePath": "_content/RO.RentOfit.API",
       "RelativePath": "swagger/ui/custom.css",
       "AssetKind": "All",
