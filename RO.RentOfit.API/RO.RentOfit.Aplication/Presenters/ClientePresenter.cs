@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.DTOs.Vestimenta;
-
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class ClientePresenter : IClientePresenter
@@ -41,10 +39,14 @@ namespace RO.RentOfit.Aplication.Presenters
             return await _unitRepository.clienteInfraestructure.InformacionVestimenta(vestimenta);
         }
 
-        //public async Task<List<ListaVestimentasDto>> MostrarVestimentas(FiltrosBusquedaAggregate requerimientos)
-        //{
-        //    return await _unitRepository.clienteInfraestructure.MostrarVestimentas(requerimientos);
-        //}
+        public async Task<List<ListaVestimentasDto>> MostrarVestimentas(RequisitosVestimentaAggregate requerimientos)
+        {
+            return await _unitRepository.clienteInfraestructure.MostrarVestimentas(requerimientos);
+        }
 
+        public async Task<List<EstablecimientosCercanosDto>> EstablecimientosCercanos(EstablecimientosCercanosAggregate requerimientos)
+        {
+            return await _unitRepository.clienteInfraestructure.EstablecimientosCercanos(requerimientos);
+        }
     }
 }

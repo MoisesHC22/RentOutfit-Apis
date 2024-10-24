@@ -1,5 +1,4 @@
-﻿using BCrypt.Net;
-
+﻿
 namespace RO.RentOfit.Infraestructure.Services
 {
     public class PasswordService

@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "EstablecimientosCercanos",
+    "RelativePath": "Cliente/EstablecimientosCercanos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Establecimientos.EstablecimientosCercanosAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "InformacionVestimenta",
     "RelativePath": "Cliente/InformacionVestimenta",
     "HttpMethod": "POST",
@@ -10,7 +26,7 @@
       {
         "Name": "vestimenta",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -26,6 +42,22 @@
       {
         "Name": "requerimiento",
         "Type": "RO.RentOfit.Domain.Aggregates.Cliente.IniciarSesionAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "MostrarVestimentas",
+    "RelativePath": "Cliente/MostrarVestimentas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.RequisitosVestimentaAggregate",
         "IsRequired": true
       }
     ],
@@ -282,12 +314,12 @@
       },
       {
         "Name": "noInt",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
         "Name": "noExt",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
@@ -334,6 +366,11 @@
     "Parameters": [
       {
         "Name": "usuarioID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "establecimientoID",
         "Type": "System.Int32",
         "IsRequired": false
       },

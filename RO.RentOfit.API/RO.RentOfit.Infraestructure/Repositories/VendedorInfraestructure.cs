@@ -32,7 +32,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
 
 
-        public async Task<RespuestaDB> DarDeAltaEstablecimiento(EstablecimientoAggregate registro)
+        public async Task<RetornoEstablecimientoDto> DarDeAltaEstablecimiento(EstablecimientoAggregate registro)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 var sqlQuery = "EXEC dbo.sp_DarDeAlta_Establecimiento @usuarioID, @nombreEstablecimiento, @codigoPostal, " +
                     "@colonia, @calle, @noInt, @noExt, @estadoID, @municipio";
 
-                var dataSP = await _context.respuestaDB.FromSqlRaw(sqlQuery, parameters).ToListAsync();
+                var dataSP = await _context.retornoEstablecimientoDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
 
                 var respuesta = dataSP.FirstOrDefault();
 
@@ -63,9 +63,10 @@ namespace RO.RentOfit.Infraestructure.Repositories
                     var linkImg = await _storageFirebase.SubirArchivo(registro.imagen, nombreImg, ubicacion);
 
                     var actualizacion = await _context.respuestaDB
-                        .FromSqlRaw("EXEC dbo.sp_Actualizar_FotoDeEstablecimiento @usuarioID, @linkImagenEstablecimiento",
-                                    new SqlParameter("@email", registro.usuarioID),
-                                    new SqlParameter("@linkImagenPerfil", linkImg))
+                        .FromSqlRaw("EXEC dbo.sp_Actualizar_FotoDeEstablecimiento @usuarioID, @establecimientoID, @linkImagenEstablecimiento",
+                                    new SqlParameter("@usuarioID", registro.usuarioID),
+                                    new SqlParameter("@establecimientoID", respuesta.EstablecimientoID),
+                                    new SqlParameter("@linkImagenEstablecimiento", linkImg))
                         .ToListAsync();
                 }
 
@@ -105,6 +106,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 SqlParameter[] parameters =
                 {
                 new SqlParameter("usuarioID", registro.usuarioID),
+                new SqlParameter("establecimientoID", registro.establecimientoID),
                 new SqlParameter("nombre", registro.nombre),
                 new SqlParameter("precio", registro.precio),
                 new SqlParameter("stock", registro.stock),
@@ -117,7 +119,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 new SqlParameter("imagen4", linksImagenes[3])
                 };
 
-                var sqlQuery = "EXEC dbo.sp_registrar_vestimenta @usuarioID, @nombre, @precio, " +
+                var sqlQuery = "EXEC dbo.sp_registrar_vestimenta @usuarioID, @establecimientoID, @nombre, @precio, " +
                     "@stock, @tallaID, @estiloID, @descripcion, @imagen1, @imagen2, @imagen3, @imagen4";
 
                 var dataSP = await _context.respuestaDB.FromSqlRaw(sqlQuery, parameters).ToListAsync();

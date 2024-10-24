@@ -1,6 +1,4 @@
-﻿using RO.RentOfit.API.Services;
-using RO.RentOfit.Infraestructure.Security;
-
+﻿
 namespace RO.RentOfit.API.Controllers
 {
     [Route("[controller]")]

@@ -1,7 +1,4 @@
 ﻿
-using NPOI.OpenXmlFormats.Dml;
-using RO.RentOfit.Domain.DTOs.Vestimenta;
-
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class VendedorPresenter : IVendedorPresenter
@@ -24,7 +21,7 @@ namespace RO.RentOfit.Aplication.Presenters
 
 
 
-        public async Task<RespuestaDB> DarDeAltaEstablecimiento(EstablecimientoAggregate registro)
+        public async Task<RetornoEstablecimientoDto> DarDeAltaEstablecimiento(EstablecimientoAggregate registro)
         {
             return await _unitRepository.vendedorInfraestructure.DarDeAltaEstablecimiento(registro);
         }

@@ -19,3 +19,6 @@ global using RO.RentOfit.Domain.Aggregates.Vendedor;
 global using Newtonsoft.Json;
 global using NPOI.OpenXmlFormats.Dml.Diagram;
 global using RO.RentOfit.Domain.Aggregates.RecuperarContrasena;
+global using RO.RentOfit.API.Services;
+global using RO.RentOfit.Infraestructure.Security;
+global using RO.RentOfit.Domain.Aggregates.Establecimientos;

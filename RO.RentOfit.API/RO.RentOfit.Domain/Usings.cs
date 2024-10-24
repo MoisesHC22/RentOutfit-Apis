@@ -10,4 +10,8 @@ global using RO.RentOfit.Domain.Aggregates.Vendedor;
 global using RO.RentOfit.Domain.DTOs.Estilos;
 global using RO.RentOfit.Domain.DTOs.Tallas;
 global using RO.RentOfit.Domain.DTOs.RecuperarContrasena;
+global using RO.RentOfit.Domain.DTOs.Establecimientos;
+global using RO.RentOfit.Domain.Aggregates.Establecimientos;
+global using RO.RentOfit.Domain.DTOs.Vestimenta;
+
 

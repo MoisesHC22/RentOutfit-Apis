@@ -91,16 +91,26 @@ namespace RO.RentOfit.API.Controllers
 
 
         [HttpPost ("InformacionVestimenta")]
-        public async ValueTask<IActionResult> InformacionVestimenta(int vestimenta) 
+        public async ValueTask<IActionResult> InformacionVestimenta([FromBody] int vestimenta) 
         {
             return Ok(await _appController.ClientePresenter.InformacionVestimenta(vestimenta));
         }
 
-        //[HttpPost("MostrarVestimentas")]
-        //public async ValueTask<IActionResult> MostrarVestimentas(FiltrosBusquedaAggregate requerimientos)
-        //{
-        //    return Ok(await _appController.ClientePresenter.MostrarVestimentas(requerimientos));
-        //}
+
+
+        [HttpPost("EstablecimientosCercanos")]
+        public async ValueTask<IActionResult> EstablecimientosCercanos(EstablecimientosCercanosAggregate requerimientos) 
+        {
+            return Ok(await _appController.ClientePresenter.EstablecimientosCercanos(requerimientos));
+        }
+
+
+
+        [HttpPost("MostrarVestimentas")]
+        public async ValueTask<IActionResult> MostrarVestimentas(RequisitosVestimentaAggregate requerimientos)
+        {
+            return Ok(await _appController.ClientePresenter.MostrarVestimentas(requerimientos));
+        }
 
     }
 }

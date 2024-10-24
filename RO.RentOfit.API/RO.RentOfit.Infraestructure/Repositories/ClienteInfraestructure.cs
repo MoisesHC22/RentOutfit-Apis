@@ -1,6 +1,4 @@
-﻿using NPOI.OpenXmlFormats.Dml;
-using RO.RentOfit.Domain.DTOs.Vestimenta;
-
+﻿
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class ClienteInfraestructure : IClienteInfraestructure
@@ -14,7 +12,6 @@ namespace RO.RentOfit.Infraestructure.Repositories
             _storageFirebase = storageFirebase;
         }
 
-        // Método para obtener un cliente
         public async Task<List<ClienteDto>> ObtenerCliente(int usuarioID)
         {
             try
@@ -31,7 +28,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
-        // Método original para registrar un cliente
+
         public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro)
         {
             try
@@ -86,7 +83,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
-        // Método para registrar un cliente usando SqlCommand
+
         public async Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro, IFormFile Imagen)
         {
             try
@@ -166,7 +163,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
-        // Método para iniciar sesión
+
         public async Task<IniciarSesionDto> IniciarSesion(IniciarSesionAggregate requerimiento)
         {
             try
@@ -191,38 +188,6 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
 
-
-        //public async Task<List<ListaVestimentasDto>> MostrarVestimentas(FiltrosBusquedaAggregate requerimientos) 
-        //{
-        //    try
-        //    {
-        //        int paginaValida = requerimientos.pagina ?? 1;
-
-        //        SqlParameter[] parameters =
-        //        {
-        //          new SqlParameter("pagina", paginaValida)
-        //        };
-
-        //        var sqlQuery = "EXEC dbo.sp_mostrar_vestimenta @pagina";
-        //        var lista = await _context.listaVestimentasDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
-
-        //        if (lista == null || !lista.Any())
-        //        {
-        //            return null;
-        //        }
-
-        //        return lista.ToList();
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("Error al obtener vestimentas.", ex);
-        //    }
-        //}
-
-
-
-
         public async Task<InformacionVestimentaDto> InformacionVestimenta(int vestimenta)
         {
             try 
@@ -245,6 +210,68 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
+
+        public async Task<List<EstablecimientosCercanosDto>> EstablecimientosCercanos(EstablecimientosCercanosAggregate requerimientos) 
+        {
+            try 
+            {
+
+                int paginaValida = (requerimientos.pagina == null || requerimientos.pagina == 0) ? 1 : requerimientos.pagina.Value;
+
+                SqlParameter[] parameters =
+                {
+                  new SqlParameter("estado", requerimientos.estado),
+                  new SqlParameter("municipio", requerimientos.municipio),
+                  new SqlParameter("pagina", paginaValida)
+                };
+
+                var sqlQuery = "EXEC dbo.sp_Establecimientos_Cercanos @estado, @municipio, @pagina ";
+                var establecimiento = await _context.establecimientosCercanosDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
+
+
+                if (establecimiento == null || !establecimiento.Any())
+                {
+                    return null;
+                }
+
+                return establecimiento.ToList();
+            }
+            catch (Exception ex)
+            { 
+                throw new Exception("Error al encontrar un establecimiento, ", ex); 
+            }
+        }
+
+
+        public async Task<List<ListaVestimentasDto>> MostrarVestimentas(RequisitosVestimentaAggregate requisitos)
+        {
+            try
+            {
+                int paginaValida = (requisitos.pagina == null || requisitos.pagina == 0) ? 1 : requisitos.pagina.Value;
+
+                SqlParameter[] parameters =
+                {
+                  new SqlParameter("estado", requisitos.estado),
+                  new SqlParameter("municipio", requisitos.municipio),
+                  new SqlParameter("pagina", paginaValida)
+                };
+
+                var sqlQuery = "EXEC dbo.sp_mostrar_vestimenta @estado, @municipio, @pagina ";
+                var establecimiento = await _context.listaVestimentasDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
+
+
+                if (establecimiento == null || !establecimiento.Any())
+                {
+                    return null;
+                }
+
+                return establecimiento.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener vestimentas.", ex);
+            }
+        }
 
     }
 }
