@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "",
+"RedirectUrl": "",
+"LaunchCommand": "",
+"WorkingDirectory": "C:\\Users\\moyhc\\Desktop\\SPRINT4_MOISES_APIS\\RO.RentOfit.Aplication",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
