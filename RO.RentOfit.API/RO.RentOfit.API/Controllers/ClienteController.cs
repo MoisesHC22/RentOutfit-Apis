@@ -46,13 +46,11 @@ namespace RO.RentOfit.API.Controllers
         }
 
 
-
         [HttpPost("RegistrarCliente")]
         public async ValueTask<IActionResult> RegistrarCliente(RegistrarClienteAggregate registro)
         {
             return Ok( await _appController.ClientePresenter.RegistrarCliente(registro));
         }
-
 
 
         [HttpPost("IniciarSesion")]
@@ -74,9 +72,7 @@ namespace RO.RentOfit.API.Controllers
                     new Claim(ClaimTypes.Role, (cliente.detalleRolID).ToString()),
                     new Claim("usuario", (cliente.usuarioID).ToString()),
                     new Claim("nombre", cliente.nombreCliente + " " + cliente.apellidoPaterno + " " +cliente.apellidoMaterno),
-                    new Claim("imagen", cliente.linkImagenPerfil),
-                    new Claim("estado", cliente.nombreEstado),
-                    new Claim("municipio", cliente.municipio),
+                    new Claim("imagen", cliente.linkImagenPerfil)
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(double.Parse(_configuration["Jwt:ExpireMinutes"])),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -89,13 +85,11 @@ namespace RO.RentOfit.API.Controllers
         }
 
 
-
         [HttpPost ("InformacionVestimenta")]
         public async ValueTask<IActionResult> InformacionVestimenta([FromBody] int vestimenta) 
         {
             return Ok(await _appController.ClientePresenter.InformacionVestimenta(vestimenta));
         }
-
 
 
         [HttpPost("EstablecimientosCercanos")]
@@ -105,12 +99,20 @@ namespace RO.RentOfit.API.Controllers
         }
 
 
-
         [HttpPost("MostrarVestimentas")]
         public async ValueTask<IActionResult> MostrarVestimentas(RequisitosVestimentaAggregate requerimientos)
         {
             return Ok(await _appController.ClientePresenter.MostrarVestimentas(requerimientos));
         }
+
+
+
+        [HttpPost("InformacionEstablecimiento")]
+        public async ValueTask<IActionResult> InformacionEstablecimiento([FromBody] int establecimiento)
+        {
+            return Ok(await _appController.ClientePresenter.InformacionEstablecimiento(establecimiento));
+        }
+
 
     }
 }

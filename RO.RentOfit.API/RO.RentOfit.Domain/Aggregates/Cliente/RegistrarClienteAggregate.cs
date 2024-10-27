@@ -3,14 +3,6 @@ namespace RO.RentOfit.Domain.Aggregates.Cliente
 {
     public class RegistrarClienteAggregate
     {
-        public int estadoID { get; set; }
-        public string codigoPostal { get; set; }
-        public string colonia { get; set; }
-        public string calle { get; set; }
-        public string noInt { get; set; }
-        public string noExt { get; set; }
-        public string municipio { get; set; }
-
 
         public string email { get; set; }
         public string contrasena { get; set; }

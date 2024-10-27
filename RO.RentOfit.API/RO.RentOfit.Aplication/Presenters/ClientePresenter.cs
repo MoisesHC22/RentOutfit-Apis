@@ -48,5 +48,12 @@ namespace RO.RentOfit.Aplication.Presenters
         {
             return await _unitRepository.clienteInfraestructure.EstablecimientosCercanos(requerimientos);
         }
+
+        public async Task<InformacionEstablecimientoDto> InformacionEstablecimiento(int establecimiento) 
+        {
+            return await _unitRepository.clienteInfraestructure.InformacionEstablecimiento(establecimiento);
+        }
+
+
     }
 }

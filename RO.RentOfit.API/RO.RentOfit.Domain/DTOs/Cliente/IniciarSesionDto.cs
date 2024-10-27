@@ -10,8 +10,6 @@ namespace RO.RentOfit.Domain.DTOs.Cliente
         public string apellidoPaterno { get; set; }
         public string apellidoMaterno { get; set; }
         public string linkImagenPerfil { get; set; }
-        public string nombreEstado { get; set; }
-        public string municipio { get; set; }
 
     }
 }

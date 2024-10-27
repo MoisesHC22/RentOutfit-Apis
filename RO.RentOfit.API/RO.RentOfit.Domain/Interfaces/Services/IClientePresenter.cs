@@ -4,6 +4,7 @@ namespace RO.RentOfit.Domain.Interfaces.Services
     public interface IClientePresenter
     {
         Task<List<EstablecimientosCercanosDto>> EstablecimientosCercanos(EstablecimientosCercanosAggregate requerimientos);
+        Task<InformacionEstablecimientoDto> InformacionEstablecimiento(int establecimiento);
         Task<InformacionVestimentaDto> InformacionVestimenta(int vestimenta);
 
         Task<List<ClienteDto>> ObtenerCliente(int usuarioID);
