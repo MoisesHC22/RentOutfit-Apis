@@ -10,6 +10,6 @@ namespace RO.RentOfit.Domain.DTOs.Vestimenta
         public string imagen1 { get; set; }
         public string nombreTalla { get; set; }
         public string nombreEstilo { get; set; }
-        public string nombreEstablecimiento { get; set; }
+        public string? nombreEstablecimiento { get; set; }
     }
 }

@@ -114,5 +114,11 @@ namespace RO.RentOfit.API.Controllers
         }
 
 
+        [HttpPost("VestimentasDeEstablecimientos")]
+        public async ValueTask<IActionResult> VestimentasDeEstablecimientos(VestimentasEstablecimientosAggregate requerimientos)
+        {
+            return Ok(await _appController.ClientePresenter.VestimentasDeEstablecimientos(requerimientos));
+        }
+
     }
 }

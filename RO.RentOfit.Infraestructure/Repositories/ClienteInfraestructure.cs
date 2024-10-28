@@ -210,6 +210,41 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
 
+        public async Task<List<VestimentasEstablecimientosDto>> VestimentasDeEstablecimientos(VestimentasEstablecimientosAggregate requerimientos) 
+        {
+            try
+            {
+
+                int paginaValida = (requerimientos.pagina == null || requerimientos.pagina == 0) ? 1 : requerimientos.pagina.Value;
+
+                SqlParameter[] parameters =
+                {
+                  new SqlParameter("establecimiento", requerimientos.establecimiento),
+                  new SqlParameter("usuario", requerimientos.usuario),
+                  new SqlParameter("pagina", paginaValida)
+                };
+
+                var sqlQuery = "EXEC dbo.sp_consultar_vestimentas_Establecimiento @establecimiento, @usuario, @pagina ";
+                var establecimiento = await _context.vestimentasEstablecimientosDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
+
+
+                if (establecimiento == null || !establecimiento.Any())
+                {
+                    return null;
+                }
+
+                return establecimiento.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al encontrar un establecimiento, ", ex);
+            }
+        }
+
+
+
+
+
 
     }
 }

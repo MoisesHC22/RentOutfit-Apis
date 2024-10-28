@@ -34,7 +34,7 @@ public class UnitRepository : BaseDisposable, IUnitRepository
     public IListasInfraestructure listasInfraestructure => new ListasInfraestructure(_outfitContext);
     public IVendedorInfraestructure vendedorInfraestructure => new VendedorInfraestructure(_outfitContext, _storageFirebaseConfig);
     public IRecuperarContrasenaInfraestructure recuperarContrasenaInfraestructure => new RecuperarContrasenaInfraestructure(_outfitContext, _emailService);
-
+    public IAdministradorInfraestructure administradorInfraestructure => new AdministradorInfraestructure(_outfitContext);
     public async ValueTask<bool> Complete()
     {
         return await _outfitContext.SaveChangesAsync() > 0;

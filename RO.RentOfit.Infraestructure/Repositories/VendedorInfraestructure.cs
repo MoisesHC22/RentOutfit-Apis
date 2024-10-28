@@ -80,7 +80,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
 
 
-    public async Task<RespuestaDB> RegistrarVestimentas(VestimentaAggregate registro, IFormFile[] Imagenes)
+        public async Task<RespuestaDB> RegistrarVestimentas(VestimentaAggregate registro, IFormFile[] Imagenes)
         {
             try
             {

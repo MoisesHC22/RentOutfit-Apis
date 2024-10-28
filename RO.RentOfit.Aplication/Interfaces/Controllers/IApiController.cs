@@ -6,4 +6,5 @@ public interface IApiController
     IListasPresenter ListasPresenter { get; }
     IVendedorPresenter vendedorPresenter { get; }
     IRecuperarContrasenaPresenter recuperarContrasenaPresenter { get; }
+    IAdministradorPresenter administradorPresenter { get; }
 }

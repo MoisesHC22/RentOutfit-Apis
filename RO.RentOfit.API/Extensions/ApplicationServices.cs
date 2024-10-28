@@ -42,7 +42,7 @@ public static class ApplicationServices
             var groupName = "v1";
             options.SwaggerDoc(groupName, new OpenApiInfo
             {
-                Title = $"GI.GestorInventarios.API",
+                Title = $"RO.RentOufit.API",
                 Version = groupName
                 //Description = " API "
                 

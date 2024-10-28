@@ -22,6 +22,7 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         public DbSet<EstablecimientosCercanosDto> establecimientosCercanosDto { get; set; }
         public DbSet<RetornoEstablecimientoDto> retornoEstablecimientoDto { get; set; }
         public DbSet<InformacionEstablecimientoDto> informacionEstablecimientoDto { get; set; }
+        public DbSet<VestimentasEstablecimientosDto> vestimentasEstablecimientosDto { get; set; }
         #endregion
 
 

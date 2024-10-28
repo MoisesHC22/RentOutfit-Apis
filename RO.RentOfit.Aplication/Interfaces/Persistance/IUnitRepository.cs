@@ -9,5 +9,6 @@ namespace RO.RentOfit.Aplication.Interfaces.Persistance
         IListasInfraestructure listasInfraestructure { get; }
         IVendedorInfraestructure vendedorInfraestructure { get; }
         IRecuperarContrasenaInfraestructure recuperarContrasenaInfraestructure { get; }
+        IAdministradorInfraestructure administradorInfraestructure { get; }
     }
 }

@@ -10,5 +10,6 @@ namespace RO.RentOfit.Domain.Interfaces.Infraestructure
         Task<List<ListaVestimentasDto>> MostrarVestimentas(RequisitosVestimentaAggregate requerimientos);
         Task<List<ClienteDto>> ObtenerCliente(int usuarioID);
         Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro);
+        Task<List<VestimentasEstablecimientosDto>> VestimentasDeEstablecimientos(VestimentasEstablecimientosAggregate requerimientos);
     }
 }

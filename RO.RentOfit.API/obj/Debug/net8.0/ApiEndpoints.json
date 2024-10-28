@@ -147,6 +147,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "VestimentasDeEstablecimientos",
+    "RelativePath": "Cliente/VestimentasDeEstablecimientos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Establecimientos.VestimentasEstablecimientosAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RO.RentOfit.API.Controllers.ListasController",
     "Method": "ObtenerEstados",
     "RelativePath": "Listas/ObtenerEstados",

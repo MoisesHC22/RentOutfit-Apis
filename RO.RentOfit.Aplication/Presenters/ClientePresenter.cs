@@ -54,6 +54,11 @@ namespace RO.RentOfit.Aplication.Presenters
             return await _unitRepository.clienteInfraestructure.InformacionEstablecimiento(establecimiento);
         }
 
+        public async Task<List<VestimentasEstablecimientosDto>> VestimentasDeEstablecimientos(VestimentasEstablecimientosAggregate requerimientos) 
+        {
+            return await _unitRepository.clienteInfraestructure.VestimentasDeEstablecimientos(requerimientos);
+        }
+
 
     }
 }
