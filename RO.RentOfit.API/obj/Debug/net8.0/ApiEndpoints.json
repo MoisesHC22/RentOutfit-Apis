@@ -275,14 +275,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "contrasena",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "requerimimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.RecuperarContrasena.ActualizarContrasena",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -298,7 +293,7 @@
       {
         "Name": "email",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -312,14 +307,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "token",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.RecuperarContrasena.ValidarToken",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -1,4 +1,6 @@
 ﻿
+using RO.RentOfit.Domain.Aggregates.RecuperarContrasena;
+
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class RecuperarContrasenaPresenter : IRecuperarContrasenaPresenter
@@ -21,16 +23,16 @@ namespace RO.RentOfit.Aplication.Presenters
 
 
 
-        public async Task<RespuestaDB> ValidarToken(string email, string token)
+        public async Task<RespuestaDB> ValidarToken(ValidarToken requerimientos)
         {
-            return await _unitRepository.recuperarContrasenaInfraestructure.ValidarToken(email, token);
+            return await _unitRepository.recuperarContrasenaInfraestructure.ValidarToken(requerimientos);
         }
 
 
 
-        public async Task<RespuestaDB> ActualizarContrasena(string contrasena, string email)
+        public async Task<RespuestaDB> ActualizarContrasena(ActualizarContrasena Requerimientos)
         {
-            return await _unitRepository.recuperarContrasenaInfraestructure.ActualizarContrasena(contrasena, email);
+            return await _unitRepository.recuperarContrasenaInfraestructure.ActualizarContrasena(Requerimientos);
         }
 
     }

@@ -1,4 +1,6 @@
 ﻿
+using RO.RentOfit.Domain.Aggregates.RecuperarContrasena;
+
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class RecuperarContrasenaInfraestructure : IRecuperarContrasenaInfraestructure
@@ -46,14 +48,14 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
         // Método para validar el token de recuperación
-        public async Task<RespuestaDB> ValidarToken(string email, string token)
+        public async Task<RespuestaDB> ValidarToken(ValidarToken requerimientos)
         {
             try
             {
                 // Ejecutar el procedimiento almacenado para validar el token
                 var validacion = await _context.respuestaDB
                      .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Token @Email, @Token",
-                     new SqlParameter("@Email", email), new SqlParameter("@Token", token))
+                     new SqlParameter("@Email", requerimientos.email), new SqlParameter("@Token", requerimientos.token))
                      .ToListAsync();
 
                 if (validacion == null || !validacion.Any())
@@ -70,8 +72,10 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
+
+
         // Método para actualizar la contraseña
-        public async Task<RespuestaDB> ActualizarContrasena(string contrasena, string email)
+        public async Task<RespuestaDB> ActualizarContrasena(ActualizarContrasena Requerimientos)
         {
             try
             {
@@ -81,7 +85,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 // Ejecutar el procedimiento almacenado para actualizar la contraseña
                 var actualizacion = await _context.respuestaDB
                      .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Actualizacion @Contrasena, @Email, @Token",
-                     new SqlParameter("@Contrasena", contrasena), new SqlParameter("@Email", email), new SqlParameter("@Token", nuevoToken))
+                     new SqlParameter("@Contrasena", Requerimientos.contrasena), new SqlParameter("@Email", Requerimientos.email), new SqlParameter("@Token", nuevoToken))
                      .ToListAsync();
 
                 if (actualizacion == null || !actualizacion.Any())

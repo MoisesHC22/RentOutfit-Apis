@@ -66,5 +66,8 @@ namespace RO.RentOfit.API.Services
                 Console.WriteLine($"Error general al enviar el correo: {ex.Message}");
             }
         }
+
+
+
     }
 }

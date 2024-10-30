@@ -19,7 +19,7 @@ namespace RO.RentOfit.API.Controllers
         }
 
         [HttpPost("ObtenerToken")]
-        public async Task<IActionResult> ObtenerToken(string email)
+        public async Task<IActionResult> ObtenerToken([FromBody]string email)
         {
             // Obtener el token para recuperación de contraseña
             var resultado = await _appController.recuperarContrasenaPresenter.ObtenerToken(email);
@@ -35,27 +35,18 @@ namespace RO.RentOfit.API.Controllers
             return Ok("Correo de recuperación enviado.");
         }
 
+
         [HttpPost("ValidarToken")]
-        public async Task<IActionResult> ValidarToken(string email, string token)
+        public async Task<IActionResult> ValidarToken(ValidarToken requerimientos)
         {
-            return Ok(await _appController.recuperarContrasenaPresenter.ValidarToken(email, token));
+            return Ok(await _appController.recuperarContrasenaPresenter.ValidarToken(requerimientos));
         }
 
+
         [HttpPost("ActualizarContrasena")]
-        public async Task<IActionResult> ActualizarContrasena(string contrasena, string email)
+        public async Task<IActionResult> ActualizarContrasena(ActualizarContrasena requerimimientos)
         {
-            // Hashear la nueva contraseña
-            var hashedPassword = _passwordService.HashPassword(contrasena);
-
-            // Actualizar la contraseña en la base de datos
-            var resultado = await _appController.recuperarContrasenaPresenter.ActualizarContrasena(hashedPassword, email);
-
-            if (resultado == null || resultado.tipoError != 0)
-            {
-                return BadRequest("No se pudo actualizar la contraseña.");
-            }
-
-            return Ok("Contraseña actualizada con éxito.");
+            return Ok(await _appController.recuperarContrasenaPresenter.ActualizarContrasena(requerimimientos));
         }
     }
 }

@@ -1,10 +1,12 @@
 ﻿
+using RO.RentOfit.Domain.Aggregates.RecuperarContrasena;
+
 namespace RO.RentOfit.Domain.Interfaces.Services
 {
     public interface IRecuperarContrasenaPresenter
     {
-        Task<RespuestaDB> ActualizarContrasena(string contrasena, string email);
+        Task<RespuestaDB> ActualizarContrasena(ActualizarContrasena Requerimientos);
         Task<RecuperarContrasenaDto> ObtenerToken(string email);
-        Task<RespuestaDB> ValidarToken(string email, string token);
+        Task<RespuestaDB> ValidarToken(ValidarToken requerimientos);
     }
 }
