@@ -8,7 +8,7 @@ namespace RO.RentOfit.Domain.DTOs.Establecimientos
 {
     public class EstablecimientosParaAprobacionParams
     {
-        public int? Usuario { get; set; } = null;
-        public int Pagina { get; set; } = 1;
+        public int Usuario { get; set; }
+        public int? Pagina { get; set; }
     }
 }

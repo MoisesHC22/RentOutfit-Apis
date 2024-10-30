@@ -15,9 +15,9 @@ namespace RO.RentOfit.API.Controllers
 
 
         [HttpPost("ObtenerCliente")]
-        public async ValueTask<IActionResult> ObtenerCliente([FromBody] int usuarioID)
+        public async ValueTask<IActionResult> ObtenerCliente(ObtenerClientesAggregate requerimientos)
         {
-            var clientes = await _appController.ClientePresenter.ObtenerCliente(usuarioID);
+            var clientes = await _appController.ClientePresenter.ObtenerCliente(requerimientos);
 
             if (clientes == null || !clientes.Any())
             {

@@ -18,13 +18,12 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
         public async Task<List<ListaDeAprobacion>> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters)
         {
-            var usuarioParam = new SqlParameter("@usuario", parameters.Usuario ?? (object)DBNull.Value);
-            var paginaParam = new SqlParameter("@pagina", parameters.Pagina);
+            int paginaValida = (parameters.Pagina == null || parameters.Pagina == 0) ? 1 : parameters.Pagina.Value;
 
             try
             {
                 var results = await _context.listaDeAprobacionsDto
-                    .FromSqlRaw("EXEC sp_Mostrar_Peticiones_Establecimientos @usuario, @pagina", usuarioParam, paginaParam)
+                    .FromSqlRaw("EXEC sp_Mostrar_Peticiones_Establecimientos @usuario, @pagina", new SqlParameter("usuario", parameters.Usuario), new SqlParameter("pagina", paginaValida))
                     .ToListAsync();
                 return results;
             }

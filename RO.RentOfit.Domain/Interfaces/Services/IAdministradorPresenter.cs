@@ -11,8 +11,6 @@ namespace RO.RentOfit.Domain.Interfaces.Services
 
         Task<RespuestaDB> DenegarEstablecimiento(int establecimientoId); // Método para denegar un establecimiento
 
-        Task<ClienteDto> ObtenerInformacionCliente(int clienteId); // Método para obtener información de un cliente
-
         Task<List<InformacionEstablecimientoDto>> ListarEstablecimientosPendientes();
 
         Task<List<ListaDeAprobacion>> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters);

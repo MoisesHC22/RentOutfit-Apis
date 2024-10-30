@@ -2,7 +2,7 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
     "Method": "PostAprobarEstablecimiento",
-    "RelativePath": "api/Administrador/AprobarEstablecimiento",
+    "RelativePath": "Administrador/AprobarEstablecimiento",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
     "Method": "PostDenegarEstablecimiento",
-    "RelativePath": "api/Administrador/DenegarEstablecimiento",
+    "RelativePath": "Administrador/DenegarEstablecimiento",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -34,7 +34,7 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
     "Method": "PostEstablecimientosParaAprobacion",
-    "RelativePath": "api/Administrador/EstablecimientosParaAprobacion",
+    "RelativePath": "Administrador/EstablecimientosParaAprobacion",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -136,8 +136,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "usuarioID",
-        "Type": "System.Int32",
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.ObtenerClientesAggregate",
         "IsRequired": true
       }
     ],

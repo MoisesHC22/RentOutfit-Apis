@@ -14,9 +14,9 @@ namespace RO.RentOfit.Aplication.Presenters
 
 
 
-        public async Task<List<ClienteDto>> ObtenerCliente(int usuarioID)
+        public async Task<List<ClienteDto>> ObtenerCliente(ObtenerClientesAggregate requerimientos)
         {
-            return await _unitRepository.clienteInfraestructure.ObtenerCliente(usuarioID);
+            return await _unitRepository.clienteInfraestructure.ObtenerCliente(requerimientos);
         }
 
 

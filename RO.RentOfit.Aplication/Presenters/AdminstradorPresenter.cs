@@ -38,12 +38,7 @@ namespace RO.RentOfit.Aplication.Presenters
         }
 
         // Método para obtener la información de un cliente
-        public async Task<ClienteDto> ObtenerInformacionCliente(int clienteId)
-        {
-            var clienteData = await _unitRepository.clienteInfraestructure.ObtenerCliente(clienteId);
-            return _mapper.Map<ClienteDto>(clienteData);
-        }
-
+       
         // Método para listar todos los establecimientos pendientes de revisión
         public async Task<List<InformacionEstablecimientoDto>> ListarEstablecimientosPendientes()
         {

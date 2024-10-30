@@ -22,3 +22,5 @@ global using RO.RentOfit.Domain.Aggregates.RecuperarContrasena;
 global using RO.RentOfit.API.Services;
 global using RO.RentOfit.Infraestructure.Security;
 global using RO.RentOfit.Domain.Aggregates.Establecimientos;
+global using RO.RentOfit.Domain.Interfaces.Services;
+global using RO.RentOfit.Domain.DTOs.Establecimientos;

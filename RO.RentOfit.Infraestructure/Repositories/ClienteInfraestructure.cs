@@ -11,15 +11,25 @@
             _storageFirebase = storageFirebase;
         }
 
-        public async Task<List<ClienteDto>> ObtenerCliente(int usuarioID)
+        public async Task<List<ClienteDto>> ObtenerCliente(ObtenerClientesAggregate requerimientos)
         {
             try
             {
-                var clientes = await _context.clienteDto
-                    .FromSqlRaw("EXEC dbo.sp_mostrar_cliente @usuarioID ", new SqlParameter("@usuarioID", usuarioID))
-                    .ToListAsync();
+                int paginaValida = (requerimientos.pagina == null || requerimientos.pagina == 0) ? 1 : requerimientos.pagina.Value;
+                bool activarValida = (requerimientos.activar == null) ? false : requerimientos.activar.Value;
 
-                return clientes;
+                SqlParameter[] parameters =
+                {
+                    new SqlParameter("usuarioID", requerimientos.usuarioID),
+                    new SqlParameter("pagina", paginaValida),
+                    new SqlParameter("activar", activarValida),
+                };
+
+
+                var sqlQuery = "EXEC dbo.sp_mostrar_cliente @usuarioID, @pagina, @activar ";
+                var cliente = await _context.clienteDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
+
+                return cliente.ToList();
             }
             catch (Exception ex)
             {
