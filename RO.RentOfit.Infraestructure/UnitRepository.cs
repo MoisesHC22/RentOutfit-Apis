@@ -1,4 +1,5 @@
 ﻿using RO.RentOfit.API.Services;
+using RO.RentOfit.Domain.Interfaces.Infrastructure;
 
 namespace RO.RentOfit.Infraestructure;
 public class UnitRepository : BaseDisposable, IUnitRepository

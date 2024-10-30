@@ -1,5 +1,53 @@
 [
   {
+    "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
+    "Method": "PostAprobarEstablecimiento",
+    "RelativePath": "api/Administrador/AprobarEstablecimiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "establecimientoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
+    "Method": "PostDenegarEstablecimiento",
+    "RelativePath": "api/Administrador/DenegarEstablecimiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "establecimientoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
+    "Method": "PostEstablecimientosParaAprobacion",
+    "RelativePath": "api/Administrador/EstablecimientosParaAprobacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parameters",
+        "Type": "RO.RentOfit.Domain.DTOs.Establecimientos.EstablecimientosParaAprobacionParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "EstablecimientosCercanos",
     "RelativePath": "Cliente/EstablecimientosCercanos",

@@ -1,5 +1,4 @@
-﻿
-namespace RO.RentOfit.Infraestructure.Repositories
+﻿namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class ClienteInfraestructure : IClienteInfraestructure
     {
@@ -103,14 +102,14 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
         public async Task<InformacionVestimentaDto> InformacionVestimenta(int vestimenta)
         {
-            try 
+            try
             {
                 var info = await _context.informacionVestimentaDto
                     .FromSqlRaw("EXEC dbo.sp_Informacion_Vestimenta @vestimenta ",
                     new SqlParameter("@vestimenta", vestimenta))
                     .ToListAsync();
 
-                if (info == null || !info.Any()) 
+                if (info == null || !info.Any())
                 {
                     return null;
                 }
@@ -124,9 +123,9 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
 
-        public async Task<List<EstablecimientosCercanosDto>> EstablecimientosCercanos(EstablecimientosCercanosAggregate requerimientos) 
+        public async Task<List<EstablecimientosCercanosDto>> EstablecimientosCercanos(EstablecimientosCercanosAggregate requerimientos)
         {
-            try 
+            try
             {
 
                 int paginaValida = (requerimientos.pagina == null || requerimientos.pagina == 0) ? 1 : requerimientos.pagina.Value;
@@ -150,8 +149,8 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 return establecimiento.ToList();
             }
             catch (Exception ex)
-            { 
-                throw new Exception("Error al encontrar un establecimiento, ", ex); 
+            {
+                throw new Exception("Error al encontrar un establecimiento, ", ex);
             }
         }
 
@@ -187,7 +186,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
 
-        public async Task<InformacionEstablecimientoDto> InformacionEstablecimiento(int establecimiento) 
+        public async Task<InformacionEstablecimientoDto> InformacionEstablecimiento(int establecimiento)
         {
             try
             {
@@ -203,14 +202,14 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
                 return info.FirstOrDefault();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 throw new Exception("Error al obtener la informacion del establecimiento. ", ex);
             }
         }
 
 
-        public async Task<List<VestimentasEstablecimientosDto>> VestimentasDeEstablecimientos(VestimentasEstablecimientosAggregate requerimientos) 
+        public async Task<List<VestimentasEstablecimientosDto>> VestimentasDeEstablecimientos(VestimentasEstablecimientosAggregate requerimientos)
         {
             try
             {
@@ -240,10 +239,6 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 throw new Exception("Error al encontrar un establecimiento, ", ex);
             }
         }
-
-
-
-
 
 
     }

@@ -1,4 +1,6 @@
 ﻿
+using RO.RentOfit.Domain.Interfaces.Infrastructure;
+
 namespace RO.RentOfit.Aplication.Interfaces.Persistance
 {
     public interface IUnitRepository

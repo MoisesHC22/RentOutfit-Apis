@@ -1,10 +1,11 @@
-﻿
+﻿using Microsoft.EntityFrameworkCore;
+
 namespace RO.RentOfit.Infraestructure.DataContexts
 {
     public class RentOutfitContext : DbContext
     {
-        public RentOutfitContext(DbContextOptions<RentOutfitContext> options) : base(options) 
-        { 
+        public RentOutfitContext(DbContextOptions<RentOutfitContext> options) : base(options)
+        {
         }
 
         #region Generic Dtos DB
@@ -17,22 +18,22 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         public DbSet<TallasDto> tallasDto { get; set; }
         public DbSet<EstilosDto> estilosDto { get; set; }
         public DbSet<RecuperarContrasenaDto> recuperarContrasenaDto { get; set; }
-        public DbSet<InformacionVestimentaDto> informacionVestimentaDto  { get; set; }
+        public DbSet<InformacionVestimentaDto> informacionVestimentaDto { get; set; }
         public DbSet<ListaVestimentasDto> listaVestimentasDto { get; set; }
         public DbSet<EstablecimientosCercanosDto> establecimientosCercanosDto { get; set; }
         public DbSet<RetornoEstablecimientoDto> retornoEstablecimientoDto { get; set; }
         public DbSet<InformacionEstablecimientoDto> informacionEstablecimientoDto { get; set; }
         public DbSet<VestimentasEstablecimientosDto> vestimentasEstablecimientosDto { get; set; }
-        #endregion
 
+        public DbSet<ListaDeAprobacion>listaDeAprobacionsDto { get; set; }
+        #endregion
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured) 
+            if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=MOISESHC\\SA; Database=RentOutfit; User Id=sa; Password=123456;Trusted_Connection=True; TrustServerCertificate=True; MultipleActiveResultSets=true; Encrypt=false;");
+                optionsBuilder.UseSqlServer("Server=SQL5112.site4now.net; Database=db_aae58d_rentoufitdb; User Id=db_aae58d_rentoufitdb_admin; Password=MHC1886M.; TrustServerCertificate=True; MultipleActiveResultSets=True; Encrypt=False;");
             }
         }
-
     }
 }

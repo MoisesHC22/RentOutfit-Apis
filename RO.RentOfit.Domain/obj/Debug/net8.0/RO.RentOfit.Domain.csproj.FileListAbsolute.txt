@@ -111,3 +111,16 @@ C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Domain\obj\Debug\net8.0\R
 C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Domain\obj\Debug\net8.0\refint\RO.RentOfit.Domain.dll
 C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.pdb
 C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Domain\obj\Debug\net8.0\ref\RO.RentOfit.Domain.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\bin\Debug\net8.0\RO.RentOfit.Domain.deps.json
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.csproj.AssemblyReference.cache
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.AssemblyInfoInputs.cache
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.AssemblyInfo.cs
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.sourcelink.json
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\refint\RO.RentOfit.Domain.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Domain\obj\Debug\net8.0\ref\RO.RentOfit.Domain.dll

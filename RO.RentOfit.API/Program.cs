@@ -4,6 +4,8 @@ using RO.RentOfit.API.Extensions;
 using RO.RentOfit.Infraestructure.Repositories;
 using RO.RentOfit.API.Services; // Servicio de Email
 using RO.RentOfit.Infraestructure.Security; // Servicio de manejo de contraseñas
+using RO.RentOfit.Domain.Interfaces.Services;
+using RO.RentOfit.Domain.Interfaces.Infrastructure;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +25,10 @@ builder.Services.AddSingleton<StorageFirebaseConfig>();
 builder.Services.AddScoped<PasswordService>(); // Servicio para manejo de contraseñas
 builder.Services.AddScoped<EmailService>();    // Servicio para envío de emails
 
+// Registrar el servicio `IAdministradorPresenter`
+builder.Services.AddScoped<IAdministradorPresenter, RO.RentOfit.Aplication.Presenters.AdministradorPresenter>();
+builder.Services.AddScoped<IAdministradorInfraestructure, AdministradorInfraestructure>();
+
 // Configurar la sesión
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -33,7 +39,7 @@ builder.Services.AddSession(options =>
 // Agregar servicios adicionales (e.g., Azure Key Vault) si es necesario
 // builder.Configuration.AzureKeyVault(builder);
 
-// Registrar las clases de dependencias
+// Registrar las clases de dependencias adicionales
 builder.Services.AddApplicationServices(builder.Configuration);
 
 // Configurar autenticación JWT
@@ -61,17 +67,10 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigins",
         builder =>
         {
-            builder.WithOrigins("http://localhost:4200")
+            builder.WithOrigins("http://localhost:4200", "https://tu-dominio-produccion.com")
                    .AllowAnyHeader()
                    .AllowAnyMethod()
                    .AllowCredentials();
-        });
-    options.AddPolicy("AllowAll",
-        builder =>
-        {
-            builder.AllowAnyOrigin()
-                   .AllowAnyHeader()
-                   .AllowAnyMethod();
         });
 });
 
