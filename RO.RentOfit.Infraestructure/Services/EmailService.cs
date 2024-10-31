@@ -16,23 +16,22 @@ namespace RO.RentOfit.API.Services
             _configuration = configuration;
         }
 
-        // Método para enviar el correo de recuperación de contraseña
-        public async Task EnviarEmailRecuperacionContrasenaAsync(string email, string tokenRecuperacion)
+        public async Task EnviarMsj(string email, string titulo, string mensaje) 
         {
-            try
+            try 
             {
-                // Obtener configuración desde appsettings.json
+
                 var smtpServer = _configuration["EmailSettings:SmtpServer"];
                 var smtpPort = int.Parse(_configuration["EmailSettings:SmtpPort"]);
                 var senderEmail = _configuration["EmailSettings:SenderEmail"];
                 var senderPassword = _configuration["EmailSettings:SenderPassword"];
 
-                // Crear el mensaje de correo electrónico
+
                 var correo = new MailMessage
                 {
                     From = new MailAddress(senderEmail),  // Añadimos la dirección del remitente
-                    Subject = "Recuperación de contraseña",
-                    Body = $"Tu token de recuperación de contraseña es: {tokenRecuperacion}",
+                    Subject = titulo,
+                    Body = mensaje,
                     IsBodyHtml = true  // Si el correo debe tener formato HTML
                 };
                 correo.To.Add(email);  // Añadir el destinatario
@@ -48,7 +47,8 @@ namespace RO.RentOfit.API.Services
                     await smtp.SendMailAsync(correo);
                 }
 
-                Console.WriteLine("Correo de recuperación enviado con éxito.");
+                Console.WriteLine($"El Correo de { titulo } fue enviado con éxito.");
+
             }
             catch (SmtpFailedRecipientException ex)
             {
@@ -65,9 +65,8 @@ namespace RO.RentOfit.API.Services
                 // Manejar cualquier otro tipo de error
                 Console.WriteLine($"Error general al enviar el correo: {ex.Message}");
             }
+
         }
-
-
 
     }
 }

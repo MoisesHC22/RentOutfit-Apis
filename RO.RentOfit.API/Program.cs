@@ -64,14 +64,14 @@ builder.Services.AddEndpointsApiExplorer();
 // Configuración de CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigins",
-        builder =>
-        {
-            builder.WithOrigins("http://localhost:4200", "https://tu-dominio-produccion.com")
-                   .AllowAnyHeader()
-                   .AllowAnyMethod()
-                   .AllowCredentials();
-        });
+    options.AddPolicy("AllowSpecificOrigins", policyBuilder =>
+    {
+        var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>();
+        policyBuilder.WithOrigins(allowedOrigins)
+                     .AllowAnyHeader()
+                     .AllowAnyMethod()
+                     .AllowCredentials();
+    });
 });
 
 // Construir la aplicación
