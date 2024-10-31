@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{E16DD74A-C7E9-49A8-A430-1D8277E7DC3C}|RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj|solutionrelative:ro.rentofit.infraestructure\\repositories\\recuperarcontrasenainfraestructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|c:\\users\\moyhc\\desktop\\sprint5_moises_api\\ro.rentofit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|solutionrelative:ro.rentofit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E16DD74A-C7E9-49A8-A430-1D8277E7DC3C}|RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj|c:\\users\\moyhc\\desktop\\sprint5_moises_api\\ro.rentofit.infraestructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E16DD74A-C7E9-49A8-A430-1D8277E7DC3C}|RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj|solutionrelative:ro.rentofit.infraestructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|c:\\users\\moyhc\\desktop\\sprint5_moises_api\\ro.rentofit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|solutionrelative:ro.rentofit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +25,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 347,
+          "DockedWidth": 380,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -34,13 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Infraestructure\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "RO.RentOfit.Infraestructure\\Services\\EmailService.cs",
               "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Infraestructure\\Services\\EmailService.cs",
               "RelativeToolTip": "RO.RentOfit.Infraestructure\\Services\\EmailService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAawEQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAEwBIAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T06:12:02.965Z",
               "EditorCaption": ""
@@ -48,8 +48,8 @@
           ]
         },
         {
-          "DockedWidth": 1007,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 974,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,26 +61,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.API\\Program.cs",
-              "RelativeDocumentMoniker": "RO.RentOfit.API\\Program.cs",
-              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.API\\Program.cs",
-              "RelativeToolTip": "RO.RentOfit.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T21:14:42.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.API\\appsettings.json",
               "RelativeDocumentMoniker": "RO.RentOfit.API\\appsettings.json",
               "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.API\\appsettings.json",
               "RelativeToolTip": "RO.RentOfit.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-31T20:07:24.335Z",
               "EditorCaption": ""
@@ -93,10 +80,22 @@
               "RelativeDocumentMoniker": "RO.RentOfit.Infraestructure\\Repositories\\RecuperarContrasenaInfraestructure.cs",
               "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Infraestructure\\Repositories\\RecuperarContrasenaInfraestructure.cs",
               "RelativeToolTip": "RO.RentOfit.Infraestructure\\Repositories\\RecuperarContrasenaInfraestructure.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wDUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T17:04:53.054Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.API\\Program.cs",
+              "RelativeDocumentMoniker": "RO.RentOfit.API\\Program.cs",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.API\\Program.cs",
+              "RelativeToolTip": "RO.RentOfit.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:14:42.349Z"
             }
           ]
         },
