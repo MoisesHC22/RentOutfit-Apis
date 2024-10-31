@@ -19,20 +19,10 @@ namespace RO.RentOfit.API.Controllers
         }
 
         [HttpPost("ObtenerToken")]
-        public async Task<IActionResult> ObtenerToken([FromBody]string email)
+        public async Task<IActionResult> ObtenerToken(RequerimientosCorreoAggregate requerimiento)
         {
             // Obtener el token para recuperación de contraseña
-            var resultado = await _appController.recuperarContrasenaPresenter.ObtenerToken(email);
-
-            if (resultado == null || string.IsNullOrEmpty(resultado.token))
-            {
-                return BadRequest("No se pudo generar el token.");
-            }
-
-            // Usamos el servicio de email para enviar el correo de recuperación con el token
-            await _emailService.EnviarEmailRecuperacionContrasenaAsync(email, resultado.token);
-
-            return Ok("Correo de recuperación enviado.");
+            return Ok(await _appController.recuperarContrasenaPresenter.ObtenerToken(requerimiento.email));
         }
 
 

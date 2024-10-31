@@ -37,5 +37,10 @@ namespace RO.RentOfit.API.Controllers
             return Ok(await _appController.vendedorPresenter.RegistrarVestimentas(registro, imagenes));
         }
 
+        [HttpPost("MisEstablecimientos")]
+        public async ValueTask<IActionResult> MisEstablecimientos(MisEstablecimientosAggregate requerimientos)
+        {
+            return Ok(await _appController.vendedorPresenter.MisEstablecimientos(requerimientos));
+        }
     }
 }

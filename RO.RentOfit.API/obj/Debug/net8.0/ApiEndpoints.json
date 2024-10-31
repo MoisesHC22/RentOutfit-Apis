@@ -291,8 +291,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
+        "Name": "requerimiento",
+        "Type": "RO.RentOfit.Domain.Aggregates.RecuperarContrasena.RequerimientosCorreoAggregate",
         "IsRequired": true
       }
     ],
@@ -386,6 +386,22 @@
       {
         "Name": "usuarioID",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
+    "Method": "MisEstablecimientos",
+    "RelativePath": "Vendedor/MisEstablecimientos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.MisEstablecimientosAggregate",
         "IsRequired": true
       }
     ],

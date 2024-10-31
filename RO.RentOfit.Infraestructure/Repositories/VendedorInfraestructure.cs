@@ -132,5 +132,35 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
+
+
+
+        public async Task<List<MisEstablecimientosDto>> MisEstablecimientos(MisEstablecimientosAggregate requerimientos)
+        {
+            try
+            {
+
+                int paginaValida = (requerimientos.pagina == null || requerimientos.pagina == 0) ? 1 : requerimientos.pagina.Value;
+
+                var establecimientos = await _context.misEstablecimientosDto
+                   .FromSqlRaw("EXEC dbo.sp_consultar_establecimientos @usuario, @pagina ",
+                   new SqlParameter("@usuario", requerimientos.usuario), new SqlParameter("@pagina", paginaValida))
+                   .ToListAsync();
+
+                if (establecimientos == null || !establecimientos.Any())
+                {
+                    return null;
+                }
+
+                return establecimientos.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al encontrar mis establecimientos, ", ex);
+            }
+        }
+
+
+
     }
 }
