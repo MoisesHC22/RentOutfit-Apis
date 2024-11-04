@@ -26,23 +26,23 @@ namespace RO.RentOfit.Aplication.Presenters
         }
 
         // Método para aprobar un establecimiento específico
-        public async Task<RespuestaDB> AprobarEstablecimiento(int establecimientoId)
+        public async Task<RespuestaEstablecimiento> AprobarEstablecimiento(int establecimientoId)
         {
             return await _unitRepository.administradorInfraestructure.AprobarEstablecimiento(establecimientoId);
         }
 
         // Método para rechazar un establecimiento con una razón específica
-        public async Task<RespuestaDB> DenegarEstablecimiento(int establecimientoId)
+        public async Task<RespuestaEstablecimiento> DenegarEstablecimiento(MotivosDenegarAggregate requerimientos)
         {
-            return await _unitRepository.administradorInfraestructure.DenegarEstablecimiento(establecimientoId);
+            return await _unitRepository.administradorInfraestructure.DenegarEstablecimiento(requerimientos);
         }
 
         // Método para obtener la información de un cliente
-       
-        // Método para listar todos los establecimientos pendientes de revisión
-        public async Task<List<InformacionEstablecimientoDto>> ListarEstablecimientosPendientes()
+
+        public async Task<List<EstablecimientosCercanosDto>> TodosLosEstablecimientos(TodosEstablecimientosAggregate requerimientos) 
         {
-            return await _unitRepository.administradorInfraestructure.ListarEstablecimientosPendientes();
+            return await _unitRepository.administradorInfraestructure.TodosLosEstablecimientos(requerimientos);
         }
+
     }
 }

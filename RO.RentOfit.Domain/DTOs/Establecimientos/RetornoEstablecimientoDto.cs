@@ -6,6 +6,6 @@ namespace RO.RentOfit.Domain.DTOs.Establecimientos
         [Key]
         public int tipoError { get; set; }
         public string mensaje { get; set; }
-        public int? EstablecimientoID { get; set; }
+        public int? establecimientoID { get; set; }
     }
 }

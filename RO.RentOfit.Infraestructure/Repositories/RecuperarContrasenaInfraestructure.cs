@@ -29,9 +29,9 @@ namespace RO.RentOfit.Infraestructure.Repositories
                 {
                     return null;
                 }
-                var tokenRecuperacion = token.FirstOrDefault()?.token;
+                var tokenRecuperacion = token.FirstOrDefault()?.token; 
 
-                string baseUrl = "http://localhost:4200/OlvideMiContrasena";
+                string baseUrl = "https://rent-outfit-web.vercel.app/OlvideMiContrasena";
                 string emailParam = Uri.EscapeDataString(email);
                 string tokenParam = Uri.EscapeDataString(tokenRecuperacion);
                 string linkRecuperacion = $"{baseUrl}/{emailParam}?token={tokenParam}";

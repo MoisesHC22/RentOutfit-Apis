@@ -65,7 +65,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                     var actualizacion = await _context.respuestaDB
                         .FromSqlRaw("EXEC dbo.sp_Actualizar_FotoDeEstablecimiento @usuarioID, @establecimientoID, @linkImagenEstablecimiento",
                                     new SqlParameter("@usuarioID", registro.usuarioID),
-                                    new SqlParameter("@establecimientoID", respuesta.EstablecimientoID),
+                                    new SqlParameter("@establecimientoID", respuesta.establecimientoID),
                                     new SqlParameter("@linkImagenEstablecimiento", linkImg))
                         .ToListAsync();
                 }

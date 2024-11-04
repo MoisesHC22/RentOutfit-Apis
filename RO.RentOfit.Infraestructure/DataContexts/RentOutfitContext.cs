@@ -10,6 +10,7 @@ namespace RO.RentOfit.Infraestructure.DataContexts
 
         #region Generic Dtos DB
         public DbSet<RespuestaDB> respuestaDB { get; set; }
+        public DbSet<RespuestaEstablecimiento> respuestaEstablecimiento { get; set; }
         public DbSet<ClienteDto> clienteDto { get; set; }
         public DbSet<IniciarSesionDto> iniciarSesionDto { get; set; }
         public DbSet<GeneroDto> generoDto { get; set; }

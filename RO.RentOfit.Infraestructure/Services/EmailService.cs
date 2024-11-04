@@ -26,7 +26,6 @@ namespace RO.RentOfit.API.Services
                 var senderEmail = _configuration["EmailSettings:SenderEmail"];
                 var senderPassword = _configuration["EmailSettings:SenderPassword"];
 
-
                 var correo = new MailMessage
                 {
                     From = new MailAddress(senderEmail),  // Añadimos la dirección del remitente

@@ -24,8 +24,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "establecimientoId",
-        "Type": "System.Int32",
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Vendedor.MotivosDenegarAggregate",
         "IsRequired": true
       }
     ],
@@ -42,6 +42,22 @@
       {
         "Name": "parameters",
         "Type": "RO.RentOfit.Domain.DTOs.Establecimientos.EstablecimientosParaAprobacionParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
+    "Method": "TodosLosEstablecimientos",
+    "RelativePath": "Administrador/TodosLosEstablecimientos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Establecimientos.TodosEstablecimientosAggregate",
         "IsRequired": true
       }
     ],

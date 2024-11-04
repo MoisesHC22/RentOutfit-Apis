@@ -12,4 +12,12 @@ namespace RO.RentOfit.Domain.DTOs
         public int tipoError {  get; set; }
         public string mensaje {  get; set; }
     }
+
+    public class RespuestaEstablecimiento
+    {
+        [Key]
+        public int tipoError { get; set; }
+        public string mensaje { get; set; }
+        public string? email { get; set; }
+    }
 }

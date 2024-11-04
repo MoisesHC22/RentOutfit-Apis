@@ -7,13 +7,11 @@ namespace RO.RentOfit.Domain.Interfaces.Services
     public interface IAdministradorPresenter
     {
 
-        Task<RespuestaDB> AprobarEstablecimiento(int establecimientoId); // Método para aprobar un establecimiento
+        Task<RespuestaEstablecimiento> AprobarEstablecimiento(int establecimientoId); // Método para aprobar un establecimiento
 
-        Task<RespuestaDB> DenegarEstablecimiento(int establecimientoId); // Método para denegar un establecimiento
-
-        Task<List<InformacionEstablecimientoDto>> ListarEstablecimientosPendientes();
+        Task<RespuestaEstablecimiento> DenegarEstablecimiento(MotivosDenegarAggregate requerimientos); // Método para denegar un establecimiento
 
         Task<List<ListaDeAprobacion>> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters);
-      
+        Task<List<EstablecimientosCercanosDto>> TodosLosEstablecimientos(TodosEstablecimientosAggregate requerimientos);
     }
 }

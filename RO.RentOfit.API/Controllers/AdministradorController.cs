@@ -17,7 +17,7 @@ namespace RO.RentOfit.API.Controllers
         [HttpPost("EstablecimientosParaAprobacion")]
         public async Task<IActionResult> PostEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters)
         {
-            return Ok( await _appController.administradorPresenter.ConsultarEstablecimientosParaAprobacion(parameters));
+            return Ok(await _appController.administradorPresenter.ConsultarEstablecimientosParaAprobacion(parameters));
         }
 
 
@@ -33,9 +33,17 @@ namespace RO.RentOfit.API.Controllers
 
         // Método para denegar un establecimiento
         [HttpPost("DenegarEstablecimiento")]
-        public async Task<IActionResult> PostDenegarEstablecimiento([FromBody] int establecimientoId)
+        public async Task<IActionResult> PostDenegarEstablecimiento(MotivosDenegarAggregate requerimientos)
         {
-            return Ok(await _appController.administradorPresenter.DenegarEstablecimiento(establecimientoId));
+            return Ok(await _appController.administradorPresenter.DenegarEstablecimiento(requerimientos));
         }
+
+
+        [HttpPost("TodosLosEstablecimientos")]
+        public async Task<IActionResult> TodosLosEstablecimientos(TodosEstablecimientosAggregate requerimientos)
+        {
+            return Ok(await _appController.administradorPresenter.TodosLosEstablecimientos(requerimientos));
+        }
+
     }
 }
