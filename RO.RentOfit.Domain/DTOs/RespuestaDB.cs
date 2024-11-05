@@ -20,4 +20,12 @@ namespace RO.RentOfit.Domain.DTOs
         public string mensaje { get; set; }
         public string? email { get; set; }
     }
+
+    public class RespuestaValidarToken
+    {
+        [Key]
+        public int tipoError { get; set; }
+        public string mensaje { get; set; }
+        public string? imagen { get; set; }
+    }
 }
