@@ -7,6 +7,6 @@ namespace RO.RentOfit.Domain.Interfaces.Services
     {
         Task<RespuestaDB> ActualizarContrasena(ActualizarContrasena Requerimientos);
         Task<RecuperarContrasenaDto> ObtenerToken(string email);
-        Task<RespuestaDB> ValidarToken(ValidarToken requerimientos);
+        Task<RespuestaValidarToken> ValidarToken(ValidarToken requerimientos);
     }
 }

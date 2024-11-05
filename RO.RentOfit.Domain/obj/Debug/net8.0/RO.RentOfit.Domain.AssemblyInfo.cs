@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RO.RentOfit.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe5070466b7528c560bea07b0b3e146aadd2bba6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10982849868419a6c6494c05cb5d9678352183c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("RO.RentOfit.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RO.RentOfit.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

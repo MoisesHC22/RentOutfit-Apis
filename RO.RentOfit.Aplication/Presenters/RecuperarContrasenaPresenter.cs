@@ -23,7 +23,7 @@ namespace RO.RentOfit.Aplication.Presenters
 
 
 
-        public async Task<RespuestaDB> ValidarToken(ValidarToken requerimientos)
+        public async Task<RespuestaValidarToken> ValidarToken(ValidarToken requerimientos)
         {
             return await _unitRepository.recuperarContrasenaInfraestructure.ValidarToken(requerimientos);
         }
