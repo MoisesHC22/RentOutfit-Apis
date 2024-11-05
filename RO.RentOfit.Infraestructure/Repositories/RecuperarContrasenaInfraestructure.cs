@@ -71,12 +71,12 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
-        public async Task<RespuestaDB> ValidarToken(ValidarToken requerimientos)
+        public async Task<RespuestaValidarToken> ValidarToken(ValidarToken requerimientos)
         {
             try
             {
                 // Ejecutar el procedimiento almacenado para validar el token
-                var validacion = await _context.respuestaDB
+                var validacion = await _context.respuestaValidarToken
                      .FromSqlRaw("EXEC dbo.sp_olvideLaContrasena_Token @Email, @Token",
                      new SqlParameter("@Email", requerimientos.email), new SqlParameter("@Token", requerimientos.token))
                      .ToListAsync();
