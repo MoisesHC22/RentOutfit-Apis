@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj": {}
+    "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj": {
+    "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj",
+        "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj",
         "projectName": "RO.RentOfit.Aplication",
-        "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj",
+        "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj",
         "packagesPath": "C:\\Users\\moyhc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Aplication\\obj\\",
+        "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj": {
-                "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj"
+              "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj": {
+                "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj"
               }
             }
           }
@@ -117,14 +117,14 @@
         }
       }
     },
-    "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj": {
+    "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
         "projectName": "RO.RentOfit.Domain",
-        "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
+        "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj",
         "packagesPath": "C:\\Users\\moyhc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Domain\\obj\\",
+        "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -200,14 +200,14 @@
         }
       }
     },
-    "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj": {
+    "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
         "projectName": "RO.RentOfit.Infraestructure",
-        "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
+        "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\moyhc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Infraestructure\\obj\\",
+        "outputPath": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -229,8 +229,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj": {
-                "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT5_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj"
+              "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj": {
+                "projectPath": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.Aplication\\RO.RentOfit.Aplication.csproj"
               }
             }
           }
