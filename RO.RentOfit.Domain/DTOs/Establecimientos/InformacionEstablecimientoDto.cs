@@ -14,6 +14,7 @@ namespace RO.RentOfit.Domain.DTOs.Establecimientos
         public string noInt { get; set; }
         public string noExt { get; set; }
         public string codigoPostal { get; set; }
+        public int usuarioID { get; set; }
         public string linkImagenPerfil { get; set; }
         public string nombreCliente { get; set; }
         public string apellidoPaterno { get; set; }
