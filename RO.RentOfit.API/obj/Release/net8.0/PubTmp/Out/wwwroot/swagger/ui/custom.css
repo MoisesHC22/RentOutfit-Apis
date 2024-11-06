@@ -1,0 +1,17 @@
+﻿.swagger-ui .topbar {
+    background-color: #000000;
+    border-bottom: 3px solid #080808;
+}
+
+
+.swagger-ui img { 
+    height: 0px;
+}
+
+.topbar-wrapper img[alt="Swagger UI"], .topbar-wrapper span {
+    visibility: collapse;
+}
+
+.topbar-wrapper .link:after {
+    display: flex;
+}

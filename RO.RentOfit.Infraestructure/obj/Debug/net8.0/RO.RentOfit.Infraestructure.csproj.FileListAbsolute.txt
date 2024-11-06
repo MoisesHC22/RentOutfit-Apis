@@ -1,0 +1,248 @@
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\GI.GestorInventarios.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\GI.GestorInventarios.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\bryan\Music\PLANTILLA NET 8\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\moyhc\Desktop\RO.RentOfit.API\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.sourcelink.json
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\moyhc\Desktop\SPRINT2_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.sourcelink.json
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\moyhc\Desktop\SPRINT3_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.sourcelink.json
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\bryan\Desktop\SPRINT4_BRYAN-APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.sourcelink.json
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\moyhc\Desktop\SPRINT4_MOISES_APIS\RO.RentOfit.API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.sourcelink.json
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_APIS\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.sourcelink.json
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\bryan\Desktop\Sprint5_Bryan\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.sourcelink.json
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\moyhc\Desktop\SPRINT5_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\spa.proxy.json
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.deps.json
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.runtimeconfig.json
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Aplication.pdb
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\bin\Debug\net8.0\RO.RentOfit.Domain.pdb
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.AssemblyInfo.cs
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.sourcelink.json
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentO.AFA58DDC.Up2Date
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\refint\RO.RentOfit.Infraestructure.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.pdb
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\RO.RentOfit.Infraestructure.genruntimeconfig.cache
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.Infraestructure\obj\Debug\net8.0\ref\RO.RentOfit.Infraestructure.dll
