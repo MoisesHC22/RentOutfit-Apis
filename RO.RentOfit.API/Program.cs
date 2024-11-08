@@ -14,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Logging.ClearProviders();
 
 // Servicios de la aplicación
+builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 builder.Services.AddSwagger(builder);
 

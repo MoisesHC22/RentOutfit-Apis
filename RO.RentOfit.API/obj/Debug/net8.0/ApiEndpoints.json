@@ -227,6 +227,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RO.RentOfit.API.Controllers.CodigoPostalProxyController",
+    "Method": "ObtenerDireccion",
+    "RelativePath": "CodigoPostalProxy/ObtenerDireccion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RO.RentOfit.Domain.Aggregates.Establecimientos.CodigoPostalRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RO.RentOfit.API.Controllers.ListasController",
     "Method": "ObtenerEstados",
     "RelativePath": "Listas/ObtenerEstados",
@@ -395,6 +411,22 @@
     "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
     "Method": "DarDeAltaUnVendedor",
     "RelativePath": "Vendedor/DarDeAltaUnVendedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
+    "Method": "GenerarPdfEstablecimientos",
+    "RelativePath": "Vendedor/GenerarPdfEstablecimientos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
