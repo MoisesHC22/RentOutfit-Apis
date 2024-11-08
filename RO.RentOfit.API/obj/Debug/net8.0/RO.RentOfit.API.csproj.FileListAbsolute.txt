@@ -1407,3 +1407,16 @@ C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\obj\Debug\net8.0\refin
 C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\obj\Debug\net8.0\RO.RentOfit.API.pdb
 C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\obj\Debug\net8.0\RO.RentOfit.API.genruntimeconfig.cache
 C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\obj\Debug\net8.0\ref\RO.RentOfit.API.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.barcodes.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.forms.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.io.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.kernel.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.layout.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.pdfa.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.pdfua.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.sign.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.styledxmlparser.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.svg.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+C:\Users\moyhc\Desktop\SPRINT6_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\itext.commons.dll
