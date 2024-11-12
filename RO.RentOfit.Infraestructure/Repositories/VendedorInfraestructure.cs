@@ -163,6 +163,5 @@ namespace RO.RentOfit.Infraestructure.Repositories
         }
 
 
-
     }
 }

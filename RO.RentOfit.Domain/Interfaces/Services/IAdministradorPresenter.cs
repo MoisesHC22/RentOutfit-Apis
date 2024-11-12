@@ -11,7 +11,8 @@ namespace RO.RentOfit.Domain.Interfaces.Services
 
         Task<RespuestaEstablecimiento> DenegarEstablecimiento(MotivosDenegarAggregate requerimientos); // Método para denegar un establecimiento
 
-        Task<List<ListaDeAprobacion>> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters);
+        Task<(List<ListaDeAprobacion> Establecimientos, int TotalRegistros)> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters);
         Task<List<EstablecimientosCercanosDto>> TodosLosEstablecimientos(TodosEstablecimientosAggregate requerimientos);
+        Task Alertar(MandarMsj requerimientos);
     }
 }

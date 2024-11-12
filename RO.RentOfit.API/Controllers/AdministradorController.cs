@@ -17,7 +17,13 @@ namespace RO.RentOfit.API.Controllers
         [HttpPost("EstablecimientosParaAprobacion")]
         public async Task<IActionResult> PostEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters)
         {
-            return Ok(await _appController.administradorPresenter.ConsultarEstablecimientosParaAprobacion(parameters));
+            var (establecimientos, totalRegistros) =  await _appController.administradorPresenter.ConsultarEstablecimientosParaAprobacion(parameters);
+
+            return Ok(new
+            {
+                Establecimientos = establecimientos,
+                TotalRegistros = totalRegistros
+            });
         }
 
 
@@ -45,5 +51,11 @@ namespace RO.RentOfit.API.Controllers
             return Ok(await _appController.administradorPresenter.TodosLosEstablecimientos(requerimientos));
         }
 
+        [HttpPost("Alertar")]
+        public async Task<IActionResult> Alertar(MandarMsj requerimientos)
+        {
+            await _appController.administradorPresenter.Alertar(requerimientos);
+            return Ok(new { mensaje = "Alerta enviada exitosamente" });
+        }
     }
 }
