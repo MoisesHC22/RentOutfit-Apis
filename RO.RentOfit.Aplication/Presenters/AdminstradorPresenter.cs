@@ -19,7 +19,7 @@ namespace RO.RentOfit.Aplication.Presenters
         }
 
         // Método para consultar establecimientos para aprobación
-        public async Task<List<ListaDeAprobacion>> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters)
+        public async Task<(List<ListaDeAprobacion> Establecimientos, int TotalRegistros)> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters)
         {
             // Aquí no es necesario manejar excepciones, ya que el repositorio lo hace
             return await _unitRepository.administradorInfraestructure.ConsultarEstablecimientosParaAprobacion(parameters);
@@ -42,6 +42,11 @@ namespace RO.RentOfit.Aplication.Presenters
         public async Task<List<EstablecimientosCercanosDto>> TodosLosEstablecimientos(TodosEstablecimientosAggregate requerimientos) 
         {
             return await _unitRepository.administradorInfraestructure.TodosLosEstablecimientos(requerimientos);
+        }
+
+        public async Task Alertar(MandarMsj requerimientos) 
+        {
+            await _unitRepository.administradorInfraestructure.Alertar(requerimientos);
         }
 
     }
