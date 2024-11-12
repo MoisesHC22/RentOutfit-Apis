@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
+    "Method": "Alertar",
+    "RelativePath": "Administrador/Alertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.MandarMsj",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
     "Method": "PostAprobarEstablecimiento",
     "RelativePath": "Administrador/AprobarEstablecimiento",
     "HttpMethod": "POST",
