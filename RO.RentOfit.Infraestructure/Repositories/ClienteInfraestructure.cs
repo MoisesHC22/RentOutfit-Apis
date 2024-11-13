@@ -250,6 +250,15 @@
             }
         }
 
+        public async Task GuardarCarrito(CarritoAggregate requerimientos) 
+        { 
+            await _storageFirebase.CarritoCompras(requerimientos);
+        }
+
+        public async Task<List<ItemsCarrito>> CargarCarrito(int usuarioID) 
+        {
+           return await _storageFirebase.ObtenerCarritoCompras(usuarioID);
+        }
 
     }
 }
