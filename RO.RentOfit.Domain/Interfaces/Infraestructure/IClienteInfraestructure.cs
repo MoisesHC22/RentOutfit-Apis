@@ -3,7 +3,9 @@ namespace RO.RentOfit.Domain.Interfaces.Infraestructure
 {
     public interface IClienteInfraestructure
     {
+        Task<List<ItemsCarrito>> CargarCarrito(int usuarioID);
         Task<List<EstablecimientosCercanosDto>> EstablecimientosCercanos(EstablecimientosCercanosAggregate requerimientos);
+        Task GuardarCarrito(CarritoAggregate requerimientos);
         Task<InformacionEstablecimientoDto> InformacionEstablecimiento(int establecimiento);
         Task<InformacionVestimentaDto> InformacionVestimenta(int vestimenta);
         Task<IniciarSesionDto> IniciarSesion(IniciarSesionAggregate requerimiento);
