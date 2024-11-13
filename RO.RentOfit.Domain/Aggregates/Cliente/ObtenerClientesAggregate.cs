@@ -13,4 +13,16 @@ namespace RO.RentOfit.Domain.Aggregates.Cliente
         public int usuarioID { get; set; }
         public string mensaje { get; set; }
     }
+
+    public class CarritoAggregate
+    {
+        public int usuarioID { get; set;}
+        public List<ItemsCarrito> itemsCarrito { get; set; }
+    }
+
+    public class ItemsCarrito
+    {
+        public int vestimentaID { get; set;}
+        public int stock { get; set; }
+    }
 }

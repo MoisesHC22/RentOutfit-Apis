@@ -81,6 +81,22 @@
   },
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "CargarCarrito",
+    "RelativePath": "Cliente/CargarCarrito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "EstablecimientosCercanos",
     "RelativePath": "Cliente/EstablecimientosCercanos",
     "HttpMethod": "POST",
@@ -138,6 +154,22 @@
       {
         "Name": "requerimiento",
         "Type": "RO.RentOfit.Domain.Aggregates.Cliente.IniciarSesionAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "ModificarCarrito",
+    "RelativePath": "Cliente/ModificarCarrito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.CarritoAggregate",
         "IsRequired": true
       }
     ],
