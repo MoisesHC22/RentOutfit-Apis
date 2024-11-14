@@ -1167,6 +1167,20 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "filtro": {
+            "type": "string",
+            "nullable": true
+          },
+          "categoria": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "talla": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
