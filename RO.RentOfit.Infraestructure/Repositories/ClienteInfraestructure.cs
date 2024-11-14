@@ -175,10 +175,13 @@
                 {
                   new SqlParameter("estado", requisitos.estado),
                   new SqlParameter("municipio", requisitos.municipio),
-                  new SqlParameter("pagina", paginaValida)
+                  new SqlParameter("pagina", paginaValida),
+                  new SqlParameter("filtro",  string.IsNullOrEmpty(requisitos.filtro) ? (object)DBNull.Value : requisitos.filtro),
+                  new SqlParameter("categoria", requisitos.categoria == null || requisitos.categoria == 0 ? (object)DBNull.Value : requisitos.categoria ),
+                   new SqlParameter("talla", requisitos.talla == null || requisitos.talla == 0 ? (object)DBNull.Value : requisitos.talla )
                 };
 
-                var sqlQuery = "EXEC dbo.sp_mostrar_vestimenta @estado, @municipio, @pagina ";
+                var sqlQuery = "EXEC dbo.sp_mostrar_vestimenta @estado, @municipio, @pagina, @filtro, @categoria, @talla ";
                 var establecimiento = await _context.listaVestimentasDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
 
 
@@ -248,6 +251,16 @@
             {
                 throw new Exception("Error al encontrar un establecimiento, ", ex);
             }
+        }
+
+        public async Task GuardarCarrito(CarritoAggregate requerimientos) 
+        { 
+            await _storageFirebase.CarritoCompras(requerimientos);
+        }
+
+        public async Task<List<ItemsCarrito>> CargarCarrito(int usuarioID) 
+        {
+           return await _storageFirebase.ObtenerCarritoCompras(usuarioID);
         }
 
 

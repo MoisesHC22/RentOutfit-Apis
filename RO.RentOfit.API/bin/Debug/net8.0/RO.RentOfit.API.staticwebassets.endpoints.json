@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "swagger/ui/custom.css",
+      "AssetFile": "swagger/ui/custom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 04:43:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ="
+        }
+      ]
+    },
+    {
+      "Route": "swagger/ui/custom.d8nd6h3bbk.css",
+      "AssetFile": "swagger/ui/custom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 04:43:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d8nd6h3bbk"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ="
+        },
+        {
+          "Name": "label",
+          "Value": "swagger/ui/custom.css"
+        }
+      ]
+    }
+  ]
+}

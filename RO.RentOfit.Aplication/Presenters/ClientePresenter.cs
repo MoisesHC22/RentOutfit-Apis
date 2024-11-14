@@ -60,5 +60,14 @@ namespace RO.RentOfit.Aplication.Presenters
         }
 
 
+        public async Task GuardarCarrito(CarritoAggregate requerimientos) 
+        {
+             await _unitRepository.clienteInfraestructure.GuardarCarrito(requerimientos);
+        }
+
+        public async Task<List<ItemsCarrito>> CargarCarrito(int usuarioID) 
+        {
+            return await _unitRepository.clienteInfraestructure.CargarCarrito(usuarioID);
+        }
     }
 }
