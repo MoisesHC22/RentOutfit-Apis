@@ -11,5 +11,6 @@ namespace RO.RentOfit.Domain.DTOs.Vestimenta
         public string nombreTalla { get; set; }
         public string nombreEstilo { get; set; }
         public string? nombreEstablecimiento { get; set; }
+        public int totalRegistros { get; set; }
     }
 }
