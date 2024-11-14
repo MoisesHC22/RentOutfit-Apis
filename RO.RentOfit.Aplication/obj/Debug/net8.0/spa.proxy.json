@@ -3,7 +3,7 @@
 "ServerUrl": "",
 "RedirectUrl": "",
 "LaunchCommand": "",
-"WorkingDirectory": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Aplication",
+"WorkingDirectory": "C:\\Users\\bryan\\Desktop\\Sprint7_Apis\\RO.RentOfit.Aplication",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }
