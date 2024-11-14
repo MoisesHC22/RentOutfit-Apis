@@ -129,10 +129,12 @@ namespace RO.RentOfit.API.Controllers
             return Ok(new { mensaje = "Se cumplio con exito" });
         }
 
+
         [HttpPost("CargarCarrito")]
         public async Task<IActionResult> CargarCarrito([FromBody] int usuarioID)
         {
             return Ok(await _appController.ClientePresenter.CargarCarrito(usuarioID));
         }
+
     }
 }
