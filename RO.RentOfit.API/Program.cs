@@ -7,6 +7,7 @@ using RO.RentOfit.Infraestructure.Security; // Servicio de manejo de contraseñas
 using RO.RentOfit.Domain.Interfaces.Services;
 using RO.RentOfit.Domain.Interfaces.Infrastructure;
 using System.Text;
+using RO.RentOfit.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,9 @@ builder.Services.AddSingleton<StorageFirebaseConfig>();
 // Registrar servicios personalizados
 builder.Services.AddScoped<PasswordService>(); // Servicio para manejo de contraseñas
 builder.Services.AddScoped<EmailService>();    // Servicio para envío de emails
+
+// Registrar servicios relacionados con el chat
+builder.Services.AddScoped<IChatService, ChatFirebaseRepository>(); // Servicio para manejar el chat usando Firebase directamente
 
 // Registrar el servicio `IAdministradorPresenter`
 builder.Services.AddScoped<IAdministradorPresenter, RO.RentOfit.Aplication.Presenters.AdministradorPresenter>();

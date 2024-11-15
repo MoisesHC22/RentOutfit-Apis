@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f23Xyhqv4EtFS8XxmHX1HxsVqLB7ehNmIQfS4P7xk9w=",
+  "Hash": "03UO34rw4h7k+6w/8M+wVJVPXzp44DYwjPQqYtcynWs=",
   "Source": "RO.RentOfit.API",
   "BasePath": "_content/RO.RentOfit.API",
   "Mode": "Default",
@@ -10,116 +10,30 @@
     {
       "Name": "RO.RentOfit.API\\wwwroot",
       "Source": "RO.RentOfit.API",
-      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bryan\\Desktop\\Sprint7_Apis\\RO.RentOfit.API\\wwwroot\\",
       "BasePath": "_content/RO.RentOfit.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "Identity": "C:\\Users\\bryan\\Desktop\\Sprint7_Apis\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
       "SourceId": "RO.RentOfit.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bryan\\Desktop\\Sprint7_Apis\\RO.RentOfit.API\\wwwroot\\",
       "BasePath": "_content/RO.RentOfit.API",
-      "RelativePath": "swagger/ui/custom#[.{fingerprint}]?.css",
+      "RelativePath": "swagger/ui/custom.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "d8nd6h3bbk",
-      "Integrity": "3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\swagger\\ui\\custom.css"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "swagger/ui/custom.css",
-      "AssetFile": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "294"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 04:43:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ="
-        }
-      ]
-    },
-    {
-      "Route": "swagger/ui/custom.d8nd6h3bbk.css",
-      "AssetFile": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "294"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 04:43:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "d8nd6h3bbk"
-        },
-        {
-          "Name": "label",
-          "Value": "swagger/ui/custom.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3VCdCOLAH0lOp9MMoucYFHa6ro5oqvEjtueokY4y9QQ="
-        }
-      ]
     }
   ]
 }
