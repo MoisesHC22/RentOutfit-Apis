@@ -1,10 +1,4 @@
 ﻿
-using iText.Kernel.Pdf;
-using iText.Kernel.Pdf.Canvas.Draw;
-using iText.Layout;
-using iText.Layout.Element;
-using iText.Layout.Properties;
-
 namespace RO.RentOfit.API.Controllers
 {
     [Route("[controller]")]

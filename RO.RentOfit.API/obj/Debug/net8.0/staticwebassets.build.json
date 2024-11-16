@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f23Xyhqv4EtFS8XxmHX1HxsVqLB7ehNmIQfS4P7xk9w=",
+  "Hash": "uyKHmhroAwGARdJ4yL/PLk0NrUpaV0uhS3zvkuPy5lk=",
   "Source": "RO.RentOfit.API",
   "BasePath": "_content/RO.RentOfit.API",
   "Mode": "Default",
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 04:43:44 GMT"
+          "Value": "Fri, 15 Nov 2024 01:55:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 04:43:44 GMT"
+          "Value": "Fri, 15 Nov 2024 01:55:16 GMT"
         },
         {
           "Name": "Cache-Control",

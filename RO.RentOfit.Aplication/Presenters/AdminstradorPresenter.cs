@@ -1,10 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using RO.RentOfit.Domain.DTOs.Establecimientos;
-using RO.RentOfit.Domain.Interfaces.Services;
-using RO.RentOfit.Domain.Interfaces.Infrastructure;
-using AutoMapper;
-
+﻿
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class AdministradorPresenter : IAdministradorPresenter

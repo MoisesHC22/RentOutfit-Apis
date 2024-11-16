@@ -178,7 +178,7 @@
                   new SqlParameter("pagina", paginaValida),
                   new SqlParameter("filtro",  string.IsNullOrEmpty(requisitos.filtro) ? (object)DBNull.Value : requisitos.filtro),
                   new SqlParameter("categoria", requisitos.categoria == null || requisitos.categoria == 0 ? (object)DBNull.Value : requisitos.categoria ),
-                   new SqlParameter("talla", requisitos.talla == null || requisitos.talla == 0 ? (object)DBNull.Value : requisitos.talla )
+                  new SqlParameter("talla", requisitos.talla == null || requisitos.talla == 0 ? (object)DBNull.Value : requisitos.talla )
                 };
 
                 var sqlQuery = "EXEC dbo.sp_mostrar_vestimenta @estado, @municipio, @pagina, @filtro, @categoria, @talla ";
@@ -233,10 +233,11 @@
                 {
                   new SqlParameter("establecimiento", requerimientos.establecimiento),
                   new SqlParameter("usuario", requerimientos.usuario),
-                  new SqlParameter("pagina", paginaValida)
+                  new SqlParameter("pagina", paginaValida),
+                  new SqlParameter("filtro", string.IsNullOrEmpty(requerimientos.filtro) ? (object)DBNull.Value : requerimientos.filtro)
                 };
 
-                var sqlQuery = "EXEC dbo.sp_consultar_vestimentas_Establecimiento @establecimiento, @usuario, @pagina ";
+                var sqlQuery = "EXEC dbo.sp_consultar_vestimentas_Establecimiento @establecimiento, @usuario, @pagina, @filtro";
                 var establecimiento = await _context.vestimentasEstablecimientosDto.FromSqlRaw(sqlQuery, parameters).ToListAsync();
 
 
@@ -253,10 +254,12 @@
             }
         }
 
+
         public async Task GuardarCarrito(CarritoAggregate requerimientos) 
         { 
             await _storageFirebase.CarritoCompras(requerimientos);
         }
+
 
         public async Task<List<ItemsCarrito>> CargarCarrito(int usuarioID) 
         {

@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-
+﻿
 namespace RO.RentOfit.API.Controllers
 {
     [Route("[controller]")]

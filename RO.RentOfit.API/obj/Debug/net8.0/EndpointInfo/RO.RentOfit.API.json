@@ -163,6 +163,90 @@
         }
       }
     },
+    "/Chat/iniciar": {
+      "post": {
+        "tags": [
+          "Chat"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.DTOs.Chat.IniciarChatDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.DTOs.Chat.IniciarChatDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.DTOs.Chat.IniciarChatDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Chat/enviarMsj": {
+      "post": {
+        "tags": [
+          "Chat"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.DTOs.Chat.EnviarMensajeDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.DTOs.Chat.EnviarMensajeDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.DTOs.Chat.EnviarMensajeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Chat/{chatId}/mensajes": {
+      "post": {
+        "tags": [
+          "Chat"
+        ],
+        "parameters": [
+          {
+            "name": "chatId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Cliente/ObtenerCliente": {
       "post": {
         "tags": [
@@ -1244,6 +1328,10 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "filtro": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1294,6 +1382,38 @@
             "format": "int32"
           },
           "motivo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RO.RentOfit.Domain.DTOs.Chat.EnviarMensajeDto": {
+        "type": "object",
+        "properties": {
+          "chatId": {
+            "type": "string",
+            "nullable": true
+          },
+          "remitenteId": {
+            "type": "string",
+            "nullable": true
+          },
+          "contenido": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RO.RentOfit.Domain.DTOs.Chat.IniciarChatDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "establecimientoId": {
             "type": "string",
             "nullable": true
           }

@@ -80,6 +80,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
+    "Method": "ObtenerMensajes",
+    "RelativePath": "Chat/{chatId}/mensajes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
+    "Method": "EnviarMensaje",
+    "RelativePath": "Chat/enviarMsj",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enviarMensajeDto",
+        "Type": "RO.RentOfit.Domain.DTOs.Chat.EnviarMensajeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
+    "Method": "IniciarConversacion",
+    "RelativePath": "Chat/iniciar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iniciarChatDto",
+        "Type": "RO.RentOfit.Domain.DTOs.Chat.IniciarChatDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "CargarCarrito",
     "RelativePath": "Cliente/CargarCarrito",
