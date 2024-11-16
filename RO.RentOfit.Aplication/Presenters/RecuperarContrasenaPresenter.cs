@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.Aggregates.RecuperarContrasena;
-
 namespace RO.RentOfit.Aplication.Presenters
 {
     public class RecuperarContrasenaPresenter : IRecuperarContrasenaPresenter

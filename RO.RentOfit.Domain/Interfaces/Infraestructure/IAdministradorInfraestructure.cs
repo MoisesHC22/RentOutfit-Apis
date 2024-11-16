@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using RO.RentOfit.Domain.DTOs.Establecimientos;
-
+﻿
 namespace RO.RentOfit.Domain.Interfaces.Infrastructure
 {
     public interface IAdministradorInfraestructure

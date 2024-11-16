@@ -13,5 +13,7 @@ global using RO.RentOfit.Domain.DTOs.RecuperarContrasena;
 global using RO.RentOfit.Domain.DTOs.Establecimientos;
 global using RO.RentOfit.Domain.Aggregates.Establecimientos;
 global using RO.RentOfit.Domain.DTOs.Vestimenta;
+global using RO.RentOfit.Domain.Aggregates.RecuperarContrasena;
+global using RO.RentOfit.Domain.DTOs.Chat;
 
 

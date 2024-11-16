@@ -1,6 +1,4 @@
 ﻿
-using RO.RentOfit.Domain.Aggregates.RecuperarContrasena;
-
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class RecuperarContrasenaInfraestructure : IRecuperarContrasenaInfraestructure
