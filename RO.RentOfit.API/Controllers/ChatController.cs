@@ -1,13 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using RO.RentOfit.Domain.DTOs.Chat;
-using RO.RentOfit.Domain.Interfaces.Services;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
+﻿
 namespace RO.RentOfit.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ChatController : ControllerBase
     {
         private readonly IChatService _chatService;
@@ -24,7 +19,7 @@ namespace RO.RentOfit.API.Controllers
             return Ok(new { ChatId = chatId });
         }
 
-        [HttpPost("enviar")]
+        [HttpPost("enviarMsj")]
         public async Task<IActionResult> EnviarMensaje([FromBody] EnviarMensajeDto enviarMensajeDto)
         {
             await _chatService.EnviarMensajeAsync(enviarMensajeDto.ChatId, enviarMensajeDto.RemitenteId, enviarMensajeDto.Contenido);

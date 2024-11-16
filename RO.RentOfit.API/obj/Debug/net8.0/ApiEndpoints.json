@@ -82,7 +82,7 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
     "Method": "ObtenerMensajes",
-    "RelativePath": "api/Chat/{chatId}/mensajes",
+    "RelativePath": "Chat/{chatId}/mensajes",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -98,7 +98,7 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
     "Method": "EnviarMensaje",
-    "RelativePath": "api/Chat/enviar",
+    "RelativePath": "Chat/enviarMsj",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -114,7 +114,7 @@
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
     "Method": "IniciarConversacion",
-    "RelativePath": "api/Chat/iniciar",
+    "RelativePath": "Chat/iniciar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

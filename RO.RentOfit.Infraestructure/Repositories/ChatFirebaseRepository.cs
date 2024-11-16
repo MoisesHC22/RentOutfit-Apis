@@ -1,12 +1,4 @@
-﻿using Firebase.Database;
-using Firebase.Database.Query;
-using RO.RentOfit.Domain.DTOs.Chat;
-using RO.RentOfit.Domain.Interfaces.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     public class ChatFirebaseRepository : IChatService
