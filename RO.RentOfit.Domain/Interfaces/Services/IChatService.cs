@@ -1,7 +1,4 @@
-﻿using RO.RentOfit.Domain.DTOs.Chat;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
+﻿
 namespace RO.RentOfit.Domain.Interfaces.Services
 {
     public interface IChatService

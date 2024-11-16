@@ -1,6 +1,4 @@
-﻿using RO.RentOfit.Domain.DTOs.Chat;
-using RO.RentOfit.Domain.Interfaces.Services;
-
+﻿
 namespace RO.RentOfit.Application.Services
 {
     public class ChatService : IChatService

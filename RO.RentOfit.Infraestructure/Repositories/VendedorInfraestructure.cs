@@ -1,6 +1,4 @@
 ﻿
-using Microsoft.Extensions.Logging;
-
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     internal class VendedorInfraestructure : IVendedorInfraestructure

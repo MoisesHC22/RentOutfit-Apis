@@ -1,16 +1,4 @@
-﻿using Firebase.Database;
-using Firebase.Database.Query;
-using Google.Apis.Auth.OAuth2;
-using Google.Cloud.Storage.V1;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
-using RO.RentOfit.Domain.DTOs.Chat;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     public class StorageFirebaseConfig
