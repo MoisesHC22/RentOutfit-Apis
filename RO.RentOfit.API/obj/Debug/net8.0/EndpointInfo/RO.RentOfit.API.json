@@ -619,6 +619,40 @@
         }
       }
     },
+    "/Cliente/GenerarTokenMercadoPago": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/CodigoPostalProxy/ObtenerDireccion": {
       "post": {
         "tags": [
@@ -1184,6 +1218,11 @@
           "stock": {
             "type": "integer",
             "format": "int32"
+          },
+          "fechaPrestamo": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false

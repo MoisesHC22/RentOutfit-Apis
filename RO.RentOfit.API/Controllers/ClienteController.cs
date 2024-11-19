@@ -1,4 +1,9 @@
-﻿
+﻿using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
+using MercadoPago.Config;
+using iText.StyledXmlParser.Node;
+using Microsoft.Extensions.Azure;
+
 namespace RO.RentOfit.API.Controllers
 {
     [Route("[controller]")]
@@ -135,6 +140,80 @@ namespace RO.RentOfit.API.Controllers
         {
             return Ok(await _appController.ClientePresenter.CargarCarrito(usuarioID));
         }
+
+
+        [HttpPost("GenerarTokenMercadoPago")]
+        public async Task<IActionResult> GenerarTokenMercadoPago([FromBody] int usurioID) 
+        {
+
+            MercadoPagoConfig.AccessToken = "TEST-1228696711826746-111815-2cc6c73a2c5c8ae98848122680486337-1414719981";
+
+            var carrito = await _appController.ClientePresenter.CargarCarrito(usurioID);
+
+            if (carrito == null || !carrito.Any())
+            {
+                return BadRequest("El carrito está vacío o no existe.");
+            }
+
+            var items = new List<PreferenceItemRequest>();
+
+            foreach (var item in carrito)
+            {
+                var vestimenta = await _appController.ClientePresenter.InformacionDeUnaSolaVestimenta(item.vestimentaID);
+
+                if (vestimenta != null)
+                {
+                    items.Add(new PreferenceItemRequest
+                    {
+                        Title = vestimenta.nombrePrenda,
+                        Quantity = item.stock,
+                        CurrencyId = "MXN",
+                        UnitPrice = vestimenta.precioPorDia
+                    });
+                }
+            }
+
+            if (!items.Any())
+            {
+                return BadRequest("No se pudo generar la lista de ítems para Mercado Pago.");
+            }
+
+            foreach (var item in items)
+            {
+                Console.WriteLine($"Title: {item.Title}, Quantity: {item.Quantity}, UnitPrice: {item.UnitPrice}");
+            }
+
+            var cliente = new PreferenceClient();
+
+            var request = new PreferenceRequest
+            {
+                Items = items,
+                BackUrls = new PreferenceBackUrlsRequest
+                {
+                    Success = "https://www.tusitio.com/success",
+                    Failure = "https://www.tusitio.com/failure",
+                    Pending = "https://www.tusitio.com/pending"
+                },
+                AutoReturn = "approved"
+            };
+
+            Preference preference = await cliente.CreateAsync(request);
+
+            if (preference != null)
+            {
+                return Ok(new { preferenceId = preference.Id });
+            }
+            else
+            {
+                return BadRequest("No se pudo generar la preferencia.");
+            }
+
+        }
+
+
+
+
+
 
     }
 }

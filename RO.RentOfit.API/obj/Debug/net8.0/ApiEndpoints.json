@@ -161,6 +161,22 @@
   },
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "GenerarTokenMercadoPago",
+    "RelativePath": "Cliente/GenerarTokenMercadoPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usurioID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "InformacionEstablecimiento",
     "RelativePath": "Cliente/InformacionEstablecimiento",
     "HttpMethod": "POST",

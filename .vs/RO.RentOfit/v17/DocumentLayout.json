@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|solutionrelative:ro.rentofit.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16DD74A-C7E9-49A8-A430-1D8277E7DC3C}|RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.infraestructure\\repositories\\storagefirebaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E16DD74A-C7E9-49A8-A430-1D8277E7DC3C}|RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj|solutionrelative:ro.rentofit.infraestructure\\repositories\\storagefirebaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEFD9C82-3349-4C26-AEB0-4F587F7E6383}|RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.domain\\aggregates\\cliente\\obtenerclientesaggregate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEFD9C82-3349-4C26-AEB0-4F587F7E6383}|RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj|solutionrelative:ro.rentofit.domain\\aggregates\\cliente\\obtenerclientesaggregate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEFD9C82-3349-4C26-AEB0-4F587F7E6383}|RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.domain\\dtos\\vestimenta\\informacionvestimentadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEFD9C82-3349-4C26-AEB0-4F587F7E6383}|RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj|solutionrelative:ro.rentofit.domain\\dtos\\vestimenta\\informacionvestimentadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16DD74A-C7E9-49A8-A430-1D8277E7DC3C}|RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.infraestructure\\datacontexts\\rentoutfitcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E16DD74A-C7E9-49A8-A430-1D8277E7DC3C}|RO.RentOfit.Infraestructure\\RO.RentOfit.Infraestructure.csproj|solutionrelative:ro.rentofit.infraestructure\\datacontexts\\rentoutfitcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEFD9C82-3349-4C26-AEB0-4F587F7E6383}|RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.domain\\interfaces\\services\\iclientepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEFD9C82-3349-4C26-AEB0-4F587F7E6383}|RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj|solutionrelative:ro.rentofit.domain\\interfaces\\services\\iclientepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|solutionrelative:ro.rentofit.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEFD9C82-3349-4C26-AEB0-4F587F7E6383}|RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.domain\\dtos\\vestimenta\\vestimentasestablecimientosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEFD9C82-3349-4C26-AEB0-4F587F7E6383}|RO.RentOfit.Domain\\RO.RentOfit.Domain.csproj|solutionrelative:ro.rentofit.domain\\dtos\\vestimenta\\vestimentasestablecimientosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|c:\\users\\moyhc\\desktop\\sprint7_moises_api\\ro.rentofit.api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6E17096-F550-45B7-8CDB-A06698C2B3B6}|RO.RentOfit.API\\RO.RentOfit.API.csproj|solutionrelative:ro.rentofit.api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -13,8 +45,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 2705,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 2937,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,22 +54,107 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ObtenerClientesAggregate.cs",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Domain\\Aggregates\\Cliente\\ObtenerClientesAggregate.cs",
+              "RelativeDocumentMoniker": "RO.RentOfit.Domain\\Aggregates\\Cliente\\ObtenerClientesAggregate.cs",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Domain\\Aggregates\\Cliente\\ObtenerClientesAggregate.cs",
+              "RelativeToolTip": "RO.RentOfit.Domain\\Aggregates\\Cliente\\ObtenerClientesAggregate.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T06:49:41.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IClientePresenter.cs",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Domain\\Interfaces\\Services\\IClientePresenter.cs",
+              "RelativeDocumentMoniker": "RO.RentOfit.Domain\\Interfaces\\Services\\IClientePresenter.cs",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Domain\\Interfaces\\Services\\IClientePresenter.cs",
+              "RelativeToolTip": "RO.RentOfit.Domain\\Interfaces\\Services\\IClientePresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T06:49:13.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RentOutfitContext.cs",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Infraestructure\\DataContexts\\RentOutfitContext.cs",
+              "RelativeDocumentMoniker": "RO.RentOfit.Infraestructure\\DataContexts\\RentOutfitContext.cs",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Infraestructure\\DataContexts\\RentOutfitContext.cs",
+              "RelativeToolTip": "RO.RentOfit.Infraestructure\\DataContexts\\RentOutfitContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wCcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:14:24.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InformacionVestimentaDto.cs",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Domain\\DTOs\\Vestimenta\\InformacionVestimentaDto.cs",
+              "RelativeDocumentMoniker": "RO.RentOfit.Domain\\DTOs\\Vestimenta\\InformacionVestimentaDto.cs",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Domain\\DTOs\\Vestimenta\\InformacionVestimentaDto.cs",
+              "RelativeToolTip": "RO.RentOfit.Domain\\DTOs\\Vestimenta\\InformacionVestimentaDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:13:02.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VestimentasEstablecimientosDto.cs",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Domain\\DTOs\\Vestimenta\\VestimentasEstablecimientosDto.cs",
+              "RelativeDocumentMoniker": "RO.RentOfit.Domain\\DTOs\\Vestimenta\\VestimentasEstablecimientosDto.cs",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Domain\\DTOs\\Vestimenta\\VestimentasEstablecimientosDto.cs",
+              "RelativeToolTip": "RO.RentOfit.Domain\\DTOs\\Vestimenta\\VestimentasEstablecimientosDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:12:36.963Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\appsettings.json",
+              "RelativeDocumentMoniker": "RO.RentOfit.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\appsettings.json",
+              "RelativeToolTip": "RO.RentOfit.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-18T19:12:21.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "RO.RentOfit.API\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "RO.RentOfit.API\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAywKUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:48:34.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ChatController.cs",
               "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "RO.RentOfit.API\\Controllers\\ChatController.cs",
               "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\Controllers\\ChatController.cs",
               "RelativeToolTip": "RO.RentOfit.API\\Controllers\\ChatController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T05:11:45.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T05:11:45.368Z"
             }
           ]
         },
         {
-          "DockedWidth": 1650,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 1945,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,6 +163,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StorageFirebaseConfig.cs",
+              "DocumentMoniker": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Infraestructure\\Repositories\\StorageFirebaseConfig.cs",
+              "RelativeDocumentMoniker": "RO.RentOfit.Infraestructure\\Repositories\\StorageFirebaseConfig.cs",
+              "ToolTip": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.Infraestructure\\Repositories\\StorageFirebaseConfig.cs",
+              "RelativeToolTip": "RO.RentOfit.Infraestructure\\Repositories\\StorageFirebaseConfig.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAzwEEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T06:43:54.127Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -87,6 +87,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
                         if (nuevoItem.stock > 0)
                         {
                             itemExistente.stock = nuevoItem.stock;
+                            itemExistente.fechaPrestamo = nuevoItem.fechaPrestamo;
                         }
                         else
                         {

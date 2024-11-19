@@ -24,5 +24,6 @@ namespace RO.RentOfit.Domain.Aggregates.Cliente
     {
         public int vestimentaID { get; set;}
         public int stock { get; set; }
+        public DateTime? fechaPrestamo { get; set; }
     }
 }

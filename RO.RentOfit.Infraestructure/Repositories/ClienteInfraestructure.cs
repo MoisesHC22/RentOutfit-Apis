@@ -267,5 +267,23 @@
         }
 
 
+        public async Task<InformacionDeUnaVestimenta> InformacionDeUnaSolaVestimenta(int vestimentaID) 
+        {
+            try 
+            {
+               var vestimenta = await _context.informacionDeUnaVestimenta
+                   .FromSqlRaw("EXEC dbo.sp_Buscar_Inf_Vestimenta @vestimentaID ", new SqlParameter("@vestimentaID", vestimentaID))
+                   .ToListAsync();
+
+                return vestimenta.FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al encontrar un establecimiento, ", ex);
+            }
+        }
+
+
+
     }
 }
