@@ -6,6 +6,7 @@ namespace RO.RentOfit.Domain.Interfaces.Infraestructure
         Task<List<ItemsCarrito>> CargarCarrito(int usuarioID);
         Task<List<EstablecimientosCercanosDto>> EstablecimientosCercanos(EstablecimientosCercanosAggregate requerimientos);
         Task GuardarCarrito(CarritoAggregate requerimientos);
+        Task<InformacionDeUnaVestimenta> InformacionDeUnaSolaVestimenta(int vestimentaID);
         Task<InformacionEstablecimientoDto> InformacionEstablecimiento(int establecimiento);
         Task<InformacionVestimentaDto> InformacionVestimenta(int vestimenta);
         Task<IniciarSesionDto> IniciarSesion(IniciarSesionAggregate requerimiento);
