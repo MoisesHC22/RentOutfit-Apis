@@ -69,5 +69,10 @@ namespace RO.RentOfit.Aplication.Presenters
         {
             return await _unitRepository.clienteInfraestructure.CargarCarrito(usuarioID);
         }
+
+        public async Task<InformacionDeUnaVestimenta> InformacionDeUnaSolaVestimenta(int vestimentaID)
+        {
+            return await _unitRepository.clienteInfraestructure.InformacionDeUnaSolaVestimenta(vestimentaID);
+        }
     }
 }

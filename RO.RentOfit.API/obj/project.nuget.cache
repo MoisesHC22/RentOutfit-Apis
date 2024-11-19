@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "J9IK6covmEg=",
+  "dgSpecHash": "tBNNPjfeQaY=",
   "success": true,
   "projectFilePath": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\RO.RentOfit.API.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\moyhc\\.nuget\\packages\\itext7.bouncy-castle-adapter\\8.0.5\\itext7.bouncy-castle-adapter.8.0.5.nupkg.sha512",
     "C:\\Users\\moyhc\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
     "C:\\Users\\moyhc\\.nuget\\packages\\mathnet.numerics.signed\\5.0.0\\mathnet.numerics.signed.5.0.0.nupkg.sha512",
+    "C:\\Users\\moyhc\\.nuget\\packages\\mercadopago-sdk\\2.4.1\\mercadopago-sdk.2.4.1.nupkg.sha512",
     "C:\\Users\\moyhc\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\moyhc\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\moyhc\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",

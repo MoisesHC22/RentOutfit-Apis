@@ -21,4 +21,13 @@ namespace RO.RentOfit.Domain.DTOs.Vestimenta
         public string nombreEstilo { get; set; }
 
     }
+
+
+    public class InformacionDeUnaVestimenta
+    {
+        [Key]
+        public string nombrePrenda { get; set;}
+        public decimal precioPorDia { get;set; }
+        public int stock { get; set; }
+    }
 }

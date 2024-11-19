@@ -22,6 +22,7 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         public DbSet<RecuperarContrasenaDto> recuperarContrasenaDto { get; set; }
         public DbSet<InformacionVestimentaDto> informacionVestimentaDto { get; set; }
         public DbSet<ListaVestimentasDto> listaVestimentasDto { get; set; }
+        public DbSet<InformacionDeUnaVestimenta> informacionDeUnaVestimenta { get; set; }
         public DbSet<EstablecimientosCercanosDto> establecimientosCercanosDto { get; set; }
         public DbSet<RetornoEstablecimientoDto> retornoEstablecimientoDto { get; set; }
         public DbSet<InformacionEstablecimientoDto> informacionEstablecimientoDto { get; set; }

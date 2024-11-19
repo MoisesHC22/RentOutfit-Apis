@@ -499,6 +499,23 @@
           }
         }
       },
+      "mercadopago-sdk/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MercadoPago.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MercadoPago.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -3928,6 +3945,23 @@
         "lib/netstandard2.0/MathNet.Numerics.xml",
         "mathnet.numerics.signed.5.0.0.nupkg.sha512",
         "mathnet.numerics.signed.nuspec"
+      ]
+    },
+    "mercadopago-sdk/2.4.1": {
+      "sha512": "ewCzveC9kqjUuFAZbtAZL/9PS+4wGjfzH6/zEyXqr4WR16M9CmJn0KFulSY0mtAl3yq7E6wfllZjij6apA6yYQ==",
+      "type": "package",
+      "path": "mercadopago-sdk/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/MercadoPago.dll",
+        "lib/net6.0/MercadoPago.pdb",
+        "lib/net6.0/MercadoPago.xml",
+        "lib/netstandard2.1/MercadoPago.dll",
+        "lib/netstandard2.1/MercadoPago.pdb",
+        "lib/netstandard2.1/MercadoPago.xml",
+        "mercadopago-sdk.2.4.1.nupkg.sha512",
+        "mercadopago-sdk.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -9739,7 +9773,8 @@
       "RO.RentOfit.Infraestructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.7.3",
       "itext7 >= 8.0.5",
-      "itext7.bouncy-castle-adapter >= 8.0.5"
+      "itext7.bouncy-castle-adapter >= 8.0.5",
+      "mercadopago-sdk >= 2.4.1"
     ]
   },
   "packageFolders": {
@@ -9842,6 +9877,10 @@
           "itext7.bouncy-castle-adapter": {
             "target": "Package",
             "version": "[8.0.5, )"
+          },
+          "mercadopago-sdk": {
+            "target": "Package",
+            "version": "[2.4.1, )"
           }
         },
         "imports": [

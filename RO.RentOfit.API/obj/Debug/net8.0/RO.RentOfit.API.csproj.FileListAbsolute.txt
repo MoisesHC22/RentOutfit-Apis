@@ -1702,3 +1702,4 @@ C:\Users\bryan\Desktop\Sprint7_Apis\RO.RentOfit.API\obj\Debug\net8.0\refint\RO.R
 C:\Users\bryan\Desktop\Sprint7_Apis\RO.RentOfit.API\obj\Debug\net8.0\RO.RentOfit.API.pdb
 C:\Users\bryan\Desktop\Sprint7_Apis\RO.RentOfit.API\obj\Debug\net8.0\RO.RentOfit.API.genruntimeconfig.cache
 C:\Users\bryan\Desktop\Sprint7_Apis\RO.RentOfit.API\obj\Debug\net8.0\ref\RO.RentOfit.API.dll
+C:\Users\moyhc\Desktop\SPRINT7_MOISES_API\RO.RentOfit.API\bin\Debug\net8.0\MercadoPago.dll
