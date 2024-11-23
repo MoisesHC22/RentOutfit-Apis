@@ -653,6 +653,68 @@
         }
       }
     },
+    "/Cliente/GuardarPago": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.PagoCarrito"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.PagoCarrito"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.PagoCarrito"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Cliente/ListaDeRentas": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.ListaDePedidoAggregate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.ListaDePedidoAggregate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.ListaDePedidoAggregate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/CodigoPostalProxy/ObtenerDireccion": {
       "post": {
         "tags": [
@@ -1173,6 +1235,37 @@
           }
         }
       }
+    },
+    "/Vendedor/ConsultarPedidos": {
+      "post": {
+        "tags": [
+          "Vendedor"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.ConsultatPedidoAggregate"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.ConsultatPedidoAggregate"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.ConsultatPedidoAggregate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1189,6 +1282,25 @@
             "items": {
               "$ref": "#/components/schemas/RO.RentOfit.Domain.Aggregates.Cliente.ItemsCarrito"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RO.RentOfit.Domain.Aggregates.Cliente.ConsultatPedidoAggregate": {
+        "type": "object",
+        "properties": {
+          "usuarioID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pagina": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "orden": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -1222,6 +1334,29 @@
           "fechaPrestamo": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RO.RentOfit.Domain.Aggregates.Cliente.ListaDePedidoAggregate": {
+        "type": "object",
+        "properties": {
+          "usuarioID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mes": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ano": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pagina": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },
@@ -1270,6 +1405,20 @@
           },
           "activar": {
             "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RO.RentOfit.Domain.Aggregates.Cliente.PagoCarrito": {
+        "type": "object",
+        "properties": {
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "paymentId": {
+            "type": "string",
             "nullable": true
           }
         },

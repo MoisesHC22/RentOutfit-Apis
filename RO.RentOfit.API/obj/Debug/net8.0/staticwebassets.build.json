@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uyKHmhroAwGARdJ4yL/PLk0NrUpaV0uhS3zvkuPy5lk=",
+  "Hash": "dQUtixhxEQV9HxKJiceTMlx3GEsRPJKPP94rVe+ahGM=",
   "Source": "RO.RentOfit.API",
   "BasePath": "_content/RO.RentOfit.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RO.RentOfit.API\\wwwroot",
       "Source": "RO.RentOfit.API",
-      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\SPRINT8_MOISES_API\\RO.RentOfit.API\\wwwroot\\",
       "BasePath": "_content/RO.RentOfit.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "Identity": "C:\\Users\\moyhc\\Desktop\\SPRINT8_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
       "SourceId": "RO.RentOfit.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\moyhc\\Desktop\\SPRINT8_MOISES_API\\RO.RentOfit.API\\wwwroot\\",
       "BasePath": "_content/RO.RentOfit.API",
       "RelativePath": "swagger/ui/custom#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -41,7 +41,7 @@
   "Endpoints": [
     {
       "Route": "swagger/ui/custom.css",
-      "AssetFile": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "AssetFile": "C:\\Users\\moyhc\\Desktop\\SPRINT8_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 15 Nov 2024 01:55:16 GMT"
+          "Value": "Thu, 21 Nov 2024 00:58:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -78,7 +78,7 @@
     },
     {
       "Route": "swagger/ui/custom.d8nd6h3bbk.css",
-      "AssetFile": "C:\\Users\\moyhc\\Desktop\\SPRINT7_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "AssetFile": "C:\\Users\\moyhc\\Desktop\\SPRINT8_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 15 Nov 2024 01:55:16 GMT"
+          "Value": "Thu, 21 Nov 2024 00:58:38 GMT"
         },
         {
           "Name": "Cache-Control",

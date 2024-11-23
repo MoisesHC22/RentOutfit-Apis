@@ -3,6 +3,7 @@ using MercadoPago.Resource.Preference;
 using MercadoPago.Config;
 using iText.StyledXmlParser.Node;
 using Microsoft.Extensions.Azure;
+using Azure.Core;
 
 namespace RO.RentOfit.API.Controllers
 {
@@ -178,11 +179,6 @@ namespace RO.RentOfit.API.Controllers
                 return BadRequest("No se pudo generar la lista de ítems para Mercado Pago.");
             }
 
-            foreach (var item in items)
-            {
-                Console.WriteLine($"Title: {item.Title}, Quantity: {item.Quantity}, UnitPrice: {item.UnitPrice}");
-            }
-
             var cliente = new PreferenceClient();
 
             var request = new PreferenceRequest
@@ -190,9 +186,9 @@ namespace RO.RentOfit.API.Controllers
                 Items = items,
                 BackUrls = new PreferenceBackUrlsRequest
                 {
-                    Success = "https://www.tusitio.com/success",
-                    Failure = "https://www.tusitio.com/failure",
-                    Pending = "https://www.tusitio.com/pending"
+                    Success = "http://localhost:4200/Cliente/home",
+                    Failure = "http://localhost:4200/Cliente/carritoDeCompras",
+                    Pending = "http://localhost:4200/Cliente/carritoDeCompras"
                 },
                 AutoReturn = "approved"
             };
@@ -201,6 +197,7 @@ namespace RO.RentOfit.API.Controllers
 
             if (preference != null)
             {
+                Console.WriteLine(preference.Id);
                 return Ok(new { preferenceId = preference.Id });
             }
             else
@@ -211,9 +208,75 @@ namespace RO.RentOfit.API.Controllers
         }
 
 
+        [HttpPost("GuardarPago")]
+        public async Task<IActionResult> GuardarPago(PagoCarrito requerimientos)
+        {
+            try 
+            {
+                var accessToken = "TEST-1228696711826746-111815-2cc6c73a2c5c8ae98848122680486337-1414719981";
+
+                using (HttpClient httpClient = new HttpClient())
+                {
+                    string apiUrl = $"https://api.mercadopago.com/v1/payments/{requerimientos.paymentId}";
+
+                    httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {accessToken}");
+
+                    HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseContent = await response.Content.ReadAsStringAsync();
+                        dynamic jsonResponse = JsonConvert.DeserializeObject(responseContent);
+
+                        string paymentStatus = jsonResponse.status;
+
+                        if (paymentStatus == "approved")
+                        {
+                            await _appController.ClientePresenter.PagoExitoso(requerimientos.usuarioId);
+
+                            return Ok(new
+                            {
+                                message = "Pago procesado correctamente.",
+                                status = paymentStatus
+                            });
+                        }
+                        else 
+                        {
+                            return Ok(new
+                            {
+                                message = "El pago aún no está aprobado.",
+                                status = paymentStatus
+                            });
+                        }
+                    }
+                    else
+                    {
+                        // Maneja errores en la respuesta
+                        string errorContent = await response.Content.ReadAsStringAsync();
+                        return StatusCode((int)response.StatusCode, new
+                        {
+                            message = "Error al consultar el estado del pago",
+                            details = errorContent
+                        });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    message = "Ocurrió un error interno al consultar el estado del pago",
+                    details = ex.Message
+                });
+            }
+        }
 
 
-
+        [HttpPost("ListaDeRentas")]
+        public async ValueTask<IActionResult> ListaDeRentas(ListaDePedidoAggregate requerimientos)
+        {
+            return Ok(await _appController.ClientePresenter.ListaDeRentas(requerimientos));
+        }
 
     }
 }

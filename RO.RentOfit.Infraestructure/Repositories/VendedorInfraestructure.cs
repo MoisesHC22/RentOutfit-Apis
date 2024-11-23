@@ -6,6 +6,7 @@ namespace RO.RentOfit.Infraestructure.Repositories
         private readonly RentOutfitContext _context;
         private readonly StorageFirebaseConfig _storageFirebase;
 
+
         public VendedorInfraestructure(RentOutfitContext context, StorageFirebaseConfig storageFirebase)
         {
             _context = context;
@@ -160,6 +161,29 @@ namespace RO.RentOfit.Infraestructure.Repositories
             }
         }
 
+        public async Task<List<ConsultarPedidosDto>> consultarPedidos(ConsultatPedidoAggregate requerimientos)
+        {
+            try
+            {
+                int paginaValida = (requerimientos.pagina == null || requerimientos.pagina == 0) ? 1 : requerimientos.pagina.Value;
+                string orden = (requerimientos.orden == null || requerimientos.orden == "") ? "reciente" : requerimientos.orden;
 
+                var pedidos = await _context.consultarPedidoDto
+                    .FromSqlRaw("EXEC dbo.sp_Consultar_Pedidos @usuarioID, @pagina, @orden ",
+                    new SqlParameter("@usuarioID", requerimientos.usuarioID), new SqlParameter("@pagina", paginaValida),
+                    new SqlParameter("@orden", orden))
+                    .ToListAsync();
+
+                if (pedidos == null || !pedidos.Any())
+                {
+                    return null;
+                }
+                return pedidos.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al cargar los pedidos, ", ex);
+            }
+        }
     }
 }
