@@ -39,5 +39,10 @@ namespace RO.RentOfit.Aplication.Presenters
             return await _unitRepository.vendedorInfraestructure.MisEstablecimientos(requerimientos);
         }
 
+
+        public async Task<List<ConsultarPedidosDto>> consultarPedidos(ConsultatPedidoAggregate requerimientos)
+        {
+            return await _unitRepository.vendedorInfraestructure.consultarPedidos(requerimientos);
+        }
     }
 }

@@ -1,4 +1,6 @@
 ﻿
+using NPOI.OpenXmlFormats.Dml;
+
 namespace RO.RentOfit.API.Controllers
 {
     [Route("[controller]")]
@@ -110,6 +112,12 @@ namespace RO.RentOfit.API.Controllers
             }
         }
 
+
+        [HttpPost("ConsultarPedidos")]
+        public async ValueTask<IActionResult> ConsultarPedidos(ConsultatPedidoAggregate requerimientos)
+        {
+            return Ok(await _appController.vendedorPresenter.consultarPedidos(requerimientos));
+        }
 
     }
 }

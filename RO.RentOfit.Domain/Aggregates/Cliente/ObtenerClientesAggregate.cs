@@ -26,4 +26,10 @@ namespace RO.RentOfit.Domain.Aggregates.Cliente
         public int stock { get; set; }
         public DateTime? fechaPrestamo { get; set; }
     }
+
+    public class PagoCarrito 
+    {
+        public int usuarioId { get; set; }
+        public string paymentId { get; set; }
+    }
 }

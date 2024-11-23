@@ -1,4 +1,5 @@
 ﻿
+
 namespace RO.RentOfit.Domain.Interfaces.Infraestructure
 {
     public interface IVendedorInfraestructure
@@ -7,5 +8,6 @@ namespace RO.RentOfit.Domain.Interfaces.Infraestructure
         Task<RespuestaDB> DarDeAltaUnVendedor(int usuarioID);
         Task<RespuestaDB> RegistrarVestimentas(VestimentaAggregate registro, IFormFile[] Imagenes);
         Task<List<MisEstablecimientosDto>> MisEstablecimientos(MisEstablecimientosAggregate requerimientos);
+        Task<List<ConsultarPedidosDto>> consultarPedidos(ConsultatPedidoAggregate requerimientos);
     }
 }
