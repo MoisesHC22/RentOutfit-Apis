@@ -74,5 +74,15 @@ namespace RO.RentOfit.Aplication.Presenters
         {
             return await _unitRepository.clienteInfraestructure.InformacionDeUnaSolaVestimenta(vestimentaID);
         }
+
+        public async Task<ClienteDto> PagoExitoso(int usuarioID)
+        {
+            return await _unitRepository.clienteInfraestructure.PagoExitoso(usuarioID);
+        }
+
+        public async Task<List<ListaPedido>> ListaDeRentas(ListaDePedidoAggregate requerimientos)
+        {
+            return await _unitRepository.clienteInfraestructure.ListaDeRentas(requerimientos);
+        }
     }
 }

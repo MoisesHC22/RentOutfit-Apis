@@ -177,6 +177,22 @@
   },
   {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "GuardarPago",
+    "RelativePath": "Cliente/GuardarPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.PagoCarrito",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "InformacionEstablecimiento",
     "RelativePath": "Cliente/InformacionEstablecimiento",
     "HttpMethod": "POST",
@@ -218,6 +234,22 @@
       {
         "Name": "requerimiento",
         "Type": "RO.RentOfit.Domain.Aggregates.Cliente.IniciarSesionAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "ListaDeRentas",
+    "RelativePath": "Cliente/ListaDeRentas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.ListaDePedidoAggregate",
         "IsRequired": true
       }
     ],
@@ -453,6 +485,22 @@
       {
         "Name": "requerimientos",
         "Type": "RO.RentOfit.Domain.Aggregates.RecuperarContrasena.ValidarToken",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
+    "Method": "ConsultarPedidos",
+    "RelativePath": "Vendedor/ConsultarPedidos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.ConsultatPedidoAggregate",
         "IsRequired": true
       }
     ],

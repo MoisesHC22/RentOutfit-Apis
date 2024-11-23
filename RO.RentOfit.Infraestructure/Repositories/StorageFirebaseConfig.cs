@@ -76,6 +76,13 @@ namespace RO.RentOfit.Infraestructure.Repositories
                     .Child("carritoCompras")
                     .Child(requerimientos.usuarioID.ToString());
 
+                if (requerimientos.itemsCarrito == null || !requerimientos.itemsCarrito.Any())
+                {
+                    await usuarioCarrito.DeleteAsync();
+                    Console.WriteLine("Carrito eliminado correctamente.");
+                    return;
+                }
+
                 var carritoExistente = await usuarioCarrito.OnceSingleAsync<List<ItemsCarrito>>();
                 List<ItemsCarrito> listaActualizada = carritoExistente ?? new List<ItemsCarrito>();
 
