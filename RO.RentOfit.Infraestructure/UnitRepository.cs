@@ -34,7 +34,7 @@ public class UnitRepository : BaseDisposable, IUnitRepository
     }
 
     // Crear las instancias de las infraestructuras
-    public IClienteInfraestructure clienteInfraestructure => new ClienteInfraestructure(_outfitContext, _storageFirebaseConfig);
+    public IClienteInfraestructure clienteInfraestructure => new ClienteInfraestructure(_outfitContext, _storageFirebaseConfig, _emailService);
     public IListasInfraestructure listasInfraestructure => new ListasInfraestructure(_outfitContext);
     public IVendedorInfraestructure vendedorInfraestructure => new VendedorInfraestructure(_outfitContext, _storageFirebaseConfig);
     public IRecuperarContrasenaInfraestructure recuperarContrasenaInfraestructure => new RecuperarContrasenaInfraestructure(_outfitContext, _emailService);

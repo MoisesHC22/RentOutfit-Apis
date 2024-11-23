@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RO.RentOfit.Infraestructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+beb337f525feb441cc1d3c00763c0c9949abc63c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4ab39ee91732e4e98601ca944c0d9292c8b0a07")]
 [assembly: System.Reflection.AssemblyProductAttribute("RO.RentOfit.Infraestructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RO.RentOfit.Infraestructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
