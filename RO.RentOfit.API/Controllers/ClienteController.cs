@@ -204,7 +204,71 @@ namespace RO.RentOfit.API.Controllers
             {
                 return BadRequest("No se pudo generar la preferencia.");
             }
+        }
 
+
+
+        [HttpPost("GenerarTokenMercadoPagoMovil")]
+        public async Task<IActionResult> GenerarTokenMercadoPagoMovil([FromBody] int usurioID)
+        {
+
+            MercadoPagoConfig.AccessToken = "TEST-1228696711826746-111815-2cc6c73a2c5c8ae98848122680486337-1414719981";
+
+            var carrito = await _appController.ClientePresenter.CargarCarrito(usurioID);
+
+            if (carrito == null || !carrito.Any())
+            {
+                return BadRequest("El carrito está vacío o no existe.");
+            }
+
+            var items = new List<PreferenceItemRequest>();
+
+            foreach (var item in carrito)
+            {
+                var vestimenta = await _appController.ClientePresenter.InformacionDeUnaSolaVestimenta(item.vestimentaID);
+
+                if (vestimenta != null)
+                {
+                    items.Add(new PreferenceItemRequest
+                    {
+                        Title = vestimenta.nombrePrenda,
+                        Quantity = item.stock,
+                        CurrencyId = "MXN",
+                        UnitPrice = vestimenta.precioPorDia
+                    });
+                }
+            }
+
+            if (!items.Any())
+            {
+                return BadRequest("No se pudo generar la lista de ítems para Mercado Pago.");
+            }
+
+            var cliente = new PreferenceClient();
+
+            var request = new PreferenceRequest
+            {
+                Items = items,
+                BackUrls = new PreferenceBackUrlsRequest
+                {
+                    Success = "myapp://checkout-success",
+                    Failure = "myapp://checkout-failure",
+                    Pending = "myapp://checkout-pending"
+                },
+                AutoReturn = "approved"
+            };
+
+            Preference preference = await cliente.CreateAsync(request);
+
+            if (preference != null)
+            {
+                Console.WriteLine(preference.Id);
+                return Ok(new { preferenceId = preference.Id });
+            }
+            else
+            {
+                return BadRequest("No se pudo generar la preferencia.");
+            }
         }
 
 
