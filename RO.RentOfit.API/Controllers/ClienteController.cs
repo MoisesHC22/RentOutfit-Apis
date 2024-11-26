@@ -186,9 +186,9 @@ namespace RO.RentOfit.API.Controllers
                 Items = items,
                 BackUrls = new PreferenceBackUrlsRequest
                 {
-                    Success = "http://localhost:4200/Cliente/home",
-                    Failure = "http://localhost:4200/Cliente/carritoDeCompras",
-                    Pending = "http://localhost:4200/Cliente/carritoDeCompras"
+                    Success = "https://rent-outfit-web.vercel.app/Cliente/home",
+                    Failure = "https://rent-outfit-web.vercel.app/Cliente/carritoDeCompras",
+                    Pending = "https://rent-outfit-web.vercel.app/Cliente/carritoDeCompras"
                 },
                 AutoReturn = "approved"
             };
