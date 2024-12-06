@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
+    "Method": "Alertar",
+    "RelativePath": "Administrador/Alertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.MandarMsj",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.AdministradorController",
     "Method": "PostAprobarEstablecimiento",
     "RelativePath": "Administrador/AprobarEstablecimiento",
     "HttpMethod": "POST",
@@ -64,6 +80,70 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
+    "Method": "ObtenerMensajes",
+    "RelativePath": "Chat/{chatId}/mensajes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
+    "Method": "EnviarMensaje",
+    "RelativePath": "Chat/enviarMsj",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enviarMensajeDto",
+        "Type": "RO.RentOfit.Domain.DTOs.Chat.EnviarMensajeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ChatController",
+    "Method": "IniciarConversacion",
+    "RelativePath": "Chat/iniciar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iniciarChatDto",
+        "Type": "RO.RentOfit.Domain.DTOs.Chat.IniciarChatDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "CargarCarrito",
+    "RelativePath": "Cliente/CargarCarrito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
     "Method": "EstablecimientosCercanos",
     "RelativePath": "Cliente/EstablecimientosCercanos",
@@ -74,6 +154,54 @@
       {
         "Name": "requerimientos",
         "Type": "RO.RentOfit.Domain.Aggregates.Establecimientos.EstablecimientosCercanosAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "GenerarTokenMercadoPago",
+    "RelativePath": "Cliente/GenerarTokenMercadoPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usurioID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "GenerarTokenMercadoPagoMovil",
+    "RelativePath": "Cliente/GenerarTokenMercadoPagoMovil",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usurioID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "GuardarPago",
+    "RelativePath": "Cliente/GuardarPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.PagoCarrito",
         "IsRequired": true
       }
     ],
@@ -122,6 +250,38 @@
       {
         "Name": "requerimiento",
         "Type": "RO.RentOfit.Domain.Aggregates.Cliente.IniciarSesionAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "ListaDeRentas",
+    "RelativePath": "Cliente/ListaDeRentas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.ListaDePedidoAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.ClienteController",
+    "Method": "ModificarCarrito",
+    "RelativePath": "Cliente/ModificarCarrito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.CarritoAggregate",
         "IsRequired": true
       }
     ],
@@ -221,6 +381,22 @@
       {
         "Name": "requerimientos",
         "Type": "RO.RentOfit.Domain.Aggregates.Establecimientos.VestimentasEstablecimientosAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.CodigoPostalProxyController",
+    "Method": "ObtenerDireccion",
+    "RelativePath": "CodigoPostalProxy/ObtenerDireccion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RO.RentOfit.Domain.Aggregates.Establecimientos.CodigoPostalRequest",
         "IsRequired": true
       }
     ],
@@ -332,6 +508,22 @@
   },
   {
     "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
+    "Method": "ConsultarPedidos",
+    "RelativePath": "Vendedor/ConsultarPedidos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requerimientos",
+        "Type": "RO.RentOfit.Domain.Aggregates.Cliente.ConsultatPedidoAggregate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
     "Method": "DarDeAltaEstablecimiento",
     "RelativePath": "Vendedor/DarDeAltaEstablecimiento",
     "HttpMethod": "POST",
@@ -395,6 +587,22 @@
     "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
     "Method": "DarDeAltaUnVendedor",
     "RelativePath": "Vendedor/DarDeAltaUnVendedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RO.RentOfit.API.Controllers.VendedorController",
+    "Method": "GenerarPdfEstablecimientos",
+    "RelativePath": "Vendedor/GenerarPdfEstablecimientos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

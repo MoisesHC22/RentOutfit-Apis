@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RO.RentOfit.Domain.DTOs.CarritoCompras;
 
 namespace RO.RentOfit.Infraestructure.DataContexts
 {
@@ -22,12 +23,16 @@ namespace RO.RentOfit.Infraestructure.DataContexts
         public DbSet<RecuperarContrasenaDto> recuperarContrasenaDto { get; set; }
         public DbSet<InformacionVestimentaDto> informacionVestimentaDto { get; set; }
         public DbSet<ListaVestimentasDto> listaVestimentasDto { get; set; }
+        public DbSet<InformacionDeUnaVestimenta> informacionDeUnaVestimenta { get; set; }
         public DbSet<EstablecimientosCercanosDto> establecimientosCercanosDto { get; set; }
         public DbSet<RetornoEstablecimientoDto> retornoEstablecimientoDto { get; set; }
         public DbSet<InformacionEstablecimientoDto> informacionEstablecimientoDto { get; set; }
         public DbSet<VestimentasEstablecimientosDto> vestimentasEstablecimientosDto { get; set; }
         public DbSet<MisEstablecimientosDto> misEstablecimientosDto { get; set; }
-        public DbSet<ListaDeAprobacion>listaDeAprobacionsDto { get; set; }
+        public DbSet<ListaDeAprobacion> listaDeAprobacionsDto { get; set; }
+        public DbSet<PedidoDto> pedidoDto { get; set; }
+        public DbSet<ListaPedido> listaPedido { get; set; }
+        public DbSet<ConsultarPedidosDto> consultarPedidoDto { get; set; }
         #endregion
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

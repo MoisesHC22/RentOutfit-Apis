@@ -1,8 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\moyhc\\Desktop\\SPRINT6_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
+      "Id": "C:\\Users\\moyhc\\Desktop\\SPRINT8_MOISES_API\\RO.RentOfit.API\\wwwroot\\swagger\\ui\\custom.css",
       "PackagePath": "staticwebassets\\swagger\\ui\\custom.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RO.RentOfit.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RO.RentOfit.API.Microsoft.AspNetCore.StaticWebAssets.props",

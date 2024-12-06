@@ -60,5 +60,29 @@ namespace RO.RentOfit.Aplication.Presenters
         }
 
 
+        public async Task GuardarCarrito(CarritoAggregate requerimientos) 
+        {
+             await _unitRepository.clienteInfraestructure.GuardarCarrito(requerimientos);
+        }
+
+        public async Task<List<ItemsCarrito>> CargarCarrito(int usuarioID) 
+        {
+            return await _unitRepository.clienteInfraestructure.CargarCarrito(usuarioID);
+        }
+
+        public async Task<InformacionDeUnaVestimenta> InformacionDeUnaSolaVestimenta(int vestimentaID)
+        {
+            return await _unitRepository.clienteInfraestructure.InformacionDeUnaSolaVestimenta(vestimentaID);
+        }
+
+        public async Task<ClienteDto> PagoExitoso(int usuarioID)
+        {
+            return await _unitRepository.clienteInfraestructure.PagoExitoso(usuarioID);
+        }
+
+        public async Task<List<ListaPedido>> ListaDeRentas(ListaDePedidoAggregate requerimientos)
+        {
+            return await _unitRepository.clienteInfraestructure.ListaDeRentas(requerimientos);
+        }
     }
 }

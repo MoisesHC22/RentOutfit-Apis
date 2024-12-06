@@ -20,5 +20,11 @@ namespace RO.RentOfit.Domain.Aggregates.Establecimientos
         public int establecimiento { get; set; }
         public int usuario { get; set; }
         public int? pagina { get; set; }
+        public string? filtro { get; set; }
+    }
+
+    public class CodigoPostalRequest
+    {
+        public string CodigoPostal { get; set; }
     }
 }

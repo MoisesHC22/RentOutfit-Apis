@@ -10,5 +10,7 @@ namespace RO.RentOfit.Domain.DTOs.Establecimientos
     {
         public int Usuario { get; set; }
         public int? Pagina { get; set; }
+        public string? Filtro { get; set; }
+        public string? Orden { get; set; }
     }
 }

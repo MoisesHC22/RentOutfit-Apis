@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using RO.RentOfit.Domain.DTOs.Establecimientos;
-
+﻿
 namespace RO.RentOfit.Domain.Interfaces.Infrastructure
 {
     public interface IAdministradorInfraestructure
@@ -15,7 +12,8 @@ namespace RO.RentOfit.Domain.Interfaces.Infrastructure
         Task<RespuestaEstablecimiento> DenegarEstablecimiento(MotivosDenegarAggregate requerimientos);
 
         // Método para listar todos los establecimientos pendientes de revisión
-        Task<List<ListaDeAprobacion>> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters);
+        Task<(List<ListaDeAprobacion> Establecimientos, int TotalRegistros)> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters);
         Task<List<EstablecimientosCercanosDto>> TodosLosEstablecimientos(TodosEstablecimientosAggregate requerimientos);
+        Task Alertar(MandarMsj requerimientos);
     }
 }

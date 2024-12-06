@@ -1,10 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using RO.RentOfit.Domain.DTOs.Establecimientos;
-using RO.RentOfit.Domain.Interfaces.Infrastructure;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Data.SqlClient;
-
+﻿
 namespace RO.RentOfit.Infraestructure.Repositories
 {
     public class AdministradorInfraestructure : IAdministradorInfraestructure
@@ -19,16 +13,27 @@ namespace RO.RentOfit.Infraestructure.Repositories
 
         }
 
-        public async Task<List<ListaDeAprobacion>> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters)
+        public async Task<(List<ListaDeAprobacion> Establecimientos, int TotalRegistros)> ConsultarEstablecimientosParaAprobacion(EstablecimientosParaAprobacionParams parameters)
         {
             int paginaValida = (parameters.Pagina == null || parameters.Pagina == 0) ? 1 : parameters.Pagina.Value;
+            string orden = (parameters.Orden == null || parameters.Orden == "") ? "reciente" : parameters.Orden;
 
             try
             {
                 var results = await _context.listaDeAprobacionsDto
-                    .FromSqlRaw("EXEC sp_Mostrar_Peticiones_Establecimientos @usuario, @pagina", new SqlParameter("usuario", parameters.Usuario), new SqlParameter("pagina", paginaValida))
+                    .FromSqlRaw("EXEC sp_Mostrar_Peticiones_Establecimientos @usuario, @pagina, @filtro, @orden", 
+                    new SqlParameter("usuario", parameters.Usuario), new SqlParameter("pagina", paginaValida), 
+                    new SqlParameter("filtro", string.IsNullOrEmpty(parameters.Filtro) ? (object)DBNull.Value : parameters.Filtro),
+                    new SqlParameter("orden", orden))
                     .ToListAsync();
-                return results;
+
+                if (results.Count > 0) 
+                {
+                    int totalRegistros = results[0].totalRegistros;
+                    return (results, totalRegistros);
+                }
+
+                return (new List<ListaDeAprobacion>(), 0);
             }
             catch (Exception ex)
             {
@@ -189,6 +194,37 @@ namespace RO.RentOfit.Infraestructure.Repositories
             {
                 // Manejar la excepción y registrarla si es necesario
                 throw new Exception("Error al denegar .", ex);
+            }
+        }
+
+
+
+        public async Task Alertar(MandarMsj requerimientos)
+        {
+            try
+            {
+                int pagina = 1;
+                bool activar = false;
+
+                var respuesta = await _context.clienteDto
+                   .FromSqlRaw("EXEC dbo.sp_mostrar_cliente @usuarioID, @pagina, @activar ",
+                    new SqlParameter("usuarioID", requerimientos.usuarioID), new SqlParameter("pagina", pagina),
+                    new SqlParameter("activar", activar)).ToListAsync();
+
+                var resultado = respuesta.FirstOrDefault();
+
+                string titulo = "Aviso importante!!";
+                string mensaje = $@"{requerimientos.mensaje}";
+
+                if (resultado != null)
+                {
+                    await _emailService.EnviarMsj(resultado.email, titulo, mensaje);
+                }
+
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception("Error al alertar al usuario ", ex);
             }
         }
 

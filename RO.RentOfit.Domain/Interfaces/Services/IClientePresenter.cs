@@ -10,7 +10,12 @@ namespace RO.RentOfit.Domain.Interfaces.Services
         Task<List<ListaVestimentasDto>> MostrarVestimentas(RequisitosVestimentaAggregate requerimientos);
         Task<RespuestaDB> RegistrarCliente(RegistrarClienteAggregate registro);
         Task<IniciarSesionDto> IniciarSesion(IniciarSesionAggregate requerimiento);
+        Task GuardarCarrito(CarritoAggregate requerimientos);
+        Task<List<ItemsCarrito>> CargarCarrito(int usuarioID);
+        Task<ClienteDto> PagoExitoso(int usuarioID);
+        Task<List<ListaPedido>> ListaDeRentas(ListaDePedidoAggregate requerimientos);
 
+        Task<InformacionDeUnaVestimenta> InformacionDeUnaSolaVestimenta(int vestimentaID);
         Task<List<VestimentasEstablecimientosDto>> VestimentasDeEstablecimientos(VestimentasEstablecimientosAggregate requerimientos);
     }
 }
